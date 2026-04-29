@@ -416,6 +416,74 @@ app.get('/api/tech-needs/:needId/match-achievements', async (req, res) => {
   }
 });
 
+async function getChainEnterprises(enterpriseName) {
+  const session = driver.session();
+  try {
+    const enterpriseResult = await session.run(
+      `MATCH (e:Node {type: 'Enterprise', label: $enterpriseName}) RETURN e`,
+      { enterpriseName }
+    );
+    
+    if (enterpriseResult.records.length === 0) {
+      return { success: false, error: '企业不存在' };
+    }
+    
+    const enterprise = enterpriseResult.records[0].get('e').properties;
+    
+    const directDownstreamResult = await session.run(
+      `MATCH (e:Node {type: 'Enterprise', label: $enterpriseName})-[r:RELATIONSHIP]->(downstream)
+       WHERE downstream.type = 'Enterprise'
+       RETURN DISTINCT downstream`,
+      { enterpriseName }
+    );
+    
+    const directUpstreamResult = await session.run(
+      `MATCH (e:Node {type: 'Enterprise', label: $enterpriseName})<-[r:RELATIONSHIP]-(upstream)
+       WHERE upstream.type = 'Enterprise'
+       RETURN DISTINCT upstream`,
+      { enterpriseName }
+    );
+    
+    const multiLevelDownstreamResult = await session.run(
+      `MATCH path = (e:Node {type: 'Enterprise', label: $enterpriseName})-[r*2..4]->(downstream)
+       WHERE downstream.type = 'Enterprise'
+       RETURN DISTINCT downstream`,
+      { enterpriseName }
+    );
+    
+    const multiLevelUpstreamResult = await session.run(
+      `MATCH path = (upstream:Node)-[r*2..4]->(e:Node {type: 'Enterprise', label: $enterpriseName})
+       WHERE upstream.type = 'Enterprise'
+       RETURN DISTINCT upstream`,
+      { enterpriseName }
+    );
+    
+    const seenIds = new Set([enterprise.id]);
+    const enterprises = [enterprise];
+    
+    const addEnterprise = (node) => {
+      if (!seenIds.has(node.id)) {
+        seenIds.add(node.id);
+        enterprises.push(node);
+      }
+    };
+    
+    directDownstreamResult.records.forEach(record => addEnterprise(record.get('downstream').properties));
+    directUpstreamResult.records.forEach(record => addEnterprise(record.get('upstream').properties));
+    multiLevelDownstreamResult.records.forEach(record => addEnterprise(record.get('downstream').properties));
+    multiLevelUpstreamResult.records.forEach(record => addEnterprise(record.get('upstream').properties));
+    
+    console.log(`产业链中共有 ${enterprises.length} 个企业`);
+    
+    return { success: true, data: { enterprise, enterprises } };
+  } catch (error) {
+    console.error('获取产业链企业失败:', error);
+    return { success: false, error: error.message };
+  } finally {
+    await session.close();
+  }
+}
+
 app.get('/api/integrated-graph/:enterpriseName', async (req, res) => {
   const session = driver.session();
   const { enterpriseName } = req.params;
@@ -655,11 +723,10 @@ ${achievementsText}
   }
 }
 
-app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
+async function matchAchievementsForNode(nodeLabel) {
   const session = driver.session();
-  const { nodeLabel } = req.params;
   try {
-    console.log('查询节点技术需求:', nodeLabel);
+    console.log('匹配节点技术需求:', nodeLabel);
     
     const nodeResult = await session.run(
       `MATCH (n:Node {label: $nodeLabel}) RETURN n`,
@@ -667,7 +734,7 @@ app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
     );
     
     if (nodeResult.records.length === 0) {
-      return res.status(404).json({ success: false, error: '节点不存在' });
+      return { success: false, error: '节点不存在' };
     }
     
     const node = nodeResult.records[0].get('n').properties;
@@ -689,6 +756,10 @@ app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
     });
     
     console.log(`找到 ${techNeeds.length} 个技术需求`);
+    
+    if (techNeeds.length === 0) {
+      return { success: true, data: { node, techNeeds: [], achievements: [], nodes: [node], edges: [], matchResults: [] } };
+    }
     
     const achievementsResult = await session.run(
       `MATCH (n:Node)
@@ -784,7 +855,7 @@ app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
         }
       });
       
-      res.json({
+      return {
         success: true,
         data: {
           node,
@@ -794,7 +865,7 @@ app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
           edges: edges,
           matchResults: matchResults
         }
-      });
+      };
       
     } catch (matchingError) {
       console.error('匹配引擎调用失败，使用AI智能匹配:', matchingError.message);
@@ -841,7 +912,7 @@ app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
       const allNodes = [node, ...techNeeds, ...achievements];
       const allEdges = [...techNeedEdges, ...matchEdges];
       
-      res.json({
+      return {
         success: true,
         data: {
           node,
@@ -851,13 +922,22 @@ app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
           edges: allEdges,
           matchResults: matchResults
         }
-      });
+      };
     }
   } catch (error) {
-    console.error('查询节点技术需求失败:', error);
-    res.status(500).json({ success: false, error: error.message });
+    console.error('匹配节点技术需求失败:', error);
+    return { success: false, error: error.message };
   } finally {
     await session.close();
+  }
+}
+
+app.get('/api/node-tech-needs/:nodeLabel', async (req, res) => {
+  const result = await matchAchievementsForNode(req.params.nodeLabel);
+  if (result.success) {
+    res.json(result);
+  } else {
+    res.status(500).json(result);
   }
 });
 
@@ -1098,6 +1178,8 @@ app.listen(PORT, () => {
   console.log(`Neo4j API服务器运行在端口 ${PORT}`);
   console.log(`匹配引擎服务地址: ${MATCHING_ENGINE_URL}`);
 });
+
+module.exports = { matchAchievementsForNode, getChainEnterprises };
 
 process.on('SIGINT', async () => {
   await driver.close();

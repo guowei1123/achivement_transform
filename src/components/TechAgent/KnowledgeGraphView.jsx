@@ -19,6 +19,8 @@ function KnowledgeGraphView({ onClose }) {
   const [focusedNode, setFocusedNode] = useState(null)
   const [hasChainGraph, setHasChainGraph] = useState(false)
   const [exportingChainPPT, setExportingChainPPT] = useState(false)
+  const [chainPPTProgress, setChainPPTProgress] = useState(0)
+  const [chainPPTStatus, setChainPPTStatus] = useState('')
   const cyRef = useRef(null)
   const cyInstanceRef = useRef(null)
 
@@ -532,18 +534,85 @@ function KnowledgeGraphView({ onClose }) {
 
     try {
       setExportingChainPPT(true)
+      setChainPPTProgress(0)
+      setChainPPTStatus('正在查询产业链企业...')
       console.log('开始导出产业链PPT，企业:', enterprise.label)
+
+      setChainPPTProgress(10)
+      setChainPPTStatus('正在匹配技术成果...')
+      
       const data = await api.exportChainPPT(enterprise.label)
       console.log('导出API返回:', data)
       
+      setChainPPTProgress(70)
+      setChainPPTStatus('正在生成PPT文件...')
+      
       if (data.success) {
-        const link = document.createElement('a')
-        link.href = data.data.ppt_url
-        link.download = `${enterprise.label}_产业链汇报PPT.pptx`
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-        console.log('PPT下载成功')
+        const pptUrl = data.data?.ppt_url || data.filePath
+        const fileName = data.data?.file_name || data.fileName || `${enterprise.label}_产业链汇报PPT.pptx`
+        
+        setChainPPTProgress(85)
+        setChainPPTStatus('正在下载PPT文件...')
+        
+        if (pptUrl) {
+          const fullUrl = `http://localhost:3002${pptUrl}`
+          
+          try {
+            const response = await fetch(fullUrl)
+            if (!response.ok) throw new Error('下载失败')
+            
+            const contentLength = response.headers.get('content-length')
+            const total = contentLength ? parseInt(contentLength, 10) : 0
+            let loaded = 0
+            
+            const reader = response.body.getReader()
+            const chunks = []
+            
+            while (true) {
+              const { done, value } = await reader.read()
+              if (done) break
+              
+              chunks.push(value)
+              loaded += value.length
+              
+              if (total > 0) {
+                const downloadProgress = Math.round((loaded / total) * 15)
+                setChainPPTProgress(85 + downloadProgress)
+                setChainPPTStatus(`正在下载PPT文件... ${Math.round((loaded / total) * 100)}%`)
+              } else {
+                setChainPPTProgress(90)
+                setChainPPTStatus('正在下载PPT文件...')
+              }
+            }
+            
+            const blob = new Blob(chunks, { 
+              type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
+            })
+            const blobUrl = URL.createObjectURL(blob)
+            
+            setChainPPTProgress(100)
+            setChainPPTStatus('PPT生成完成！')
+            
+            window.open(blobUrl, '_blank')
+            
+            const link = document.createElement('a')
+            link.href = blobUrl
+            link.download = fileName
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link)
+            
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 60000)
+            console.log('PPT下载成功:', fileName)
+          } catch (downloadError) {
+            console.error('下载PPT失败，尝试直接打开:', downloadError)
+            window.open(fullUrl, '_blank')
+            setChainPPTProgress(100)
+            setChainPPTStatus('PPT已生成！')
+          }
+        } else {
+          alert('PPT生成成功但未获取到下载地址')
+        }
       } else {
         console.error('导出失败:', data.error)
         alert('导出产业链PPT失败：' + (data.error || '未知错误'))
@@ -552,7 +621,11 @@ function KnowledgeGraphView({ onClose }) {
       console.error('导出产业链PPT失败:', error)
       alert('导出产业链PPT失败：' + error.message)
     } finally {
-      setExportingChainPPT(false)
+      setTimeout(() => {
+        setExportingChainPPT(false)
+        setChainPPTProgress(0)
+        setChainPPTStatus('')
+      }, 2000)
     }
   }
 
@@ -604,7 +677,14 @@ function KnowledgeGraphView({ onClose }) {
                 onClick={handleExportChainPPT}
                 disabled={!hasChainGraph || exportingChainPPT}
               >
-                {exportingChainPPT ? '生成中...' : '生成产业链汇总PPT'}
+                {exportingChainPPT ? (
+                  <span className="chain-ppt-progress-wrapper">
+                    <span className="chain-ppt-progress-text">{chainPPTStatus || '生成中...'}</span>
+                    <span className="chain-ppt-progress-bar">
+                      <span className="chain-ppt-progress-fill" style={{ width: `${chainPPTProgress}%` }}></span>
+                    </span>
+                  </span>
+                ) : '生成产业链汇总PPT'}
               </button>
             </div>
           </div>

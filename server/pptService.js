@@ -1,6 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const JSZip = require('jszip');
+const axios = require('axios');
+
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || 'sk-3f8e9d2c1b4a5e6f7d8c9b0a1e2f3d4c5b6a7e8f';
+const MATCHING_ENGINE_URL = process.env.MATCHING_ENGINE_URL || 'http://localhost:5001';
 
 const PPTService = {
   classifyAchievementType(label) {
@@ -652,6 +656,225 @@ const PPTService = {
     }
     
     return applications.length > 0 ? applications.join('\n') : '暂无应用情况描述';
+  },
+
+  async filterAchievementsWithAI(techNeed, achievements) {
+    try {
+      const achievementsText = achievements.map((a, index) => 
+        `${index + 1}. ${a.label}`
+      ).join('\n');
+
+      const prompt = `请根据企业技术需求，筛选出最相关的科技成果。
+
+技术需求：${techNeed.label}
+
+科技成果列表：
+${achievementsText}
+
+请按照以下标准筛选：
+1. 学校成果与技术需求的相关程度是否高（30%）
+2. 技术领域是否匹配（30%）
+3. 技术方向是否一致（20%）
+4. 应用场景是否相关（20%）
+
+请以JSON格式返回结果，只保留相关性评分大于等于80的科技成果（满分100分），格式如下：
+{
+  "filtered": [
+    {
+      "index": 数字,
+      "score": 评分,
+      "reason": "筛选理由"
+    }
+  ]
+}
+
+注意：
+- 只返回相关性评分>=7的科技成果
+- index对应科技成果列表中的序号（从1开始）
+- score是相关性评分（0-10分）
+- reason是筛选理由`;
+
+      const response = await axios.post(
+        'https://api.deepseek.com/v1/chat/completions',
+        {
+          model: 'deepseek-chat',
+          messages: [
+            {
+              role: 'system',
+              content: '你是一个专业的技术匹配专家，擅长评估科技成果与技术需求的相关性。'
+            },
+            {
+              role: 'user',
+              content: prompt
+            }
+          ],
+          temperature: 0.3,
+          max_tokens: 2000
+        },
+        {
+          headers: {
+            'Authorization': `Bearer ${DEEPSEEK_API_KEY}`,
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      const aiContent = response.data.choices[0].message.content;
+      console.log(`AI筛选结果 for ${techNeed.label}:`, aiContent);
+      
+      let filteredResult;
+      try {
+        const jsonMatch = aiContent.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          filteredResult = JSON.parse(jsonMatch[0]);
+        } else {
+          console.error('AI返回内容无法解析为JSON:', aiContent);
+          return [];
+        }
+      } catch (parseError) {
+        console.error('解析AI返回内容失败:', parseError);
+        return [];
+      }
+
+      if (filteredResult && filteredResult.filtered) {
+        const filteredIndices = filteredResult.filtered.map(f => f.index - 1);
+        const filteredAchievements = achievements.filter((_, index) => 
+          filteredIndices.includes(index)
+        ).map((achievement, index) => {
+          const filteredInfo = filteredResult.filtered.find(f => f.index === index + 1);
+          const score = filteredInfo ? filteredInfo.score : 7.5;
+          return {
+            ...achievement,
+            structural_score: (score / 10) * 0.7,
+            semantic_score: (score / 10) * 0.8,
+            fused_score: score / 10,
+            recommendation_reason: filteredInfo ? filteredInfo.reason : 'AI智能匹配推荐',
+            matching_path: [techNeed.label, 'AI匹配', achievement.label]
+          };
+        });
+        console.log(`技术需求 "${techNeed.label}" AI筛选后保留 ${filteredAchievements.length}/${achievements.length} 个科技成果`);
+        return filteredAchievements;
+      }
+
+      return [];
+    } catch (error) {
+      console.error('AI筛选失败:', error);
+      return [];
+    }
+  },
+
+  async exportChainPPT(driver, enterpriseName) {
+    try {
+      console.log(`开始导出产业链PPT，企业: ${enterpriseName}`);
+      
+      const { getChainEnterprises, matchAchievementsForNode } = require('./server');
+      
+      const chainResult = await getChainEnterprises(enterpriseName);
+      
+      if (!chainResult.success) {
+        return { success: false, error: chainResult.error || '获取产业链企业失败' };
+      }
+      
+      const { enterprise, enterprises: chainEnterprises } = chainResult.data;
+      
+      const allMatchedAchievements = [];
+      const seenIds = new Set();
+      
+      for (const ent of chainEnterprises) {
+        console.log(`正在匹配企业 "${ent.label}" 的技术需求与成果...`);
+        
+        try {
+          const matchResult = await matchAchievementsForNode(ent.label);
+          
+          if (matchResult.success && matchResult.data.achievements) {
+            const achievements = matchResult.data.achievements;
+            console.log(`企业 "${ent.label}" 匹配到 ${achievements.length} 个技术成果`);
+            
+            achievements.forEach(achievement => {
+              if (!seenIds.has(achievement.id)) {
+                seenIds.add(achievement.id);
+                allMatchedAchievements.push({
+                  ...achievement,
+                  matched_enterprise: ent.label
+                });
+              }
+            });
+          } else {
+            console.log(`企业 "${ent.label}" 未匹配到技术成果: ${matchResult.error || '无成果'}`);
+          }
+        } catch (matchError) {
+          console.error(`匹配企业 "${ent.label}" 失败:`, matchError.message);
+        }
+      }
+      
+      console.log(`产业链共匹配到 ${allMatchedAchievements.length} 个技术成果`);
+      
+      if (allMatchedAchievements.length === 0) {
+        return {
+          success: false,
+          error: '未找到匹配的技术成果'
+        };
+      }
+      
+      const technologyPptDir = path.join(__dirname, '..', 'public', 'technology_ppt');
+      let pptFiles = [];
+      
+      if (fs.existsSync(technologyPptDir)) {
+        const files = fs.readdirSync(technologyPptDir).filter(f => f.endsWith('.pptx'));
+        
+        files.forEach(f => {
+          const achievementLabel = f.replace('.pptx', '');
+          const matchedAchievement = allMatchedAchievements.find(a => a.label === achievementLabel);
+          
+          if (matchedAchievement) {
+            pptFiles.push({
+              pptUrl: `technology_ppt/${f}`,
+              achievementLabel: achievementLabel,
+              matched_enterprise: matchedAchievement.matched_enterprise,
+              fused_score: matchedAchievement.fused_score
+            });
+          }
+        });
+      }
+      
+      console.log(`找到 ${pptFiles.length} 个匹配的PPT文件`);
+      
+      const sortedPptFiles = [
+        ...pptFiles.filter(f => this.classifyAchievementType(f.achievementLabel) === '方法类')
+          .sort((a, b) => (b.fused_score || 0) - (a.fused_score || 0)),
+        ...pptFiles.filter(f => this.classifyAchievementType(f.achievementLabel) === '技术类')
+          .sort((a, b) => (b.fused_score || 0) - (a.fused_score || 0))
+      ];
+      
+      if (sortedPptFiles.length === 0) {
+        return {
+          success: false,
+          error: '未找到匹配的技术成果PPT文件，请先生成技术成果PPT'
+        };
+      }
+      
+      const methodCount = sortedPptFiles.filter(f => this.classifyAchievementType(f.achievementLabel) === '方法类').length;
+      const techCount = sortedPptFiles.filter(f => this.classifyAchievementType(f.achievementLabel) === '技术类').length;
+      
+      console.log(`方法类PPT: ${methodCount}个，技术类PPT: ${techCount}个`);
+      
+      const mergeResult = await this.mergePPTs(
+        sortedPptFiles,
+        enterpriseName,
+        {
+          methodCount: methodCount,
+          techCount: techCount
+        }
+      );
+      
+      return mergeResult;
+    } catch (error) {
+      console.error('导出产业链PPT失败:', error);
+      return {
+        success: false,
+        error: error.message
+      };
+    }
   }
 };
 
