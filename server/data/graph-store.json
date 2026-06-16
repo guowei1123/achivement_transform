@@ -1,0 +1,639 @@
+{
+  "nodes": [
+    {
+      "name": "建筑材料与绿色施工技术",
+      "source": "武汉理工大学三峡新通道PDF",
+      "nodeType": "TechField",
+      "id": "node_5bu6562R5p2Q5paZ5LiO57u_6Imy5pa95bel5oqA5pyv"
+    },
+    {
+      "name": "智能监控与运维技术",
+      "source": "武汉理工大学三峡新通道PDF",
+      "nodeType": "TechField",
+      "id": "node_5pm66IO955uR5o6n5LiO6L-Q57u05oqA5pyv"
+    },
+    {
+      "name": "船舶航道水动力与调控技术",
+      "source": "三峡PDF原第3类拆分",
+      "nodeType": "TechField",
+      "id": "node_6Ii56Ii26Iiq6YGT5rC05Yqo5Yqb5LiO6LCD5o6n5oqA5pyv"
+    },
+    {
+      "name": "能源系统与储能技术",
+      "source": "武汉理工大学三峡新通道PDF",
+      "nodeType": "TechField",
+      "id": "node_6IO95rqQ57O757uf5LiO5YKo6IO95oqA5pyv"
+    },
+    {
+      "name": "消防与安全防护技术",
+      "source": "武汉理工大学三峡新通道PDF",
+      "nodeType": "TechField",
+      "id": "node_5raI6Ziy5LiO5a6J5YWo6Ziy5oqk5oqA5pyv"
+    },
+    {
+      "field": "建筑材料与绿色施工技术",
+      "name": "水运工程大体积混凝土控裂技术",
+      "nodeType": "Tech",
+      "id": "node_5rC06L-Q5bel56iL5aSn5L2T56ev5re35Yed5Zyf5o6n6KOC"
+    },
+    {
+      "field": "建筑材料与绿色施工技术",
+      "name": "混凝土疏水光催化自清洁纳米涂层",
+      "nodeType": "Tech",
+      "id": "node_5re35Yed5Zyf55aP5rC05YWJ5YKs5YyW6Ieq5riF5rSB57qz"
+    },
+    {
+      "field": "建筑材料与绿色施工技术",
+      "name": "高陡边坡控制爆破与安全控制技术",
+      "nodeType": "Tech",
+      "id": "node_6auY6Zmh6L655Z2h5o6n5Yi254iG56C05LiO5a6J5YWo5o6n"
+    },
+    {
+      "field": "建筑材料与绿色施工技术",
+      "name": "工程废弃物就地资源化利用技术",
+      "nodeType": "Tech",
+      "id": "node_5bel56iL5bqf5byD54mp5bCx5Zyw6LWE5rqQ5YyW5Yip55So"
+    },
+    {
+      "field": "智能监控与数字孪生运维技术",
+      "name": "通航枢纽数字孪生智能调度技术",
+      "nodeType": "Tech",
+      "id": "node_6YCa6Iiq5p6i57q95pWw5a2X5a2q55Sf5pm66IO96LCD5bqm"
+    },
+    {
+      "field": "智能监控与数字孪生运维技术",
+      "name": "船闸设备故障预警和诊断系统",
+      "nodeType": "Tech",
+      "id": "node_6Ii56Ze46K6-5aSH5pWF6Zqc6aKE6K2m5ZKM6K-K5pat57O7"
+    },
+    {
+      "field": "智能监控与数字孪生运维技术",
+      "name": "船舶智能助航与过闸控制技术",
+      "nodeType": "Tech",
+      "id": "node_6Ii56Ii25pm66IO95Yqp6Iiq5LiO6L-H6Ze45o6n5Yi25oqA"
+    },
+    {
+      "field": "智能监控与数字孪生运维技术",
+      "name": "大坝三维数字化探测技术",
+      "nodeType": "Tech",
+      "id": "node_5aSn5Z2d5LiJ57u05pWw5a2X5YyW5o6i5rWL5oqA5pyv"
+    },
+    {
+      "field": "智能监控与数字孪生运维技术",
+      "name": "基于数据-机理混合驱动的绞吸式挖泥船智能疏浚决策支持系统",
+      "nodeType": "Tech",
+      "id": "node_5Z-65LqO5pWw5o2uLeacuueQhua3t-WQiOmpseWKqOeahOe7"
+    },
+    {
+      "field": "水动力与航道整治工程技术",
+      "name": "风、浅水、岸壁以及船闸航道非线性船组水动力预报系统",
+      "nodeType": "Tech",
+      "id": "node_6aOO44CB5rWF5rC044CB5bK45aOB5Lul5Y-K6Ii56Ze46Iiq"
+    },
+    {
+      "field": "水动力与航道整治工程技术",
+      "name": "船舶智能运动控制系统",
+      "nodeType": "Tech",
+      "id": "node_6Ii56Ii25pm66IO96L-Q5Yqo5o6n5Yi257O757uf",
+      "用途": "控制传播运动"
+    },
+    {
+      "field": "能源系统与储能微电网技术",
+      "name": "光-波浪-储自洽能源系统技术",
+      "nodeType": "Tech",
+      "id": "node_5YWJLeazoua1qi3lgqjoh6rmtL3og73mupDns7vnu5_mioDm"
+    },
+    {
+      "field": "能源系统与储能微电网技术",
+      "name": "三峡新通道光-波浪-储自洽能源系统关键技术及应用",
+      "nodeType": "Tech",
+      "id": "node_5LiJ5bOh5paw6YCa6YGT5YWJLeazoua1qi3lgqjoh6rmtL3o"
+    },
+    {
+      "field": "消防安全与工程风险防护技术",
+      "name": "船舶及航道构筑物智慧消防关键技术",
+      "nodeType": "Tech",
+      "id": "node_6Ii56Ii25Y-K6Iiq6YGT5p6E562R54mp5pm65oWn5raI6Ziy"
+    },
+    {
+      "field": "消防安全与工程风险防护技术",
+      "name": "大型水利枢纽断航风险评估技术",
+      "nodeType": "Tech",
+      "id": "node_5aSn5Z6L5rC05Yip5p6i57q95pat6Iiq6aOO6Zmp6K-E5Lyw"
+    },
+    {
+      "field": "消防安全与工程风险防护技术",
+      "name": "基于探地雷达的渗流追踪和大坝安全检测",
+      "nodeType": "Tech",
+      "id": "node_5Z-65LqO5o6i5Zyw6Zu36L6-55qE5riX5rWB6L-96Liq5ZKM"
+    },
+    {
+      "name": "特种水泥供应",
+      "nodeType": "Layer2",
+      "id": "node_54m556eN5rC05rOl5L6b5bqU"
+    },
+    {
+      "name": "高强钢材供应",
+      "nodeType": "Layer2",
+      "id": "node_6auY5by66ZKi5p2Q5L6b5bqU"
+    },
+    {
+      "name": "特种骨料与掺合料",
+      "nodeType": "Layer2",
+      "id": "node_54m556eN6aqo5paZ5LiO5o665ZCI5paZ"
+    },
+    {
+      "name": "工程爆破材料供应",
+      "nodeType": "Layer2",
+      "id": "node_5bel56iL54iG56C05p2Q5paZ5L6b5bqU"
+    },
+    {
+      "name": "水轮发电机组制造",
+      "nodeType": "Layer2",
+      "id": "node_5rC06L2u5Y-R55S15py657uE5Yi26YCg"
+    },
+    {
+      "name": "升船机成套设备制造",
+      "nodeType": "Layer2",
+      "id": "node_5Y2H6Ii55py65oiQ5aWX6K6-5aSH5Yi26YCg"
+    },
+    {
+      "name": "大型闸门与启闭机制造",
+      "nodeType": "Layer2",
+      "id": "node_5aSn5Z6L6Ze46Zeo5LiO5ZCv6Zet5py65Yi26YCg"
+    },
+    {
+      "name": "施工重型机械制造",
+      "nodeType": "Layer2",
+      "id": "node_5pa95bel6YeN5Z6L5py65qKw5Yi26YCg"
+    },
+    {
+      "name": "疏浚与航道整治装备制造",
+      "nodeType": "Layer2",
+      "id": "node_55aP5rWa5LiO6Iiq6YGT5pW05rK76KOF5aSH5Yi26YCg"
+    },
+    {
+      "name": "物资采购平台",
+      "nodeType": "Layer2",
+      "id": "node_54mp6LWE6YeH6LSt5bmz5Y-w"
+    },
+    {
+      "name": "仓储配送",
+      "nodeType": "Layer2",
+      "id": "node_5LuT5YKo6YWN6YCB"
+    },
+    {
+      "name": "导流与围堰工程",
+      "nodeType": "Layer3",
+      "id": "node_5a-85rWB5LiO5Zu05aCw5bel56iL"
+    },
+    {
+      "name": "大坝浇筑施工",
+      "nodeType": "Layer3",
+      "id": "node_5aSn5Z2d5rWH562R5pa95bel"
+    },
+    {
+      "name": "船闸开挖与衬砌施工",
+      "nodeType": "Layer3",
+      "id": "node_6Ii56Ze45byA5oyW5LiO6KGs56CM5pa95bel"
+    },
+    {
+      "name": "电站厂房施工",
+      "nodeType": "Layer3",
+      "id": "node_55S156uZ5Y6C5oi_5pa95bel"
+    },
+    {
+      "name": "金属结构安装",
+      "nodeType": "Layer3",
+      "id": "node_6YeR5bGe57uT5p6E5a6J6KOF"
+    },
+    {
+      "name": "机电设备安装",
+      "nodeType": "Layer3",
+      "id": "node_5py655S16K6-5aSH5a6J6KOF"
+    },
+    {
+      "name": "航道整治施工",
+      "nodeType": "Layer3",
+      "id": "node_6Iiq6YGT5pW05rK75pa95bel"
+    },
+    {
+      "name": "数字化管理平台",
+      "nodeType": "Layer3",
+      "id": "node_5pWw5a2X5YyW566h55CG5bmz5Y-w"
+    },
+    {
+      "name": "智能施工控制",
+      "nodeType": "Layer3",
+      "id": "node_5pm66IO95pa95bel5o6n5Yi2"
+    },
+    {
+      "name": "安全监测系统",
+      "nodeType": "Layer3",
+      "id": "node_5a6J5YWo55uR5rWL57O757uf"
+    },
+    {
+      "name": "发电运行调度",
+      "nodeType": "Layer4",
+      "id": "node_5Y-R55S16L-Q6KGM6LCD5bqm"
+    },
+    {
+      "name": "梯级联合调度",
+      "nodeType": "Layer4",
+      "id": "node_5qKv57qn6IGU5ZCI6LCD5bqm"
+    },
+    {
+      "name": "电力外送",
+      "nodeType": "Layer4",
+      "id": "node_55S15Yqb5aSW6YCB"
+    },
+    {
+      "name": "船闸运行管理",
+      "nodeType": "Layer4",
+      "id": "node_6Ii56Ze46L-Q6KGM566h55CG"
+    },
+    {
+      "name": "智慧通航服务",
+      "nodeType": "Layer4",
+      "id": "node_5pm65oWn6YCa6Iiq5pyN5Yqh"
+    },
+    {
+      "name": "计划性检修",
+      "nodeType": "Layer4",
+      "id": "node_6K6h5YiS5oCn5qOA5L-u"
+    },
+    {
+      "name": "备品备件保障",
+      "nodeType": "Layer4",
+      "id": "node_5aSH5ZOB5aSH5Lu25L-d6Zqc"
+    },
+    {
+      "name": "应急抢修",
+      "nodeType": "Layer4",
+      "id": "node_5bqU5oCl5oqi5L-u"
+    },
+    {
+      "name": "移民安置与产业扶持",
+      "nodeType": "Layer4",
+      "id": "node_56e75rCR5a6J572u5LiO5Lqn5Lia5om25oyB"
+    },
+    {
+      "name": "生态环境保护",
+      "nodeType": "Layer4",
+      "id": "node_55Sf5oCB546v5aKD5L-d5oqk"
+    },
+    {
+      "name": "下游电力用户",
+      "nodeType": "Value",
+      "id": "node_5LiL5ri455S15Yqb55So5oi3"
+    },
+    {
+      "name": "航运企业",
+      "nodeType": "Value",
+      "id": "node_6Iiq6L-Q5LyB5Lia"
+    },
+    {
+      "name": "库区社会经济",
+      "nodeType": "Value",
+      "id": "node_5bqT5Yy656S-5Lya57uP5rWO"
+    },
+    {
+      "name": "库区生态环境",
+      "nodeType": "Value",
+      "id": "node_5bqT5Yy655Sf5oCB546v5aKD"
+    }
+  ],
+  "edges": [
+    {
+      "source": "特种水泥供应",
+      "target": "大坝浇筑施工",
+      "relType": "供应",
+      "label": "供应"
+    },
+    {
+      "source": "特种骨料与掺合料",
+      "target": "大坝浇筑施工",
+      "relType": "供应",
+      "label": "供应"
+    },
+    {
+      "source": "高强钢材供应",
+      "target": "金属结构安装",
+      "relType": "供应",
+      "label": "供应"
+    },
+    {
+      "source": "工程爆破材料供应",
+      "target": "船闸开挖与衬砌施工",
+      "relType": "供应",
+      "label": "供应"
+    },
+    {
+      "source": "水轮发电机组制造",
+      "target": "机电设备安装",
+      "relType": "供应",
+      "label": "供应"
+    },
+    {
+      "source": "升船机成套设备制造",
+      "target": "金属结构安装",
+      "relType": "供应",
+      "label": "供应"
+    },
+    {
+      "source": "大型闸门与启闭机制造",
+      "target": "金属结构安装",
+      "relType": "供应",
+      "label": "供应"
+    },
+    {
+      "source": "施工重型机械制造",
+      "target": "导流与围堰工程",
+      "relType": "装备支持",
+      "label": "装备支持"
+    },
+    {
+      "source": "施工重型机械制造",
+      "target": "大坝浇筑施工",
+      "relType": "装备支持",
+      "label": "装备支持"
+    },
+    {
+      "source": "疏浚与航道整治装备制造",
+      "target": "航道整治施工",
+      "relType": "装备支持",
+      "label": "装备支持"
+    },
+    {
+      "source": "物资采购平台",
+      "target": "大坝浇筑施工",
+      "relType": "统一配送",
+      "label": "统一配送"
+    },
+    {
+      "source": "物资采购平台",
+      "target": "船闸开挖与衬砌施工",
+      "relType": "统一配送",
+      "label": "统一配送"
+    },
+    {
+      "source": "仓储配送",
+      "target": "大坝浇筑施工",
+      "relType": "现场配送",
+      "label": "现场配送"
+    },
+    {
+      "source": "导流与围堰工程",
+      "target": "大坝浇筑施工",
+      "relType": "提供施工条件",
+      "label": "提供施工条件"
+    },
+    {
+      "source": "大坝浇筑施工",
+      "target": "金属结构安装",
+      "relType": "提供安装面",
+      "label": "提供安装面"
+    },
+    {
+      "source": "船闸开挖与衬砌施工",
+      "target": "金属结构安装",
+      "relType": "提供安装面",
+      "label": "提供安装面"
+    },
+    {
+      "source": "电站厂房施工",
+      "target": "机电设备安装",
+      "relType": "提供安装面",
+      "label": "提供安装面"
+    },
+    {
+      "source": "数字化管理平台",
+      "target": "大坝浇筑施工",
+      "relType": "数字化支撑",
+      "label": "数字化支撑"
+    },
+    {
+      "source": "数字化管理平台",
+      "target": "船闸开挖与衬砌施工",
+      "relType": "数字化支撑",
+      "label": "数字化支撑"
+    },
+    {
+      "source": "智能施工控制",
+      "target": "大坝浇筑施工",
+      "relType": "智能控制",
+      "label": "智能控制"
+    },
+    {
+      "source": "安全监测系统",
+      "target": "大坝浇筑施工",
+      "relType": "安全监测",
+      "label": "安全监测"
+    },
+    {
+      "source": "大坝浇筑施工",
+      "target": "发电运行调度",
+      "relType": "交付",
+      "label": "交付"
+    },
+    {
+      "source": "电站厂房施工",
+      "target": "发电运行调度",
+      "relType": "交付",
+      "label": "交付"
+    },
+    {
+      "source": "机电设备安装",
+      "target": "发电运行调度",
+      "relType": "交付",
+      "label": "交付"
+    },
+    {
+      "source": "船闸开挖与衬砌施工",
+      "target": "船闸运行管理",
+      "relType": "交付",
+      "label": "交付"
+    },
+    {
+      "source": "金属结构安装",
+      "target": "船闸运行管理",
+      "relType": "交付",
+      "label": "交付"
+    },
+    {
+      "source": "航道整治施工",
+      "target": "船闸运行管理",
+      "relType": "交付",
+      "label": "交付"
+    },
+    {
+      "source": "数字化管理平台",
+      "target": "智慧通航服务",
+      "relType": "数字模型支撑",
+      "label": "数字模型支撑"
+    },
+    {
+      "source": "梯级联合调度",
+      "target": "发电运行调度",
+      "relType": "联合调度",
+      "label": "联合调度"
+    },
+    {
+      "source": "发电运行调度",
+      "target": "电力外送",
+      "relType": "输送电力",
+      "label": "输送电力"
+    },
+    {
+      "source": "发电运行调度",
+      "target": "计划性检修",
+      "relType": "提出检修需求",
+      "label": "提出检修需求"
+    },
+    {
+      "source": "船闸运行管理",
+      "target": "计划性检修",
+      "relType": "提出检修需求",
+      "label": "提出检修需求"
+    },
+    {
+      "source": "备品备件保障",
+      "target": "计划性检修",
+      "relType": "提供备件",
+      "label": "提供备件"
+    },
+    {
+      "source": "备品备件保障",
+      "target": "应急抢修",
+      "relType": "提供备件",
+      "label": "提供备件"
+    },
+    {
+      "source": "船闸运行管理",
+      "target": "智慧通航服务",
+      "relType": "支撑",
+      "label": "支撑"
+    },
+    {
+      "source": "电力外送",
+      "target": "下游电力用户",
+      "relType": "服务",
+      "label": "服务"
+    },
+    {
+      "source": "智慧通航服务",
+      "target": "航运企业",
+      "relType": "服务",
+      "label": "服务"
+    },
+    {
+      "source": "移民安置与产业扶持",
+      "target": "库区社会经济",
+      "relType": "促进",
+      "label": "促进"
+    },
+    {
+      "source": "生态环境保护",
+      "target": "库区生态环境",
+      "relType": "保护",
+      "label": "保护"
+    },
+    {
+      "source": "建筑材料与绿色施工技术",
+      "target": "水运工程大体积混凝土控裂技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "建筑材料与绿色施工技术",
+      "target": "混凝土疏水光催化自清洁纳米涂层",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "建筑材料与绿色施工技术",
+      "target": "高陡边坡控制爆破与安全控制技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "建筑材料与绿色施工技术",
+      "target": "工程废弃物就地资源化利用技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "智能监控与运维技术",
+      "target": "通航枢纽数字孪生智能调度技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "智能监控与运维技术",
+      "target": "船闸设备故障预警和诊断系统",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "智能监控与运维技术",
+      "target": "船舶智能助航与过闸控制技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "智能监控与运维技术",
+      "target": "大坝三维数字化探测技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "智能监控与运维技术",
+      "target": "基于数据-机理混合驱动的绞吸式挖泥船智能疏浚决策支持系统",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "船舶航道水动力与调控技术",
+      "target": "风、浅水、岸壁以及船闸航道非线性船组水动力预报系统",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "船舶航道水动力与调控技术",
+      "target": "船舶智能运动控制系统",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "能源系统与储能技术",
+      "target": "光-波浪-储自洽能源系统技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "能源系统与储能技术",
+      "target": "三峡新通道光-波浪-储自洽能源系统关键技术及应用",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "消防与安全防护技术",
+      "target": "船舶及航道构筑物智慧消防关键技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "消防与安全防护技术",
+      "target": "大型水利枢纽断航风险评估技术",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    },
+    {
+      "source": "消防与安全防护技术",
+      "target": "基于探地雷达的渗流追踪和大坝安全检测",
+      "relType": "包含细分技术",
+      "label": "包含细分技术"
+    }
+  ],
+  "updatedAt": "2026-06-15T03:43:50.611Z"
+}

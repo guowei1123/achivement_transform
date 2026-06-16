@@ -2,7 +2,6 @@ import React from 'react'
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import KnowledgeGraph from './components/KnowledgeGraph/KnowledgeGraph'
 import TechAgent from './components/TechAgent/TechAgent'
-import IntelligentMatching from './components/IntelligentMatching/IntelligentMatching'
 import PPTGenerator from './components/ppt_generate/PPTGenerator'
 import './App.css'
 
@@ -28,9 +27,6 @@ function App() {
               <Link to="/tech-agent" className={`nav-link ${location.pathname === '/tech-agent' ? 'active' : ''}`}>
                 AI智能体
               </Link>
-              <Link to="/intelligent-matching" className={`nav-link ${location.pathname === '/intelligent-matching' ? 'active' : ''}`}>
-                智能匹配
-              </Link>
               <Link to="/ppt_generate" className={`nav-link ${location.pathname === '/ppt_generate' ? 'active' : ''}`}>
                 PPT生成
               </Link>
@@ -45,7 +41,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/knowledge-graph" element={<KnowledgeGraph />} />
             <Route path="/tech-agent" element={<TechAgent />} />
-            <Route path="/intelligent-matching" element={<IntelligentMatching />} />
             <Route path="/ppt_generate" element={<PPTGenerator />} />
           </Routes>
         </div>
@@ -72,7 +67,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="features grid grid-3">
+      <div className="features grid grid-2">
         <div className="feature-card card">
           <div className="feature-icon">📊</div>
           <h3>知识图谱构建</h3>
@@ -82,30 +77,6 @@ function Home() {
           <div className="feature-icon">🤖</div>
           <h3>AI智能体</h3>
           <p>基于DeepSeek等大模型，支持多轮对话、任务分解与动态规划，实现科技服务智能问答</p>
-        </div>
-        <div className="feature-card card">
-          <div className="feature-icon">🎯</div>
-          <h3>智能匹配推荐</h3>
-          <p>图神经网络与排序学习融合，构建技术-产业-市场多维匹配网络，实现精准推荐</p>
-        </div>
-      </div>
-
-      <div className="stats grid grid-4">
-        <div className="stat-card card text-center">
-          <div className="stat-number">10,000+</div>
-          <div className="stat-label">科技资源</div>
-        </div>
-        <div className="stat-card card text-center">
-          <div className="stat-number">5,000+</div>
-          <div className="stat-label">服务主体</div>
-        </div>
-        <div className="stat-card card text-center">
-          <div className="stat-number">95%</div>
-          <div className="stat-label">匹配准确率</div>
-        </div>
-        <div className="stat-card card text-center">
-          <div className="stat-number">24/7</div>
-          <div className="stat-label">智能服务</div>
         </div>
       </div>
     </div>

@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "strategy": {
+    "maxIterations": 8,
+    "preferKnowledgeBaseFirst": true,
+    "retryLimitPerTool": 2,
+    "toolPriority": [
+      "query_knowledge_base",
+      "parse_chain_links",
+      "search_tech",
+      "save_learning",
+      "generate_ppt",
+      "respond_to_user"
+    ],
+    "preferredSequence": [
+      "query_knowledge_base",
+      "parse_chain_links",
+      "search_tech",
+      "save_learning",
+      "generate_ppt"
+    ]
+  },
+  "metrics": {
+    "runCount": 46,
+    "successCount": 37,
+    "averageScore": 0.7097826086956521,
+    "lastRunAt": "2026-06-08T15:46:45.312Z",
+    "toolStats": {
+      "query_knowledge_base": {
+        "runs": 36,
+        "success": 36,
+        "failure": 0,
+        "lastUsedAt": "2026-06-07T15:38:54.229Z"
+      },
+      "parse_chain_links": {
+        "runs": 32,
+        "success": 32,
+        "failure": 0,
+        "lastUsedAt": "2026-06-08T15:46:45.312Z"
+      },
+      "search_tech": {
+        "runs": 30,
+        "success": 30,
+        "failure": 0,
+        "lastUsedAt": "2026-06-08T15:46:45.312Z"
+      },
+      "save_learning": {
+        "runs": 29,
+        "success": 29,
+        "failure": 0,
+        "lastUsedAt": "2026-06-07T15:38:54.229Z"
+      },
+      "generate_ppt": {
+        "runs": 17,
+        "success": 17,
+        "failure": 0,
+        "lastUsedAt": "2026-06-07T08:40:34.857Z"
+      },
+      "respond_to_user": {
+        "runs": 2,
+        "success": 2,
+        "failure": 0,
+        "lastUsedAt": "2026-05-21T11:46:18.817Z"
+      }
+    },
+    "sequenceStats": {
+      "query_knowledge_base > parse_chain_links > search_tech > save_learning": {
+        "runs": 8,
+        "success": 8,
+        "averageScore": 0.9000000000000001,
+        "lastUsedAt": "2026-06-07T15:25:58.719Z"
+      },
+      "search_tech": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.65,
+        "lastUsedAt": "2026-05-20T11:32:19.809Z"
+      },
+      "query_knowledge_base": {
+        "runs": 5,
+        "success": 3,
+        "averageScore": 0.3,
+        "lastUsedAt": "2026-06-07T08:24:42.499Z"
+      },
+      "query_knowledge_base > parse_chain_links > search_tech > save_learning > generate_ppt": {
+        "runs": 7,
+        "success": 7,
+        "averageScore": 1,
+        "lastUsedAt": "2026-05-25T00:53:28.796Z"
+      },
+      "query_knowledge_base > parse_chain_links > search_tech > query_knowledge_base > save_learning > generate_ppt": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 1,
+        "lastUsedAt": "2026-05-20T12:24:47.896Z"
+      },
+      "query_knowledge_base > parse_chain_links > search_tech > save_learning > respond_to_user": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.9,
+        "lastUsedAt": "2026-05-21T11:43:14.509Z"
+      },
+      "parse_chain_links > search_tech > save_learning > respond_to_user": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.9,
+        "lastUsedAt": "2026-05-21T11:46:18.817Z"
+      },
+      "parse_chain_links > search_tech > save_learning > generate_ppt": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 1,
+        "lastUsedAt": "2026-05-21T13:31:45.898Z"
+      },
+      "query_knowledge_base > parse_chain_links": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.55,
+        "lastUsedAt": "2026-06-02T15:39:39.913Z"
+      },
+      "generate_ppt": {
+        "runs": 1,
+        "success": 0,
+        "averageScore": 0.4,
+        "lastUsedAt": "2026-06-02T15:40:19.646Z"
+      },
+      "save_learning > generate_ppt": {
+        "runs": 1,
+        "success": 0,
+        "averageScore": 0.4,
+        "lastUsedAt": "2026-06-02T16:00:40.504Z"
+      },
+      "parse_chain_links > search_tech > query_knowledge_base > generate_ppt > save_learning": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 1,
+        "lastUsedAt": "2026-06-07T02:57:23.503Z"
+      },
+      "query_knowledge_base > parse_chain_links > search_tech > generate_ppt > save_learning": {
+        "runs": 2,
+        "success": 2,
+        "averageScore": 1,
+        "lastUsedAt": "2026-06-07T08:40:34.857Z"
+      },
+      "parse_chain_links > search_tech > generate_ppt > save_learning": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 1,
+        "lastUsedAt": "2026-06-07T08:07:40.192Z"
+      },
+      "query_knowledge_base > query_knowledge_base > query_knowledge_base": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.3,
+        "lastUsedAt": "2026-06-07T08:11:14.601Z"
+      },
+      "query_knowledge_base > parse_chain_links > search_tech > query_knowledge_base > generate_ppt > save_learning": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 1,
+        "lastUsedAt": "2026-06-07T08:15:26.450Z"
+      },
+      "generate_ppt > save_learning": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.4,
+        "lastUsedAt": "2026-06-07T08:26:28.569Z"
+      },
+      "parse_chain_links": {
+        "runs": 2,
+        "success": 2,
+        "averageScore": 0.55,
+        "lastUsedAt": "2026-06-07T15:38:12.765Z"
+      },
+      "parse_chain_links > query_knowledge_base > search_tech > query_knowledge_base > save_learning": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.9,
+        "lastUsedAt": "2026-06-07T08:47:32.080Z"
+      },
+      "parse_chain_links > search_tech > parse_chain_links > search_tech > query_knowledge_base > save_learning": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.9,
+        "lastUsedAt": "2026-06-07T15:27:10.375Z"
+      },
+      "parse_chain_links > search_tech > query_knowledge_base > save_learning": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.9,
+        "lastUsedAt": "2026-06-07T15:38:54.229Z"
+      },
+      "parse_chain_links > search_tech": {
+        "runs": 1,
+        "success": 1,
+        "averageScore": 0.9,
+        "lastUsedAt": "2026-06-08T15:46:45.312Z"
+      }
+    },
+    "feedback": {
+      "count": 0,
+      "averageRating": 0,
+      "positive": 0,
+      "neutral": 0,
+      "negative": 0,
+      "lastFeedbackAt": null
+    }
+  },
+  "evolution": {
+    "recentAdjustments": [],
+    "latestReflection": "LangChain run completed with 3 chain links and 3 achievements.",
+    "updatedAt": "2026-06-08T15:46:45.312Z"
+  }
+}

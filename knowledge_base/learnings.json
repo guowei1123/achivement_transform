@@ -1,0 +1,632 @@
+[
+  {
+    "id": "l_1779118197585_exw3",
+    "category": "tech_search",
+    "key": "新能源汽车电池技术搜索优化",
+    "value": "新能源汽车电池技术相关关键词搜索时，应重点关注：动力电池、锂电池、固态电池、电池材料、电池管理系统等环节。当前知识库中电池相关技术成果主要分布在能源系统领域，如光-波浪-储自洽能源系统技术、水风光氢一体化零碳微电网技术等。建议后续补充更多新能源汽车电池领域的专业成果数据。",
+    "source": "用户查询'新能源汽车电池技术有哪些最新成果'的搜索经验",
+    "hitCount": 1,
+    "createdAt": "2026-05-18T15:29:57.585Z",
+    "updatedAt": "2026-05-18T15:29:57.585Z"
+  },
+  {
+    "id": "l_1779118203315_m3k1",
+    "category": "chain_mapping",
+    "key": "新能源汽车电池技术有哪些最新成果？",
+    "value": "识别环节: 动力电池、锂电池、固态电池、电池材料、电池管理系统 → 找到18项成果",
+    "source": "agent_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-18T15:30:03.315Z",
+    "updatedAt": "2026-05-18T15:30:03.315Z"
+  },
+  {
+    "id": "l_1779118203316_rb2b",
+    "category": "tech_search",
+    "key": "动力电池+锂电池+固态电池+电池材料+电池管理系统",
+    "value": "搜索到18项成果，工具序列: query_knowledge_base→parse_chain_links→search_tech→parse_chain_links→search_tech→save_learning→respond_to_user",
+    "source": "agent_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-18T15:30:03.316Z",
+    "updatedAt": "2026-05-18T15:30:03.316Z"
+  },
+  {
+    "id": "l_1779262943193_lgui",
+    "category": "chain_mapping",
+    "key": "内河航运",
+    "value": "links=航运企业; achievements=2; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "用户查询'内河航运'的解析结果",
+    "hitCount": 5,
+    "createdAt": "2026-05-20T07:42:23.193Z",
+    "updatedAt": "2026-05-21T11:56:39.683Z"
+  },
+  {
+    "id": "l_1779263106456_zz7l",
+    "category": "optimization",
+    "key": "三峡新通道 产业环节映射",
+    "value": "用户输入'三峡新通道'时，可重点关联航运、通航服务、航道整治、生态保护等环节。历史上技术搜索曾因 Neo4j 查询语句中的关系类型字符串损坏而失败，现已修复为兼容当前图谱结构的搜索逻辑。",
+    "source": "用户输入'三峡新通道'的解析与搜索尝试",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T07:45:06.456Z",
+    "updatedAt": "2026-05-20T07:45:06.456Z"
+  },
+  {
+    "id": "l_1779263843492_0s9k",
+    "category": "tech_search",
+    "key": "内河航运搜索异常",
+    "value": "2025年6月，用户输入'内河航运'，解析到环节：航运。调用search_tech时出现内部编码错误，搜索工具暂时不可用。后续可尝试使用更具体的子环节关键词如'船舶技术'、'港口自动化'、'内河物流'等进行搜索。",
+    "source": "用户输入'内河航运'时的搜索失败记录",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T07:57:23.492Z",
+    "updatedAt": "2026-05-20T07:57:23.492Z"
+  },
+  {
+    "id": "l_1779266326785_3zk8",
+    "category": "tech_search",
+    "key": "内河航运搜索异常_2025年7月",
+    "value": "2025年7月，用户输入'内河航运'，解析到环节：航运。调用search_tech时出现内部编码错误，搜索工具暂时不可用。后续可尝试使用更具体的子环节关键词如'船舶技术'、'港口自动化'、'内河物流'等进行搜索。",
+    "source": "用户输入'内河航运'，search_tech返回编码错误",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T08:38:46.785Z",
+    "updatedAt": "2026-05-20T08:38:46.785Z"
+  },
+  {
+    "id": "l_1779267304889_j27x",
+    "category": "optimization",
+    "key": "test输入处理",
+    "value": "用户输入'test'作为测试指令时，无法解析出任何产业环节，直接回复用户说明情况并引导提供具体需求。",
+    "source": "用户输入'test'的测试场景",
+    "hitCount": 2,
+    "createdAt": "2026-05-20T08:55:04.889Z",
+    "updatedAt": "2026-05-20T08:55:58.339Z"
+  },
+  {
+    "id": "l_1779268018662_0usl",
+    "category": "tech_search",
+    "key": "内河航运搜索编码异常_2025年7月",
+    "value": "2025年7月，用户输入'内河航运'，解析到环节：航运。尝试使用'船舶技术'、'港口自动化'、'内河物流'以及'船舶'、'港口'、'物流'等关键词搜索，均出现内部编码错误（Invalid input error），搜索工具存在系统性编码问题。建议后续排查工具底层编码或等待修复。",
+    "source": "用户输入'内河航运'，多次尝试搜索均失败",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T09:06:58.662Z",
+    "updatedAt": "2026-05-20T09:06:58.662Z"
+  },
+  {
+    "id": "l_1779275354317_chrq",
+    "category": "tech_search",
+    "key": "内河航运搜索成功_2025年7月",
+    "value": "2025年7月，用户输入'内河航运'，解析到环节：航运企业。使用'航运企业'作为关键词成功搜索到2项技术成果，表明使用具体环节名称可避免编码错误。",
+    "source": "用户输入'内河航运'，解析到'航运企业'环节，成功搜索到2项技术成果",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T11:09:14.317Z",
+    "updatedAt": "2026-05-20T11:09:14.318Z"
+  },
+  {
+    "id": "l_1779275357997_p4fj",
+    "category": "tech_search",
+    "key": "航运企业",
+    "value": "achievements=3; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 8,
+    "createdAt": "2026-05-20T11:09:17.997Z",
+    "updatedAt": "2026-06-07T15:38:54.237Z"
+  },
+  {
+    "id": "l_1779275358000_2626",
+    "category": "optimization",
+    "key": "harness:2026-05-20",
+    "value": "score=1; success=true; sequence=query_knowledge_base>parse_chain_links>search_tech>query_knowledge_base>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 11,
+    "createdAt": "2026-05-20T11:09:18.000Z",
+    "updatedAt": "2026-05-20T12:24:47.914Z"
+  },
+  {
+    "id": "l_1779275735817_mwuv",
+    "category": "chain_mapping",
+    "key": "航运新通道",
+    "value": "links=航运企业|智慧通航服务; achievements=7; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "用户输入'航运新通道'的解析与搜索实践",
+    "hitCount": 2,
+    "createdAt": "2026-05-20T11:15:35.817Z",
+    "updatedAt": "2026-05-20T11:15:40.394Z"
+  },
+  {
+    "id": "l_1779275740396_eyfx",
+    "category": "tech_search",
+    "key": "航运企业+智慧通航服务",
+    "value": "achievements=7; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 3,
+    "createdAt": "2026-05-20T11:15:40.396Z",
+    "updatedAt": "2026-05-21T11:57:28.415Z"
+  },
+  {
+    "id": "l_1779276668693_j1h7",
+    "category": "chain_mapping",
+    "key": "船舶运输较慢",
+    "value": "links=航运企业; achievements=2; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "用户输入'船舶运输较慢'的解析与搜索经验",
+    "hitCount": 2,
+    "createdAt": "2026-05-20T11:31:08.693Z",
+    "updatedAt": "2026-05-20T11:31:11.417Z"
+  },
+  {
+    "id": "l_1779277875527_ptwk",
+    "category": "chain_mapping",
+    "key": "航道堵塞",
+    "value": "links=航运企业|疏浚与航道整治装备制造; achievements=6; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "用户输入'航道堵塞'的解析经验",
+    "hitCount": 2,
+    "createdAt": "2026-05-20T11:51:15.527Z",
+    "updatedAt": "2026-05-20T11:51:18.637Z"
+  },
+  {
+    "id": "l_1779277878640_y90g",
+    "category": "tech_search",
+    "key": "航运企业+疏浚与航道整治装备制造",
+    "value": "achievements=6; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T11:51:18.640Z",
+    "updatedAt": "2026-05-20T11:51:18.640Z"
+  },
+  {
+    "id": "l_1779278443646_i93k",
+    "category": "chain_mapping",
+    "key": "水坝建设",
+    "value": "links=大坝浇筑施工; achievements=10; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "agent",
+    "hitCount": 2,
+    "createdAt": "2026-05-20T12:00:43.646Z",
+    "updatedAt": "2026-05-20T12:00:46.886Z"
+  },
+  {
+    "id": "l_1779278446887_zecu",
+    "category": "tech_search",
+    "key": "大坝浇筑施工",
+    "value": "achievements=10; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T12:00:46.887Z",
+    "updatedAt": "2026-05-20T12:00:46.887Z"
+  },
+  {
+    "id": "l_1779278705663_i8em",
+    "category": "chain_mapping",
+    "key": "航道疏浚→疏浚与航道整治装备制造、航运企业",
+    "value": "用户输入'航道疏浚'，解析出产业环节：疏浚与航道整治装备制造、航运企业，命中6项技术成果。与历史案例的环节映射一致。",
+    "source": "用户输入'航道疏浚'的解析与搜索过程",
+    "hitCount": 4,
+    "createdAt": "2026-05-20T12:05:05.663Z",
+    "updatedAt": "2026-05-25T00:53:16.945Z"
+  },
+  {
+    "id": "l_1779278712450_hqy9",
+    "category": "chain_mapping",
+    "key": "航道疏浚",
+    "value": "links=疏浚与航道整治装备制造|航运企业; achievements=6; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 6,
+    "createdAt": "2026-05-20T12:05:12.450Z",
+    "updatedAt": "2026-05-25T00:53:28.802Z"
+  },
+  {
+    "id": "l_1779278712454_eoy0",
+    "category": "tech_search",
+    "key": "疏浚与航道整治装备制造+航运企业",
+    "value": "achievements=6; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 5,
+    "createdAt": "2026-05-20T12:05:12.454Z",
+    "updatedAt": "2026-05-25T00:53:28.805Z"
+  },
+  {
+    "id": "l_1779279337833_musc",
+    "category": "chain_mapping",
+    "key": "新航道 -> 航运企业、智慧通航服务",
+    "value": "用户输入'新航道'，成功解析为'航运企业'和'智慧通航服务'两个产业环节，命中7项技术成果。与历史案例'航运新通道'一致。",
+    "source": "用户输入'新航道'的解析与搜索过程",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T12:15:37.833Z",
+    "updatedAt": "2026-05-20T12:15:37.833Z"
+  },
+  {
+    "id": "l_1779279344245_jyy1",
+    "category": "chain_mapping",
+    "key": "新航道",
+    "value": "links=航运企业|智慧通航服务; achievements=7; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T12:15:44.245Z",
+    "updatedAt": "2026-05-20T12:15:44.245Z"
+  },
+  {
+    "id": "l_1779279882012_jnba",
+    "category": "chain_mapping",
+    "key": "船舶建设 -> 航运企业",
+    "value": "用户输入'船舶建设'时，因产业链图谱中没有直接对应的'船舶制造'环节，最匹配的环节是'航运企业'。搜索到2项相关技术成果：船闸设备故障预警和诊断系统、通航枢纽数字孪生智能调度技术。",
+    "source": "用户输入'船舶建设'的解析与搜索过程",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T12:24:42.012Z",
+    "updatedAt": "2026-05-20T12:24:42.012Z"
+  },
+  {
+    "id": "l_1779279887904_o5xm",
+    "category": "chain_mapping",
+    "key": "船舶建设",
+    "value": "links=航运企业; achievements=2; sequence=query_knowledge_base>parse_chain_links>search_tech>query_knowledge_base>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-20T12:24:47.904Z",
+    "updatedAt": "2026-05-20T12:24:47.904Z"
+  },
+  {
+    "id": "l_1779363426604_4y6a",
+    "category": "optimization",
+    "key": "harness:2026-05-21",
+    "value": "score=1; success=true; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 11,
+    "createdAt": "2026-05-21T11:37:06.604Z",
+    "updatedAt": "2026-05-21T13:40:50.380Z"
+  },
+  {
+    "id": "l_1779363791687_8zq9",
+    "category": "chain_mapping",
+    "key": "内河航运 -> 航运企业",
+    "value": "用户输入'内河航运'，解析到产业环节'航运企业'，成功搜索到2项技术成果。使用具体环节名称可避免编码错误。",
+    "source": "2025年7月内河航运搜索成功案例",
+    "hitCount": 3,
+    "createdAt": "2026-05-21T11:43:11.687Z",
+    "updatedAt": "2026-05-21T11:56:29.218Z"
+  },
+  {
+    "id": "l_1779364147291_5sd5",
+    "category": "chain_mapping",
+    "key": "汽车玻璃产业环节映射",
+    "value": "用户输入'汽车玻璃'时，当前产业链图谱中无直接匹配环节。汽车玻璃属于汽车零部件制造领域，建议未来扩展产业链图谱时增加'汽车零部件制造'或'玻璃制造'等环节。当前系统将其映射为'下游电力用户'，但搜索结果与用户需求不匹配。",
+    "source": "用户输入'汽车玻璃'的查询处理经验",
+    "hitCount": 1,
+    "createdAt": "2026-05-21T11:49:07.291Z",
+    "updatedAt": "2026-05-21T11:49:07.291Z"
+  },
+  {
+    "id": "l_1779364151616_8uvu",
+    "category": "chain_mapping",
+    "key": "汽车玻璃",
+    "value": "links=下游电力用户; achievements=18; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-21T11:49:11.616Z",
+    "updatedAt": "2026-05-21T11:49:11.616Z"
+  },
+  {
+    "id": "l_1779364151618_ijai",
+    "category": "tech_search",
+    "key": "下游电力用户",
+    "value": "achievements=18; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-21T11:49:11.618Z",
+    "updatedAt": "2026-05-21T11:49:11.618Z"
+  },
+  {
+    "id": "l_1779364633288_68nw",
+    "category": "tech_search",
+    "key": "内河航运搜索优化-增加智慧通航服务环节",
+    "value": "用户输入'内河航运'时，仅使用'航运企业'环节只能搜到2项成果。增加'智慧通航服务'环节后，共搜到7项成果，覆盖水动力、消防、数字孪生等多个技术领域。建议未来处理内河航运相关查询时，同时使用'航运企业'和'智慧通航服务'两个环节。",
+    "source": "agent",
+    "hitCount": 1,
+    "createdAt": "2026-05-21T11:57:13.288Z",
+    "updatedAt": "2026-05-21T11:57:13.288Z"
+  },
+  {
+    "id": "l_1779364648413_bq8o",
+    "category": "chain_mapping",
+    "key": "结果不太好",
+    "value": "links=航运企业|智慧通航服务; achievements=7; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-21T11:57:28.413Z",
+    "updatedAt": "2026-05-21T11:57:28.413Z"
+  },
+  {
+    "id": "l_1779416986261_qmxs",
+    "category": "optimization",
+    "key": "harness:2026-05-22",
+    "value": "score=0.15; success=false; sequence=",
+    "source": "harness_auto",
+    "hitCount": 8,
+    "createdAt": "2026-05-22T02:29:46.261Z",
+    "updatedAt": "2026-05-22T02:49:32.487Z"
+  },
+  {
+    "id": "l_1779418124638_0mcq",
+    "category": "chain_mapping",
+    "key": "航道疏浚与通航安全产业环节映射",
+    "value": "用户输入'航道疏浚与通航安全'时，解析出3个产业环节：疏浚与航道整治装备制造、航运企业、智慧通航服务，命中9项技术成果（含知识库PPT中的断航风险评估技术）",
+    "source": "用户查询：航道疏浚与通航安全相关技术如何匹配产业需求",
+    "hitCount": 1,
+    "createdAt": "2026-05-22T02:48:44.638Z",
+    "updatedAt": "2026-05-22T02:48:44.638Z"
+  },
+  {
+    "id": "l_1779418139862_5ita",
+    "category": "chain_mapping",
+    "key": "航道疏浚与通航安全相关技术如何匹配产业需求？",
+    "value": "links=疏浚与航道整治装备制造|航运企业|智慧通航服务; achievements=8; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning",
+    "source": "harness_auto",
+    "hitCount": 5,
+    "createdAt": "2026-05-22T02:48:59.862Z",
+    "updatedAt": "2026-06-07T15:25:58.721Z"
+  },
+  {
+    "id": "l_1779418139865_1rc9",
+    "category": "tech_search",
+    "key": "疏浚与航道整治装备制造+航运企业+智慧通航服务",
+    "value": "achievements=8; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 3,
+    "createdAt": "2026-05-22T02:48:59.865Z",
+    "updatedAt": "2026-06-07T15:25:58.723Z"
+  },
+  {
+    "id": "l_1779670408807_j8ip",
+    "category": "optimization",
+    "key": "harness:2026-05-25",
+    "value": "score=1; success=true; sequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-05-25T00:53:28.807Z",
+    "updatedAt": "2026-05-25T00:53:28.807Z"
+  },
+  {
+    "id": "l_1780414779922_1ym9",
+    "category": "optimization",
+    "key": "harness:2026-06-02",
+    "value": "score=0.4; success=false; sequence=save_learning>generate_ppt",
+    "source": "harness_auto",
+    "hitCount": 4,
+    "createdAt": "2026-06-02T15:39:39.922Z",
+    "updatedAt": "2026-06-02T16:00:40.506Z"
+  },
+  {
+    "id": "l_1780416036257_wpel",
+    "category": "chain_mapping",
+    "key": "三峡水运新通道",
+    "value": "智慧通航服务、船闸运行管理、梯级联合调度",
+    "source": "用户查询\"三峡水运新通道有哪些关键技术成果\"",
+    "hitCount": 1,
+    "createdAt": "2026-06-02T16:00:36.257Z",
+    "updatedAt": "2026-06-02T16:00:36.257Z"
+  },
+  {
+    "id": "l_1780801002020_dtmm",
+    "category": "optimization",
+    "key": "langchain:2026-06-07",
+    "value": "score=0.9; success=true; sequence=parse_chain_links>search_tech>query_knowledge_base>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 18,
+    "createdAt": "2026-06-07T02:56:42.020Z",
+    "updatedAt": "2026-06-07T15:38:54.239Z"
+  },
+  {
+    "id": "l_1780801040511_3pku",
+    "category": "tech_search",
+    "key": "三峡水运新通道关键技术成果",
+    "value": "三峡水运新通道 -> 智慧通航服务、船闸运行管理、梯级联合调度，命中10项技术成果，已生成PPT",
+    "source": "用户交互",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T02:57:20.511Z",
+    "updatedAt": "2026-06-07T02:57:20.511Z"
+  },
+  {
+    "id": "l_1780801043511_tqfj",
+    "category": "chain_mapping",
+    "key": "生成PPT",
+    "value": "links=智慧通航服务|船闸运行管理|梯级联合调度; achievements=13; sequence=parse_chain_links>search_tech>query_knowledge_base>generate_ppt>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T02:57:23.511Z",
+    "updatedAt": "2026-06-07T02:57:23.511Z"
+  },
+  {
+    "id": "l_1780801043512_l5ah",
+    "category": "tech_search",
+    "key": "智慧通航服务+船闸运行管理+梯级联合调度",
+    "value": "achievements=3; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "langchain_harness_auto",
+    "hitCount": 4,
+    "createdAt": "2026-06-07T02:57:23.512Z",
+    "updatedAt": "2026-06-08T15:46:45.317Z"
+  },
+  {
+    "id": "l_1780801204328_yunq",
+    "category": "chain_mapping",
+    "key": "三峡水运新通道 关键技术成果",
+    "value": "产业环节：智慧通航服务、船闸运行管理、梯级联合调度；命中成果10项，已生成PPT",
+    "source": "用户查询\"三峡水运新通道有哪些关键技术成果？并生成PPT\"",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T03:00:04.328Z",
+    "updatedAt": "2026-06-07T03:00:04.328Z"
+  },
+  {
+    "id": "l_1780801209402_4bc6",
+    "category": "chain_mapping",
+    "key": "三峡水运新通道有哪些关键技术成果？，并帮我生成汇报PPT",
+    "value": "links=智慧通航服务|船闸运行管理|梯级联合调度; achievements=13; sequence=query_knowledge_base>parse_chain_links>search_tech>generate_ppt>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T03:00:09.402Z",
+    "updatedAt": "2026-06-07T03:00:09.402Z"
+  },
+  {
+    "id": "l_1780819656768_yd3b",
+    "category": "tech_search",
+    "key": "三峡水运新通道_关键技术成果",
+    "value": "产业环节：智慧通航服务、船闸运行管理、梯级联合调度；命中成果13项，生成PPT成功",
+    "source": "用户需求：三峡水运新通道关键技术成果并生成PPT",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:07:36.768Z",
+    "updatedAt": "2026-06-07T08:07:36.768Z"
+  },
+  {
+    "id": "l_1780819660197_dnz2",
+    "category": "chain_mapping",
+    "key": "生成成果汇报",
+    "value": "links=智慧通航服务|船闸运行管理|梯级联合调度; achievements=13; sequence=parse_chain_links>search_tech>generate_ppt>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:07:40.197Z",
+    "updatedAt": "2026-06-07T08:07:40.197Z"
+  },
+  {
+    "id": "l_1780820122664_i0mf",
+    "category": "user_preference",
+    "key": "学校为三峡集团提供服务汇报",
+    "value": "学校为三峡集团提供服务汇报PPT，产业环节：数字化管理平台、梯级联合调度、智慧通航服务、船闸运行管理，共18项技术成果，生成25页PPT",
+    "source": "agent",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:15:22.664Z",
+    "updatedAt": "2026-06-07T08:15:22.664Z"
+  },
+  {
+    "id": "l_1780820126453_tuji",
+    "category": "chain_mapping",
+    "key": "生成服务汇报PPT",
+    "value": "links=数字化管理平台|梯级联合调度; achievements=13; sequence=query_knowledge_base>parse_chain_links>search_tech>query_knowledge_base>generate_ppt>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:15:26.453Z",
+    "updatedAt": "2026-06-07T08:15:26.453Z"
+  },
+  {
+    "id": "l_1780820126456_6hra",
+    "category": "tech_search",
+    "key": "数字化管理平台+梯级联合调度",
+    "value": "achievements=13; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "langchain_harness_auto",
+    "hitCount": 2,
+    "createdAt": "2026-06-07T08:15:26.456Z",
+    "updatedAt": "2026-06-07T08:40:34.860Z"
+  },
+  {
+    "id": "l_1780820784431_nnmq",
+    "category": "user_preference",
+    "key": "航道疏浚与通航安全_产业环节_技术成果",
+    "value": "产业环节：疏浚与航道整治装备制造、航运企业、智慧通航服务；命中8项技术成果；生成PPT成功",
+    "source": "用户需求：航道疏浚与通航安全相关技术如何匹配产业需求？并生成汇报PPT",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:26:24.431Z",
+    "updatedAt": "2026-06-07T08:26:24.431Z"
+  },
+  {
+    "id": "l_1780821630966_b50o",
+    "category": "user_preference",
+    "key": "生成汇报PPT_航运新通道建设",
+    "value": "用户输入\"生成汇报PPT\"，环节匹配为数字化管理平台、梯级联合调度、智慧通航服务、船闸运行管理，命中13项成果，成功生成PPT",
+    "source": "当前对话",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:40:30.966Z",
+    "updatedAt": "2026-06-07T08:40:30.966Z"
+  },
+  {
+    "id": "l_1780821634859_vlts",
+    "category": "chain_mapping",
+    "key": "生成汇报PPT",
+    "value": "links=数字化管理平台|梯级联合调度; achievements=13; sequence=query_knowledge_base>parse_chain_links>search_tech>generate_ppt>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:40:34.859Z",
+    "updatedAt": "2026-06-07T08:40:34.859Z"
+  },
+  {
+    "id": "l_1780822042233_3a6d",
+    "category": "chain_mapping",
+    "key": "中远海运集团",
+    "value": "航运企业",
+    "source": "用户查询学校成果服务中远海运集团，解析为航运企业环节",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:47:22.233Z",
+    "updatedAt": "2026-06-07T08:47:22.233Z"
+  },
+  {
+    "id": "l_1780822052083_vpgt",
+    "category": "chain_mapping",
+    "key": "学校有哪些成果可以服务中远海运集团",
+    "value": "links=航运企业; achievements=3; sequence=parse_chain_links>query_knowledge_base>search_tech>query_knowledge_base>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T08:47:32.083Z",
+    "updatedAt": "2026-06-07T08:47:32.083Z"
+  },
+  {
+    "id": "l_1780846021210_5nva",
+    "category": "chain_mapping",
+    "key": "东风汽车 产业环节",
+    "value": "下游电力用户、施工重型机械制造、水轮发电机组制造",
+    "source": "用户查询\"学校成果如何服务东风汽车\"",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T15:27:01.210Z",
+    "updatedAt": "2026-06-07T15:27:01.210Z"
+  },
+  {
+    "id": "l_1780846030378_slcn",
+    "category": "chain_mapping",
+    "key": "学校成果如何服务东风汽车",
+    "value": "links=施工重型机械制造|水轮发电机组制造; achievements=8; sequence=parse_chain_links>search_tech>parse_chain_links>search_tech>query_knowledge_base>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T15:27:10.378Z",
+    "updatedAt": "2026-06-07T15:27:10.378Z"
+  },
+  {
+    "id": "l_1780846030379_h77d",
+    "category": "tech_search",
+    "key": "施工重型机械制造+水轮发电机组制造",
+    "value": "achievements=8; preferredSequence=query_knowledge_base>parse_chain_links>search_tech>save_learning>generate_ppt",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T15:27:10.379Z",
+    "updatedAt": "2026-06-07T15:27:10.379Z"
+  },
+  {
+    "id": "l_1780846727560_0o0o",
+    "category": "tech_search",
+    "key": "远洋海运企业_技术服务",
+    "value": "远洋海运企业对应的产业环节为\"航运企业\"，匹配到3项技术成果及多个相关技术PPT",
+    "source": "用户查询：学校可以为远洋海运企业提供哪些技术服务",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T15:38:47.560Z",
+    "updatedAt": "2026-06-07T15:38:47.560Z"
+  },
+  {
+    "id": "l_1780846734234_38uk",
+    "category": "chain_mapping",
+    "key": "学校可以为远洋海运企业提供哪些技术服务",
+    "value": "links=航运企业; achievements=3; sequence=parse_chain_links>search_tech>query_knowledge_base>save_learning",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-07T15:38:54.234Z",
+    "updatedAt": "2026-06-07T15:38:54.234Z"
+  },
+  {
+    "id": "l_1780933605316_69lc",
+    "category": "chain_mapping",
+    "key": "航运新通道建设涉及哪些产业链环节？",
+    "value": "links=智慧通航服务|船闸运行管理|梯级联合调度; achievements=3; sequence=parse_chain_links>search_tech",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-08T15:46:45.316Z",
+    "updatedAt": "2026-06-08T15:46:45.316Z"
+  },
+  {
+    "id": "l_1780933605318_3x2f",
+    "category": "optimization",
+    "key": "langchain:2026-06-08",
+    "value": "score=0.9; success=true; sequence=parse_chain_links>search_tech",
+    "source": "langchain_harness_auto",
+    "hitCount": 1,
+    "createdAt": "2026-06-08T15:46:45.318Z",
+    "updatedAt": "2026-06-08T15:46:45.318Z"
+  }
+]

@@ -1,0 +1,5301 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "tech-service-knowledge-graph",
+    "languages": [
+      "batch",
+      "config",
+      "css",
+      "html",
+      "javascript",
+      "json",
+      "markdown",
+      "nginx",
+      "shell",
+      "text",
+      "toml",
+      "typescript",
+      "yaml"
+    ],
+    "frameworks": [
+      "React",
+      "Vite",
+      "Express",
+      "Neo4j",
+      "Redis",
+      "Ant Design",
+      "Cytoscape"
+    ],
+    "description": "科技服务知识图谱动态构建与智能匹配系统",
+    "analyzedAt": "2026-06-07T03:13:29.504Z",
+    "gitCommitHash": "0b9762f5715da30acf3e4153327ce26d935eea9a"
+  },
+  "nodes": [
+    {
+      "id": "config:.env",
+      "type": "config",
+      "name": ".env",
+      "filePath": ".env",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config"
+      ],
+      "language": "config",
+      "sizeLines": 4
+    },
+    {
+      "id": "config:.env.local",
+      "type": "config",
+      "name": ".env.local",
+      "filePath": ".env.local",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config"
+      ],
+      "language": "config",
+      "sizeLines": 3
+    },
+    {
+      "id": "file:check-enterprises.js",
+      "type": "file",
+      "name": "check-enterprises.js",
+      "filePath": "check-enterprises.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript"
+      ],
+      "language": "javascript",
+      "sizeLines": 37
+    },
+    {
+      "id": "file:check-path.js",
+      "type": "file",
+      "name": "check-path.js",
+      "filePath": "check-path.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript"
+      ],
+      "language": "javascript",
+      "sizeLines": 42
+    },
+    {
+      "id": "file:check-relations.js",
+      "type": "file",
+      "name": "check-relations.js",
+      "filePath": "check-relations.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript"
+      ],
+      "language": "javascript",
+      "sizeLines": 65
+    },
+    {
+      "id": "file:deploy.bat",
+      "type": "file",
+      "name": "deploy.bat",
+      "filePath": "deploy.bat",
+      "summary": "项目中的 batch 源文件。",
+      "tags": [
+        "script",
+        "batch"
+      ],
+      "language": "batch",
+      "sizeLines": 36
+    },
+    {
+      "id": "file:deploy.sh",
+      "type": "file",
+      "name": "deploy.sh",
+      "filePath": "deploy.sh",
+      "summary": "项目中的 shell 源文件。",
+      "tags": [
+        "script",
+        "shell"
+      ],
+      "language": "shell",
+      "sizeLines": 37
+    },
+    {
+      "id": "document:DEPLOYMENT.md",
+      "type": "document",
+      "name": "DEPLOYMENT.md",
+      "filePath": "DEPLOYMENT.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "language": "markdown",
+      "sizeLines": 344
+    },
+    {
+      "id": "document:Excel导入模板-关系.md",
+      "type": "document",
+      "name": "Excel导入模板-关系.md",
+      "filePath": "Excel导入模板-关系.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "language": "markdown",
+      "sizeLines": 89
+    },
+    {
+      "id": "document:Excel导入模板-节点.md",
+      "type": "document",
+      "name": "Excel导入模板-节点.md",
+      "filePath": "Excel导入模板-节点.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "language": "markdown",
+      "sizeLines": 85
+    },
+    {
+      "id": "file:import-achievements.js",
+      "type": "file",
+      "name": "import-achievements.js",
+      "filePath": "import-achievements.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript"
+      ],
+      "language": "javascript",
+      "sizeLines": 303
+    },
+    {
+      "id": "file:import-shipping-chain.js",
+      "type": "file",
+      "name": "import-shipping-chain.js",
+      "filePath": "import-shipping-chain.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript"
+      ],
+      "language": "javascript",
+      "sizeLines": 227
+    },
+    {
+      "id": "file:import-tech-needs.js",
+      "type": "file",
+      "name": "import-tech-needs.js",
+      "filePath": "import-tech-needs.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript"
+      ],
+      "language": "javascript",
+      "sizeLines": 140
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "Vite 前端应用的 HTML 入口文件。",
+      "tags": [
+        "markup",
+        "html"
+      ],
+      "language": "html",
+      "sizeLines": 13
+    },
+    {
+      "id": "config:knowledge_base/feedback.json",
+      "type": "config",
+      "name": "feedback.json",
+      "filePath": "knowledge_base/feedback.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json"
+      ],
+      "language": "json",
+      "sizeLines": 2
+    },
+    {
+      "id": "config:knowledge_base/harness_profile.json",
+      "type": "config",
+      "name": "harness_profile.json",
+      "filePath": "knowledge_base/harness_profile.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json"
+      ],
+      "language": "json",
+      "sizeLines": 160
+    },
+    {
+      "id": "config:knowledge_base/learnings.json",
+      "type": "config",
+      "name": "learnings.json",
+      "filePath": "knowledge_base/learnings.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json"
+      ],
+      "language": "json",
+      "sizeLines": 462
+    },
+    {
+      "id": "config:knowledge_base/patterns.json",
+      "type": "config",
+      "name": "patterns.json",
+      "filePath": "knowledge_base/patterns.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json"
+      ],
+      "language": "json",
+      "sizeLines": 482
+    },
+    {
+      "id": "config:knowledge_base/technology_ppts.json",
+      "type": "config",
+      "name": "technology_ppts.json",
+      "filePath": "knowledge_base/technology_ppts.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 468
+    },
+    {
+      "id": "file:match-tech-needs-achievements.js",
+      "type": "file",
+      "name": "match-tech-needs-achievements.js",
+      "filePath": "match-tech-needs-achievements.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "matching"
+      ],
+      "language": "javascript",
+      "sizeLines": 133
+    },
+    {
+      "id": "document:NEO4J_SETUP.md",
+      "type": "document",
+      "name": "NEO4J_SETUP.md",
+      "filePath": "NEO4J_SETUP.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "language": "markdown",
+      "sizeLines": 239
+    },
+    {
+      "id": "config:nginx.conf",
+      "type": "config",
+      "name": "nginx.conf",
+      "filePath": "nginx.conf",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "nginx"
+      ],
+      "language": "nginx",
+      "sizeLines": 28
+    },
+    {
+      "id": "config:package-lock.json",
+      "type": "config",
+      "name": "package-lock.json",
+      "filePath": "package-lock.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json"
+      ],
+      "language": "json",
+      "sizeLines": 6839
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "项目清单文件，定义脚本、依赖和包元数据。",
+      "tags": [
+        "config",
+        "json"
+      ],
+      "language": "json",
+      "sizeLines": 47
+    },
+    {
+      "id": "document:QUICK_START.md",
+      "type": "document",
+      "name": "QUICK_START.md",
+      "filePath": "QUICK_START.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown"
+      ],
+      "language": "markdown",
+      "sizeLines": 177
+    },
+    {
+      "id": "file:scripts/start-server-with-redis.js",
+      "type": "file",
+      "name": "start-server-with-redis.js",
+      "filePath": "scripts/start-server-with-redis.js",
+      "summary": "用于服务启动、数据导入、维护或自动化的运维脚本。",
+      "tags": [
+        "script",
+        "javascript",
+        "automation"
+      ],
+      "language": "javascript",
+      "sizeLines": 144
+    },
+    {
+      "id": "file:server/agentEngine.js",
+      "type": "file",
+      "name": "agentEngine.js",
+      "filePath": "server/agentEngine.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 73
+    },
+    {
+      "id": "file:server/agentTools.js",
+      "type": "file",
+      "name": "agentTools.js",
+      "filePath": "server/agentTools.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 257
+    },
+    {
+      "id": "file:server/bootstrap/createApp.js",
+      "type": "file",
+      "name": "createApp.js",
+      "filePath": "server/bootstrap/createApp.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 30
+    },
+    {
+      "id": "file:server/bootstrap/createServerContext.js",
+      "type": "file",
+      "name": "createServerContext.js",
+      "filePath": "server/bootstrap/createServerContext.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 121
+    },
+    {
+      "id": "file:server/check-database.js",
+      "type": "file",
+      "name": "check-database.js",
+      "filePath": "server/check-database.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 94
+    },
+    {
+      "id": "file:server/config.example.js",
+      "type": "file",
+      "name": "config.example.js",
+      "filePath": "server/config.example.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 14
+    },
+    {
+      "id": "file:server/config.js",
+      "type": "file",
+      "name": "config.js",
+      "filePath": "server/config.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 9
+    },
+    {
+      "id": "file:server/harness/langChainTechAgentHarness.js",
+      "type": "file",
+      "name": "langChainTechAgentHarness.js",
+      "filePath": "server/harness/langChainTechAgentHarness.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 407
+    },
+    {
+      "id": "file:server/harness/profileStore.js",
+      "type": "file",
+      "name": "profileStore.js",
+      "filePath": "server/harness/profileStore.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 324
+    },
+    {
+      "id": "file:server/import-chain-data.js",
+      "type": "file",
+      "name": "import-chain-data.js",
+      "filePath": "server/import-chain-data.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 321
+    },
+    {
+      "id": "file:server/init-db.js",
+      "type": "file",
+      "name": "init-db.js",
+      "filePath": "server/init-db.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 102
+    },
+    {
+      "id": "file:server/knowledgeBase.js",
+      "type": "file",
+      "name": "knowledgeBase.js",
+      "filePath": "server/knowledgeBase.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 606
+    },
+    {
+      "id": "document:server/MATCHING_ENGINE_README.md",
+      "type": "document",
+      "name": "MATCHING_ENGINE_README.md",
+      "filePath": "server/MATCHING_ENGINE_README.md",
+      "summary": "后端服务中的 markdown 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "docs",
+        "markdown",
+        "backend"
+      ],
+      "language": "markdown",
+      "sizeLines": 434
+    },
+    {
+      "id": "file:server/neo4j-import.js",
+      "type": "file",
+      "name": "neo4j-import.js",
+      "filePath": "server/neo4j-import.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend",
+        "neo4j"
+      ],
+      "language": "javascript",
+      "sizeLines": 126
+    },
+    {
+      "id": "file:server/pptService.js",
+      "type": "file",
+      "name": "pptService.js",
+      "filePath": "server/pptService.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend",
+        "presentation"
+      ],
+      "language": "javascript",
+      "sizeLines": 1202
+    },
+    {
+      "id": "file:server/routes/agent/registerAgentRoutes.js",
+      "type": "file",
+      "name": "registerAgentRoutes.js",
+      "filePath": "server/routes/agent/registerAgentRoutes.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 431
+    },
+    {
+      "id": "file:server/routes/aippt/registerAipptRoutes.js",
+      "type": "file",
+      "name": "registerAipptRoutes.js",
+      "filePath": "server/routes/aippt/registerAipptRoutes.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend",
+        "presentation"
+      ],
+      "language": "javascript",
+      "sizeLines": 2047
+    },
+    {
+      "id": "file:server/routes/graph/registerGraphRoutes.js",
+      "type": "file",
+      "name": "registerGraphRoutes.js",
+      "filePath": "server/routes/graph/registerGraphRoutes.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 1625
+    },
+    {
+      "id": "file:server/routes/matching/registerMatchingRoutes.js",
+      "type": "file",
+      "name": "registerMatchingRoutes.js",
+      "filePath": "server/routes/matching/registerMatchingRoutes.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend",
+        "matching"
+      ],
+      "language": "javascript",
+      "sizeLines": 348
+    },
+    {
+      "id": "file:server/routes/ppt/registerPptRoutes.js",
+      "type": "file",
+      "name": "registerPptRoutes.js",
+      "filePath": "server/routes/ppt/registerPptRoutes.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend",
+        "presentation"
+      ],
+      "language": "javascript",
+      "sizeLines": 45
+    },
+    {
+      "id": "file:server/server.js",
+      "type": "file",
+      "name": "server.js",
+      "filePath": "server/server.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 49
+    },
+    {
+      "id": "file:server/services/chainSeedService.js",
+      "type": "file",
+      "name": "chainSeedService.js",
+      "filePath": "server/services/chainSeedService.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 115
+    },
+    {
+      "id": "file:server/services/graphService.js",
+      "type": "file",
+      "name": "graphService.js",
+      "filePath": "server/services/graphService.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 349
+    },
+    {
+      "id": "file:server/services/matchingAiService.js",
+      "type": "file",
+      "name": "matchingAiService.js",
+      "filePath": "server/services/matchingAiService.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend",
+        "matching"
+      ],
+      "language": "javascript",
+      "sizeLines": 88
+    },
+    {
+      "id": "file:server/utils/memoryRedisClient.js",
+      "type": "file",
+      "name": "memoryRedisClient.js",
+      "filePath": "server/utils/memoryRedisClient.js",
+      "summary": "后端服务中的 javascript 源文件，用于 API、数据或服务逻辑。",
+      "tags": [
+        "code",
+        "javascript",
+        "backend"
+      ],
+      "language": "javascript",
+      "sizeLines": 65
+    },
+    {
+      "id": "file:src/App.css",
+      "type": "file",
+      "name": "App.css",
+      "filePath": "src/App.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend"
+      ],
+      "language": "css",
+      "sizeLines": 192
+    },
+    {
+      "id": "file:src/App.jsx",
+      "type": "file",
+      "name": "App.jsx",
+      "filePath": "src/App.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 106
+    },
+    {
+      "id": "file:src/components/IntelligentMatching/IntelligentMatching.css",
+      "type": "file",
+      "name": "IntelligentMatching.css",
+      "filePath": "src/components/IntelligentMatching/IntelligentMatching.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend"
+      ],
+      "language": "css",
+      "sizeLines": 377
+    },
+    {
+      "id": "file:src/components/IntelligentMatching/IntelligentMatching.jsx",
+      "type": "file",
+      "name": "IntelligentMatching.jsx",
+      "filePath": "src/components/IntelligentMatching/IntelligentMatching.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 430
+    },
+    {
+      "id": "file:src/components/KnowledgeGraph/graphData.js",
+      "type": "file",
+      "name": "graphData.js",
+      "filePath": "src/components/KnowledgeGraph/graphData.js",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 75
+    },
+    {
+      "id": "file:src/components/KnowledgeGraph/KnowledgeGraph.css",
+      "type": "file",
+      "name": "KnowledgeGraph.css",
+      "filePath": "src/components/KnowledgeGraph/KnowledgeGraph.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend"
+      ],
+      "language": "css",
+      "sizeLines": 1143
+    },
+    {
+      "id": "file:src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+      "type": "file",
+      "name": "KnowledgeGraph.jsx",
+      "filePath": "src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 1871
+    },
+    {
+      "id": "file:src/components/ppt_generate/PPTGenerator.css",
+      "type": "file",
+      "name": "PPTGenerator.css",
+      "filePath": "src/components/ppt_generate/PPTGenerator.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend",
+        "presentation"
+      ],
+      "language": "css",
+      "sizeLines": 791
+    },
+    {
+      "id": "file:src/components/ppt_generate/PPTGenerator.jsx",
+      "type": "file",
+      "name": "PPTGenerator.jsx",
+      "filePath": "src/components/ppt_generate/PPTGenerator.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend",
+        "presentation"
+      ],
+      "language": "javascript",
+      "sizeLines": 510
+    },
+    {
+      "id": "file:src/components/TechAgent/EnterpriseDemand.css",
+      "type": "file",
+      "name": "EnterpriseDemand.css",
+      "filePath": "src/components/TechAgent/EnterpriseDemand.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend"
+      ],
+      "language": "css",
+      "sizeLines": 277
+    },
+    {
+      "id": "file:src/components/TechAgent/EnterpriseDemand.jsx",
+      "type": "file",
+      "name": "EnterpriseDemand.jsx",
+      "filePath": "src/components/TechAgent/EnterpriseDemand.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 367
+    },
+    {
+      "id": "file:src/components/TechAgent/KnowledgeGraphView.css",
+      "type": "file",
+      "name": "KnowledgeGraphView.css",
+      "filePath": "src/components/TechAgent/KnowledgeGraphView.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend"
+      ],
+      "language": "css",
+      "sizeLines": 602
+    },
+    {
+      "id": "file:src/components/TechAgent/KnowledgeGraphView.jsx",
+      "type": "file",
+      "name": "KnowledgeGraphView.jsx",
+      "filePath": "src/components/TechAgent/KnowledgeGraphView.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 1154
+    },
+    {
+      "id": "file:src/components/TechAgent/TechAgent.css",
+      "type": "file",
+      "name": "TechAgent.css",
+      "filePath": "src/components/TechAgent/TechAgent.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend"
+      ],
+      "language": "css",
+      "sizeLines": 1858
+    },
+    {
+      "id": "file:src/components/TechAgent/TechAgent.jsx",
+      "type": "file",
+      "name": "TechAgent.jsx",
+      "filePath": "src/components/TechAgent/TechAgent.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 913
+    },
+    {
+      "id": "file:src/config.example.js",
+      "type": "file",
+      "name": "config.example.js",
+      "filePath": "src/config.example.js",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 10
+    },
+    {
+      "id": "file:src/config.js",
+      "type": "file",
+      "name": "config.js",
+      "filePath": "src/config.js",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 10
+    },
+    {
+      "id": "file:src/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "src/index.css",
+      "summary": "React 前端应用中的 css 源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "frontend"
+      ],
+      "language": "css",
+      "sizeLines": 270
+    },
+    {
+      "id": "file:src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "src/main.jsx",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 19
+    },
+    {
+      "id": "file:src/utils/api.js",
+      "type": "file",
+      "name": "api.js",
+      "filePath": "src/utils/api.js",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 561
+    },
+    {
+      "id": "file:src/utils/excelUtils.js",
+      "type": "file",
+      "name": "excelUtils.js",
+      "filePath": "src/utils/excelUtils.js",
+      "summary": "React 前端应用中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "frontend"
+      ],
+      "language": "javascript",
+      "sizeLines": 289
+    },
+    {
+      "id": "config:TrainPPTAgent/.env",
+      "type": "config",
+      "name": ".env",
+      "filePath": "TrainPPTAgent/.env",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "presentation"
+      ],
+      "language": "config",
+      "sizeLines": 12
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/启动说明.md",
+      "type": "document",
+      "name": "启动说明.md",
+      "filePath": "TrainPPTAgent/backend/启动说明.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 114
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/main_api/.env",
+      "type": "config",
+      "name": ".env",
+      "filePath": "TrainPPTAgent/backend/main_api/.env",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "presentation"
+      ],
+      "language": "config",
+      "sizeLines": 4
+    },
+    {
+      "id": "file:TrainPPTAgent/backend/main_api/Dockerfile",
+      "type": "file",
+      "name": "Dockerfile",
+      "filePath": "TrainPPTAgent/backend/main_api/Dockerfile",
+      "summary": "项目中的 text 源文件。",
+      "tags": [
+        "code",
+        "text",
+        "presentation"
+      ],
+      "language": "text",
+      "sizeLines": 23
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/main_api/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/backend/main_api/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 8
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/main_api/template/__________________1.json",
+      "type": "config",
+      "name": "__________________1.json",
+      "filePath": "TrainPPTAgent/backend/main_api/template/__________________1.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 29
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/main_api/template/template_1.json",
+      "type": "config",
+      "name": "template_1.json",
+      "filePath": "TrainPPTAgent/backend/main_api/template/template_1.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 9021
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/main_api/template/template_2.json",
+      "type": "config",
+      "name": "template_2.json",
+      "filePath": "TrainPPTAgent/backend/main_api/template/template_2.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 9651
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/main_api/template/template_3.json",
+      "type": "config",
+      "name": "template_3.json",
+      "filePath": "TrainPPTAgent/backend/main_api/template/template_3.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 7485
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/main_api/template/template_4.json",
+      "type": "config",
+      "name": "template_4.json",
+      "filePath": "TrainPPTAgent/backend/main_api/template/template_4.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 8818
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/main_api/template/template_9.json",
+      "type": "config",
+      "name": "template_9.json",
+      "filePath": "TrainPPTAgent/backend/main_api/template/template_9.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 9651
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/knowledge-graph-fusion-nodes-json.json",
+      "type": "config",
+      "name": "knowledge-graph-fusion-nodes-json.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/knowledge-graph-fusion-nodes-json.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 262
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_1.json",
+      "type": "config",
+      "name": "template_1.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_1.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 9021
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_2.json",
+      "type": "config",
+      "name": "template_2.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_2.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 9651
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_3.json",
+      "type": "config",
+      "name": "template_3.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_3.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 7485
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_4.json",
+      "type": "config",
+      "name": "template_4.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_4.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 8818
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_5.json",
+      "type": "config",
+      "name": "template_5.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_5.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 4480
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_6.json",
+      "type": "config",
+      "name": "template_6.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_6.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 6671
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_7.json",
+      "type": "config",
+      "name": "template_7.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_7.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 220
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_8.json",
+      "type": "config",
+      "name": "template_8.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_8.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 206
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template_9.json",
+      "type": "config",
+      "name": "template_9.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template_9.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 9651
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/mock_api/template/template.json",
+      "type": "config",
+      "name": "template.json",
+      "filePath": "TrainPPTAgent/backend/mock_api/template/template.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 1
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/personaldb/.env",
+      "type": "config",
+      "name": ".env",
+      "filePath": "TrainPPTAgent/backend/personaldb/.env",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "presentation"
+      ],
+      "language": "config",
+      "sizeLines": 16
+    },
+    {
+      "id": "file:TrainPPTAgent/backend/personaldb/Dockerfile",
+      "type": "file",
+      "name": "Dockerfile",
+      "filePath": "TrainPPTAgent/backend/personaldb/Dockerfile",
+      "summary": "项目中的 text 源文件。",
+      "tags": [
+        "code",
+        "text",
+        "presentation"
+      ],
+      "language": "text",
+      "sizeLines": 23
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 28
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/17e95f63-45aa-491a-9a26-9d4587bc1051_39009782.md",
+      "type": "document",
+      "name": "17e95f63-45aa-491a-9a26-9d4587bc1051_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/17e95f63-45aa-491a-9a26-9d4587bc1051_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/31fbe6d5-b744-40df-ab38-950ea503cb43_39009782.md",
+      "type": "document",
+      "name": "31fbe6d5-b744-40df-ab38-950ea503cb43_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/31fbe6d5-b744-40df-ab38-950ea503cb43_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/912e5edf-6172-4c03-96d0-93c7cd24f2b1_39009782.md",
+      "type": "document",
+      "name": "912e5edf-6172-4c03-96d0-93c7cd24f2b1_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/912e5edf-6172-4c03-96d0-93c7cd24f2b1_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/9f220746-f282-4b83-9373-51746cf74db4_39009782.md",
+      "type": "document",
+      "name": "9f220746-f282-4b83-9373-51746cf74db4_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/9f220746-f282-4b83-9373-51746cf74db4_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/a8eb3950-8825-4356-8889-81688538d8ae_39009782.md",
+      "type": "document",
+      "name": "a8eb3950-8825-4356-8889-81688538d8ae_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/a8eb3950-8825-4356-8889-81688538d8ae_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/ca9c91a1-0c5b-4130-bca9-8585cf687697_39009782.md",
+      "type": "document",
+      "name": "ca9c91a1-0c5b-4130-bca9-8585cf687697_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/ca9c91a1-0c5b-4130-bca9-8585cf687697_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/d266ba03-a71f-4a82-8c3f-c99cf77931f5_39009782.md",
+      "type": "document",
+      "name": "d266ba03-a71f-4a82-8c3f-c99cf77931f5_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/d266ba03-a71f-4a82-8c3f-c99cf77931f5_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/personaldb/temp_download/f54e9fd6-f7c4-4255-a09a-b6f612758f77_39009782.md",
+      "type": "document",
+      "name": "f54e9fd6-f7c4-4255-a09a-b6f612758f77_39009782.md",
+      "filePath": "TrainPPTAgent/backend/personaldb/temp_download/f54e9fd6-f7c4-4255-a09a-b6f612758f77_39009782.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 30
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/backend/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 41
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/simpleOutline/.env",
+      "type": "config",
+      "name": ".env",
+      "filePath": "TrainPPTAgent/backend/simpleOutline/.env",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "presentation"
+      ],
+      "language": "config",
+      "sizeLines": 9
+    },
+    {
+      "id": "file:TrainPPTAgent/backend/simpleOutline/Dockerfile",
+      "type": "file",
+      "name": "Dockerfile",
+      "filePath": "TrainPPTAgent/backend/simpleOutline/Dockerfile",
+      "summary": "项目中的 text 源文件。",
+      "tags": [
+        "code",
+        "text",
+        "presentation"
+      ],
+      "language": "text",
+      "sizeLines": 21
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/simpleOutline/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/backend/simpleOutline/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 92
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/slide_agent/.env",
+      "type": "config",
+      "name": ".env",
+      "filePath": "TrainPPTAgent/backend/slide_agent/.env",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "presentation"
+      ],
+      "language": "config",
+      "sizeLines": 14
+    },
+    {
+      "id": "file:TrainPPTAgent/backend/slide_agent/Dockerfile",
+      "type": "file",
+      "name": "Dockerfile",
+      "filePath": "TrainPPTAgent/backend/slide_agent/Dockerfile",
+      "summary": "项目中的 text 源文件。",
+      "tags": [
+        "code",
+        "text",
+        "presentation"
+      ],
+      "language": "text",
+      "sizeLines": 21
+    },
+    {
+      "id": "config:TrainPPTAgent/backend/slide_agent/pyproject.toml",
+      "type": "config",
+      "name": "pyproject.toml",
+      "filePath": "TrainPPTAgent/backend/slide_agent/pyproject.toml",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "toml",
+        "presentation"
+      ],
+      "language": "toml",
+      "sizeLines": 22
+    },
+    {
+      "id": "document:TrainPPTAgent/backend/slide_agent/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/backend/slide_agent/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 115
+    },
+    {
+      "id": "file:TrainPPTAgent/deploy.sh",
+      "type": "file",
+      "name": "deploy.sh",
+      "filePath": "TrainPPTAgent/deploy.sh",
+      "summary": "项目中的 shell 源文件。",
+      "tags": [
+        "script",
+        "shell",
+        "presentation"
+      ],
+      "language": "shell",
+      "sizeLines": 67
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/API_CONTENT.md",
+      "type": "document",
+      "name": "API_CONTENT.md",
+      "filePath": "TrainPPTAgent/doc/API_CONTENT.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 72
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/API_IMAGE.md",
+      "type": "document",
+      "name": "API_IMAGE.md",
+      "filePath": "TrainPPTAgent/doc/API_IMAGE.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 502
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/API_OUTLINE.md",
+      "type": "document",
+      "name": "API_OUTLINE.md",
+      "filePath": "TrainPPTAgent/doc/API_OUTLINE.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 152
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/API_TEMPLATE.md",
+      "type": "document",
+      "name": "API_TEMPLATE.md",
+      "filePath": "TrainPPTAgent/doc/API_TEMPLATE.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 9264
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/CHANGES.md",
+      "type": "document",
+      "name": "CHANGES.md",
+      "filePath": "TrainPPTAgent/doc/CHANGES.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 743
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/custom_model.md",
+      "type": "document",
+      "name": "custom_model.md",
+      "filePath": "TrainPPTAgent/doc/custom_model.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 229
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/DockerDeploy.md",
+      "type": "document",
+      "name": "DockerDeploy.md",
+      "filePath": "TrainPPTAgent/doc/DockerDeploy.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 12
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/Gallery.md",
+      "type": "document",
+      "name": "Gallery.md",
+      "filePath": "TrainPPTAgent/doc/Gallery.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 74
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/Image.md",
+      "type": "document",
+      "name": "Image.md",
+      "filePath": "TrainPPTAgent/doc/Image.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 13
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/issue.md",
+      "type": "document",
+      "name": "issue.md",
+      "filePath": "TrainPPTAgent/doc/issue.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 106
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/PPT_Structure.md",
+      "type": "document",
+      "name": "PPT_Structure.md",
+      "filePath": "TrainPPTAgent/doc/PPT_Structure.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 187
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/prompt.md",
+      "type": "document",
+      "name": "prompt.md",
+      "filePath": "TrainPPTAgent/doc/prompt.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 1888
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/Template.md",
+      "type": "document",
+      "name": "Template.md",
+      "filePath": "TrainPPTAgent/doc/Template.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 22
+    },
+    {
+      "id": "document:TrainPPTAgent/doc/Train.md",
+      "type": "document",
+      "name": "Train.md",
+      "filePath": "TrainPPTAgent/doc/Train.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 369
+    },
+    {
+      "id": "config:TrainPPTAgent/docker-compose-hostnetwork.yml",
+      "type": "config",
+      "name": "docker-compose-hostnetwork.yml",
+      "filePath": "TrainPPTAgent/docker-compose-hostnetwork.yml",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "yaml",
+        "presentation"
+      ],
+      "language": "yaml",
+      "sizeLines": 54
+    },
+    {
+      "id": "config:TrainPPTAgent/docker-compose.yml",
+      "type": "config",
+      "name": "docker-compose.yml",
+      "filePath": "TrainPPTAgent/docker-compose.yml",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "yaml",
+        "presentation"
+      ],
+      "language": "yaml",
+      "sizeLines": 102
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/.eslintrc.cjs",
+      "type": "file",
+      "name": ".eslintrc.cjs",
+      "filePath": "TrainPPTAgent/frontend/.eslintrc.cjs",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "presentation"
+      ],
+      "language": "javascript",
+      "sizeLines": 78
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/bug_report.md",
+      "type": "document",
+      "name": "bug_report.md",
+      "filePath": "TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/bug_report.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 25
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/feature_request.md",
+      "type": "document",
+      "name": "feature_request.md",
+      "filePath": "TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/feature_request.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 15
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/.github/workflows/deploy.yml",
+      "type": "config",
+      "name": "deploy.yml",
+      "filePath": "TrainPPTAgent/frontend/.github/workflows/deploy.yml",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "yaml",
+        "presentation"
+      ],
+      "language": "yaml",
+      "sizeLines": 31
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/.vscode/extensions.json",
+      "type": "config",
+      "name": "extensions.json",
+      "filePath": "TrainPPTAgent/frontend/.vscode/extensions.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 8
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/commitlint.config.cjs",
+      "type": "file",
+      "name": "commitlint.config.cjs",
+      "filePath": "TrainPPTAgent/frontend/commitlint.config.cjs",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript",
+        "presentation"
+      ],
+      "language": "javascript",
+      "sizeLines": 16
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/doc/AIPPT.md",
+      "type": "document",
+      "name": "AIPPT.md",
+      "filePath": "TrainPPTAgent/frontend/doc/AIPPT.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 61
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/doc/Blacklist.md",
+      "type": "document",
+      "name": "Blacklist.md",
+      "filePath": "TrainPPTAgent/frontend/doc/Blacklist.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 5
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/doc/Canvas.md",
+      "type": "document",
+      "name": "Canvas.md",
+      "filePath": "TrainPPTAgent/frontend/doc/Canvas.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 68
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/doc/CustomElement.md",
+      "type": "document",
+      "name": "CustomElement.md",
+      "filePath": "TrainPPTAgent/frontend/doc/CustomElement.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 415
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/doc/DirectoryAndData.md",
+      "type": "document",
+      "name": "DirectoryAndData.md",
+      "filePath": "TrainPPTAgent/frontend/doc/DirectoryAndData.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 43
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/doc/Q&A.md",
+      "type": "document",
+      "name": "Q&A.md",
+      "filePath": "TrainPPTAgent/frontend/doc/Q&A.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 158
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/Dockerfile",
+      "type": "file",
+      "name": "Dockerfile",
+      "filePath": "TrainPPTAgent/frontend/Dockerfile",
+      "summary": "项目中的 text 源文件。",
+      "tags": [
+        "code",
+        "text",
+        "presentation"
+      ],
+      "language": "text",
+      "sizeLines": 30
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/env.d.ts",
+      "type": "file",
+      "name": "env.d.ts",
+      "filePath": "TrainPPTAgent/frontend/env.d.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 3
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "TrainPPTAgent/frontend/index.html",
+      "summary": "前端标记文件或静态资源源文件。",
+      "tags": [
+        "markup",
+        "html",
+        "presentation"
+      ],
+      "language": "html",
+      "sizeLines": 64
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/nginx.conf",
+      "type": "config",
+      "name": "nginx.conf",
+      "filePath": "TrainPPTAgent/frontend/nginx.conf",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "nginx",
+        "presentation"
+      ],
+      "language": "nginx",
+      "sizeLines": 32
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/package-lock.json",
+      "type": "config",
+      "name": "package-lock.json",
+      "filePath": "TrainPPTAgent/frontend/package-lock.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 9552
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "TrainPPTAgent/frontend/package.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 77
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/public/mocks/AIPPT_Outline.md",
+      "type": "document",
+      "name": "AIPPT_Outline.md",
+      "filePath": "TrainPPTAgent/frontend/public/mocks/AIPPT_Outline.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 69
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/public/mocks/AIPPT.json",
+      "type": "config",
+      "name": "AIPPT.json",
+      "filePath": "TrainPPTAgent/frontend/public/mocks/AIPPT.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 475
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/public/mocks/imgs.json",
+      "type": "config",
+      "name": "imgs.json",
+      "filePath": "TrainPPTAgent/frontend/public/mocks/imgs.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 482
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/public/mocks/slides.json",
+      "type": "config",
+      "name": "slides.json",
+      "filePath": "TrainPPTAgent/frontend/public/mocks/slides.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 184
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/public/mocks/template_1.json",
+      "type": "config",
+      "name": "template_1.json",
+      "filePath": "TrainPPTAgent/frontend/public/mocks/template_1.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 91
+    },
+    {
+      "id": "document:TrainPPTAgent/frontend/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/frontend/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 11
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/assets/styles/font.scss",
+      "type": "file",
+      "name": "font.scss",
+      "filePath": "TrainPPTAgent/frontend/src/assets/styles/font.scss",
+      "summary": "前端标记文件或静态资源源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "presentation"
+      ],
+      "language": "css",
+      "sizeLines": 9
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/assets/styles/global.scss",
+      "type": "file",
+      "name": "global.scss",
+      "filePath": "TrainPPTAgent/frontend/src/assets/styles/global.scss",
+      "summary": "前端标记文件或静态资源源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "presentation"
+      ],
+      "language": "css",
+      "sizeLines": 138
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/assets/styles/mixin.scss",
+      "type": "file",
+      "name": "mixin.scss",
+      "filePath": "TrainPPTAgent/frontend/src/assets/styles/mixin.scss",
+      "summary": "前端标记文件或静态资源源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "presentation"
+      ],
+      "language": "css",
+      "sizeLines": 42
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/assets/styles/prosemirror.scss",
+      "type": "file",
+      "name": "prosemirror.scss",
+      "filePath": "TrainPPTAgent/frontend/src/assets/styles/prosemirror.scss",
+      "summary": "前端标记文件或静态资源源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "presentation"
+      ],
+      "language": "css",
+      "sizeLines": 102
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/assets/styles/variable.scss",
+      "type": "file",
+      "name": "variable.scss",
+      "filePath": "TrainPPTAgent/frontend/src/assets/styles/variable.scss",
+      "summary": "前端标记文件或静态资源源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "presentation"
+      ],
+      "language": "css",
+      "sizeLines": 13
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/components.d.ts",
+      "type": "file",
+      "name": "components.d.ts",
+      "filePath": "TrainPPTAgent/frontend/src/components.d.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 7
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/components/Contextmenu/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "TrainPPTAgent/frontend/src/components/Contextmenu/types.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 14
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/components/LaTeXEditor/hfmath.ts",
+      "type": "file",
+      "name": "hfmath.ts",
+      "filePath": "TrainPPTAgent/frontend/src/components/LaTeXEditor/hfmath.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 5
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/animation.ts",
+      "type": "file",
+      "name": "animation.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/animation.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 234
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/chart.ts",
+      "type": "file",
+      "name": "chart.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/chart.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 70
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/element.ts",
+      "type": "file",
+      "name": "element.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/element.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 22
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/font.ts",
+      "type": "file",
+      "name": "font.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/font.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 25
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/hotkey.ts",
+      "type": "file",
+      "name": "hotkey.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/hotkey.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 149
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/imageClip.ts",
+      "type": "file",
+      "name": "imageClip.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/imageClip.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 181
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/latex.ts",
+      "type": "file",
+      "name": "latex.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/latex.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 274
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/lines.ts",
+      "type": "file",
+      "name": "lines.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/lines.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 39
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/shapes.ts",
+      "type": "file",
+      "name": "shapes.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/shapes.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 1038
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/storage.ts",
+      "type": "file",
+      "name": "storage.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/storage.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 1
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/symbol.ts",
+      "type": "file",
+      "name": "symbol.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/symbol.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 72
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/configs/theme.ts",
+      "type": "file",
+      "name": "theme.ts",
+      "filePath": "TrainPPTAgent/frontend/src/configs/theme.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 126
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/global.d.ts",
+      "type": "file",
+      "name": "global.d.ts",
+      "filePath": "TrainPPTAgent/frontend/src/global.d.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 16
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useAddSlidesOrElements.ts",
+      "type": "file",
+      "name": "useAddSlidesOrElements.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useAddSlidesOrElements.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 147
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useAIPPT.ts",
+      "type": "file",
+      "name": "useAIPPT.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useAIPPT.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 1044
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useAlignActiveElement.ts",
+      "type": "file",
+      "name": "useAlignActiveElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useAlignActiveElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 177
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useAlignElementToCanvas.ts",
+      "type": "file",
+      "name": "useAlignElementToCanvas.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useAlignElementToCanvas.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 80
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useCombineElement.ts",
+      "type": "file",
+      "name": "useCombineElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useCombineElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 91
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts",
+      "type": "file",
+      "name": "useCopyAndPasteElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 55
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useCreateElement.ts",
+      "type": "file",
+      "name": "useCreateElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useCreateElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 325
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts",
+      "type": "file",
+      "name": "useDeleteElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 44
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useExport.ts",
+      "type": "file",
+      "name": "useExport.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useExport.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 972
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "type": "file",
+      "name": "useGlobalHotkey.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 321
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useHideElement.ts",
+      "type": "file",
+      "name": "useHideElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useHideElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 35
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "type": "file",
+      "name": "useHistorySnapshot.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 27
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useImport.ts",
+      "type": "file",
+      "name": "useImport.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useImport.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 783
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useLink.ts",
+      "type": "file",
+      "name": "useLink.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useLink.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 37
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useLoadSlides.ts",
+      "type": "file",
+      "name": "useLoadSlides.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useLoadSlides.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 30
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useLockElement.ts",
+      "type": "file",
+      "name": "useLockElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useLockElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 61
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useMoveElement.ts",
+      "type": "file",
+      "name": "useMoveElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useMoveElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 61
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useOrderElement.ts",
+      "type": "file",
+      "name": "useOrderElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useOrderElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 212
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/usePasteEvent.ts",
+      "type": "file",
+      "name": "usePasteEvent.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/usePasteEvent.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 58
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/usePasteTextClipboardData.ts",
+      "type": "file",
+      "name": "usePasteTextClipboardData.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/usePasteTextClipboardData.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 98
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useScaleCanvas.ts",
+      "type": "file",
+      "name": "useScaleCanvas.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useScaleCanvas.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 50
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useScreening.ts",
+      "type": "file",
+      "name": "useScreening.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useScreening.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 34
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useSearch.ts",
+      "type": "file",
+      "name": "useSearch.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useSearch.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 444
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useSectionHandler.ts",
+      "type": "file",
+      "name": "useSectionHandler.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useSectionHandler.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 92
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useSelectElement.ts",
+      "type": "file",
+      "name": "useSelectElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useSelectElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 31
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useShapeFormatPainter.ts",
+      "type": "file",
+      "name": "useShapeFormatPainter.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useShapeFormatPainter.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 29
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useSlideBackgroundStyle.ts",
+      "type": "file",
+      "name": "useSlideBackgroundStyle.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useSlideBackgroundStyle.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 53
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts",
+      "type": "file",
+      "name": "useSlideHandler.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 191
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useSlideTheme.ts",
+      "type": "file",
+      "name": "useSlideTheme.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useSlideTheme.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 392
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useTextFormatPainter.ts",
+      "type": "file",
+      "name": "useTextFormatPainter.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useTextFormatPainter.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 30
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/hooks/useUniformDisplayElement.ts",
+      "type": "file",
+      "name": "useUniformDisplayElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/hooks/useUniformDisplayElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 261
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "TrainPPTAgent/frontend/src/main.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 22
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/plugins/directive/clickOutside.ts",
+      "type": "file",
+      "name": "clickOutside.ts",
+      "filePath": "TrainPPTAgent/frontend/src/plugins/directive/clickOutside.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 35
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/plugins/directive/contextmenu.ts",
+      "type": "file",
+      "name": "contextmenu.ts",
+      "filePath": "TrainPPTAgent/frontend/src/plugins/directive/contextmenu.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 64
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/plugins/directive/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/plugins/directive/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 14
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/plugins/directive/tooltip.scss",
+      "type": "file",
+      "name": "tooltip.scss",
+      "filePath": "TrainPPTAgent/frontend/src/plugins/directive/tooltip.scss",
+      "summary": "前端标记文件或静态资源源文件。",
+      "tags": [
+        "markup",
+        "css",
+        "presentation"
+      ],
+      "language": "css",
+      "sizeLines": 67
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts",
+      "type": "file",
+      "name": "tooltip.ts",
+      "filePath": "TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 62
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/plugins/icon.ts",
+      "type": "file",
+      "name": "icon.ts",
+      "filePath": "TrainPPTAgent/frontend/src/plugins/icon.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 290
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/router/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/router/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 33
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/services/config.ts",
+      "type": "file",
+      "name": "config.ts",
+      "filePath": "TrainPPTAgent/frontend/src/services/config.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 33
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/services/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/services/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 136
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/store/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/store/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 13
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/store/keyboard.ts",
+      "type": "file",
+      "name": "keyboard.ts",
+      "filePath": "TrainPPTAgent/frontend/src/store/keyboard.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 33
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/store/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "TrainPPTAgent/frontend/src/store/main.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 242
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/store/screen.ts",
+      "type": "file",
+      "name": "screen.ts",
+      "filePath": "TrainPPTAgent/frontend/src/store/screen.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 17
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/store/slides.ts",
+      "type": "file",
+      "name": "slides.ts",
+      "filePath": "TrainPPTAgent/frontend/src/store/slides.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 290
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/store/snapshot.ts",
+      "type": "file",
+      "name": "snapshot.ts",
+      "filePath": "TrainPPTAgent/frontend/src/store/snapshot.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 130
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/types/AIPPT.ts",
+      "type": "file",
+      "name": "AIPPT.ts",
+      "filePath": "TrainPPTAgent/frontend/src/types/AIPPT.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 202
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/types/edit.ts",
+      "type": "file",
+      "name": "edit.ts",
+      "filePath": "TrainPPTAgent/frontend/src/types/edit.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 126
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/types/export.ts",
+      "type": "file",
+      "name": "export.ts",
+      "filePath": "TrainPPTAgent/frontend/src/types/export.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 1
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/types/injectKey.ts",
+      "type": "file",
+      "name": "injectKey.ts",
+      "filePath": "TrainPPTAgent/frontend/src/types/injectKey.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 12
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/types/mobile.ts",
+      "type": "file",
+      "name": "mobile.ts",
+      "filePath": "TrainPPTAgent/frontend/src/types/mobile.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 1
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/types/slides.ts",
+      "type": "file",
+      "name": "slides.ts",
+      "filePath": "TrainPPTAgent/frontend/src/types/slides.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 777
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/types/toolbar.ts",
+      "type": "file",
+      "name": "toolbar.ts",
+      "filePath": "TrainPPTAgent/frontend/src/types/toolbar.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 9
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/clipboard.ts",
+      "type": "file",
+      "name": "clipboard.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/clipboard.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 98
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/common.ts",
+      "type": "file",
+      "name": "common.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/common.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 32
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/crypto.ts",
+      "type": "file",
+      "name": "crypto.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/crypto.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 20
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/database.ts",
+      "type": "file",
+      "name": "database.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/database.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 55
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/element.ts",
+      "type": "file",
+      "name": "element.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/element.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 259
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/emitter.ts",
+      "type": "file",
+      "name": "emitter.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/emitter.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 29
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/fullscreen.ts",
+      "type": "file",
+      "name": "fullscreen.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/fullscreen.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 26
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/htmlParser/format.ts",
+      "type": "file",
+      "name": "format.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/htmlParser/format.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 47
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 16
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+      "type": "file",
+      "name": "lexer.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 275
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+      "type": "file",
+      "name": "parser.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 129
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts",
+      "type": "file",
+      "name": "stringify.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 28
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts",
+      "type": "file",
+      "name": "tags.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 20
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "type": "file",
+      "name": "types.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 70
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/image.ts",
+      "type": "file",
+      "name": "image.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/image.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 75
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/message.ts",
+      "type": "file",
+      "name": "message.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/message.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 103
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/print.ts",
+      "type": "file",
+      "name": "print.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/print.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 87
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/replaceText.ts",
+      "type": "file",
+      "name": "replaceText.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/replaceText.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 33
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setListStyle.ts",
+      "type": "file",
+      "name": "setListStyle.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setListStyle.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 31
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextAlign.ts",
+      "type": "file",
+      "name": "setTextAlign.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextAlign.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 62
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextIndent.ts",
+      "type": "file",
+      "name": "setTextIndent.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextIndent.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 87
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/toggleList.ts",
+      "type": "file",
+      "name": "toggleList.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/toggleList.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 54
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 32
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 31
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/inputrules.ts",
+      "type": "file",
+      "name": "inputrules.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/inputrules.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 63
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/keymap.ts",
+      "type": "file",
+      "name": "keymap.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/keymap.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 51
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/placeholder.ts",
+      "type": "file",
+      "name": "placeholder.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/placeholder.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 23
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 6
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/marks.ts",
+      "type": "file",
+      "name": "marks.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/schema/marks.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 192
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/nodes.ts",
+      "type": "file",
+      "name": "nodes.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/schema/nodes.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 179
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 260
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/selection.ts",
+      "type": "file",
+      "name": "selection.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/selection.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 5
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/svg2Base64.ts",
+      "type": "file",
+      "name": "svg2Base64.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/svg2Base64.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 55
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/svgPathParser.ts",
+      "type": "file",
+      "name": "svgPathParser.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/svgPathParser.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 146
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/utils/textParser.ts",
+      "type": "file",
+      "name": "textParser.ts",
+      "filePath": "TrainPPTAgent/frontend/src/utils/textParser.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 13
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/ChartElement/chartOption.ts",
+      "type": "file",
+      "name": "chartOption.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/ChartElement/chartOption.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 315
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFill.ts",
+      "type": "file",
+      "name": "useElementFill.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFill.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 15
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFlip.ts",
+      "type": "file",
+      "name": "useElementFlip.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFlip.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 18
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementOutline.ts",
+      "type": "file",
+      "name": "useElementOutline.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementOutline.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 23
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementShadow.ts",
+      "type": "file",
+      "name": "useElementShadow.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementShadow.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 17
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/ImageElement/useClipImage.ts",
+      "type": "file",
+      "name": "useClipImage.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/ImageElement/useClipImage.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 53
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/ImageElement/useFilter.ts",
+      "type": "file",
+      "name": "useFilter.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/ImageElement/useFilter.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 18
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/TableElement/useHideCells.ts",
+      "type": "file",
+      "name": "useHideCells.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/TableElement/useHideCells.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 31
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/TableElement/useSubThemeColor.ts",
+      "type": "file",
+      "name": "useSubThemeColor.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/TableElement/useSubThemeColor.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 18
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/TableElement/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/TableElement/utils.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 39
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/components/element/VideoElement/VideoPlayer/useMSE.ts",
+      "type": "file",
+      "name": "useMSE.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/components/element/VideoElement/VideoPlayer/useMSE.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 41
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useCommonOperate.ts",
+      "type": "file",
+      "name": "useCommonOperate.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useCommonOperate.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 49
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragElement.ts",
+      "type": "file",
+      "name": "useDragElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 327
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragLineElement.ts",
+      "type": "file",
+      "name": "useDragLineElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragLineElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 232
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDropImageOrText.ts",
+      "type": "file",
+      "name": "useDropImageOrText.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDropImageOrText.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 64
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "type": "file",
+      "name": "useInsertFromCreateSelection.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 95
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMouseSelection.ts",
+      "type": "file",
+      "name": "useMouseSelection.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMouseSelection.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 175
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "type": "file",
+      "name": "useMoveShapeKeypoint.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 124
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useRotateElement.ts",
+      "type": "file",
+      "name": "useRotateElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useRotateElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 100
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useScaleElement.ts",
+      "type": "file",
+      "name": "useScaleElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useScaleElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 579
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useSelectElement.ts",
+      "type": "file",
+      "name": "useSelectElement.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useSelectElement.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 93
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useViewportSize.ts",
+      "type": "file",
+      "name": "useViewportSize.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useViewportSize.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 124
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useExecPlay.ts",
+      "type": "file",
+      "name": "useExecPlay.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Screen/hooks/useExecPlay.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 264
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useFullscreen.ts",
+      "type": "file",
+      "name": "useFullscreen.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Screen/hooks/useFullscreen.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 38
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useSlideSize.ts",
+      "type": "file",
+      "name": "useSlideSize.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Screen/hooks/useSlideSize.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 47
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useSlidesWithTurningMode.ts",
+      "type": "file",
+      "name": "useSlidesWithTurningMode.ts",
+      "filePath": "TrainPPTAgent/frontend/src/views/Screen/hooks/useSlidesWithTurningMode.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 27
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/tsconfig.app.json",
+      "type": "config",
+      "name": "tsconfig.app.json",
+      "filePath": "TrainPPTAgent/frontend/tsconfig.app.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 14
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "TrainPPTAgent/frontend/tsconfig.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 12
+    },
+    {
+      "id": "config:TrainPPTAgent/frontend/tsconfig.node.json",
+      "type": "config",
+      "name": "tsconfig.node.json",
+      "filePath": "TrainPPTAgent/frontend/tsconfig.node.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 18
+    },
+    {
+      "id": "file:TrainPPTAgent/frontend/vite.config.ts",
+      "type": "file",
+      "name": "vite.config.ts",
+      "filePath": "TrainPPTAgent/frontend/vite.config.ts",
+      "summary": "项目中的 typescript 源文件。",
+      "tags": [
+        "code",
+        "typescript",
+        "presentation"
+      ],
+      "language": "typescript",
+      "sizeLines": 39
+    },
+    {
+      "id": "document:TrainPPTAgent/README_EN.md",
+      "type": "document",
+      "name": "README_EN.md",
+      "filePath": "TrainPPTAgent/README_EN.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 182
+    },
+    {
+      "id": "document:TrainPPTAgent/README_PRODUCTION.md",
+      "type": "document",
+      "name": "README_PRODUCTION.md",
+      "filePath": "TrainPPTAgent/README_PRODUCTION.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 222
+    },
+    {
+      "id": "document:TrainPPTAgent/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 263
+    },
+    {
+      "id": "config:TrainPPTAgent/template/标注过后的pptx.json",
+      "type": "config",
+      "name": "标注过后的pptx.json",
+      "filePath": "TrainPPTAgent/template/标注过后的pptx.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 1181
+    },
+    {
+      "id": "config:TrainPPTAgent/template/未标注pptx.json",
+      "type": "config",
+      "name": "未标注pptx.json",
+      "filePath": "TrainPPTAgent/template/未标注pptx.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 1179
+    },
+    {
+      "id": "config:TrainPPTAgent/template/ai_template_pptx.json",
+      "type": "config",
+      "name": "ai_template_pptx.json",
+      "filePath": "TrainPPTAgent/template/ai_template_pptx.json",
+      "summary": "应用、工具链、部署或环境使用的配置文件。",
+      "tags": [
+        "config",
+        "json",
+        "presentation"
+      ],
+      "language": "json",
+      "sizeLines": 1184
+    },
+    {
+      "id": "document:TrainPPTAgent/template/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/template/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 50
+    },
+    {
+      "id": "document:TrainPPTAgent/utils/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "TrainPPTAgent/utils/README.md",
+      "summary": "项目文档和运行说明。",
+      "tags": [
+        "docs",
+        "markdown",
+        "presentation"
+      ],
+      "language": "markdown",
+      "sizeLines": 5
+    },
+    {
+      "id": "file:vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "vite.config.js",
+      "summary": "项目中的 javascript 源文件。",
+      "tags": [
+        "code",
+        "javascript"
+      ],
+      "language": "javascript",
+      "sizeLines": 18
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:check-enterprises.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:import-achievements.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:import-shipping-chain.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:import-tech-needs.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:match-tech-needs-achievements.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/agentEngine.js",
+      "target": "file:server/knowledgeBase.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/agentEngine.js",
+      "target": "file:server/harness/langChainTechAgentHarness.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/agentEngine.js",
+      "target": "file:server/harness/profileStore.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createApp.js",
+      "target": "file:server/routes/graph/registerGraphRoutes.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createApp.js",
+      "target": "file:server/routes/matching/registerMatchingRoutes.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createApp.js",
+      "target": "file:server/routes/ppt/registerPptRoutes.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createApp.js",
+      "target": "file:server/routes/agent/registerAgentRoutes.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createApp.js",
+      "target": "file:server/routes/aippt/registerAipptRoutes.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createServerContext.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createServerContext.js",
+      "target": "file:server/pptService.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createServerContext.js",
+      "target": "file:server/utils/memoryRedisClient.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/bootstrap/createServerContext.js",
+      "target": "file:server/agentEngine.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/check-database.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/harness/langChainTechAgentHarness.js",
+      "target": "file:server/agentTools.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/harness/langChainTechAgentHarness.js",
+      "target": "file:server/harness/profileStore.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/import-chain-data.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/init-db.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/neo4j-import.js",
+      "target": "file:src/components/KnowledgeGraph/graphData.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/neo4j-import.js",
+      "target": "file:server/config.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/routes/agent/registerAgentRoutes.js",
+      "target": "file:server/services/graphService.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/routes/graph/registerGraphRoutes.js",
+      "target": "file:server/services/graphService.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/routes/graph/registerGraphRoutes.js",
+      "target": "file:server/services/chainSeedService.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/routes/matching/registerMatchingRoutes.js",
+      "target": "file:server/services/matchingAiService.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/server.js",
+      "target": "file:server/bootstrap/createApp.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:server/server.js",
+      "target": "file:server/bootstrap/createServerContext.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "file:src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "file:src/components/TechAgent/TechAgent.jsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "file:src/components/ppt_generate/PPTGenerator.jsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "file:src/App.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/IntelligentMatching/IntelligentMatching.jsx",
+      "target": "file:src/components/IntelligentMatching/IntelligentMatching.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+      "target": "file:src/utils/api.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+      "target": "file:src/components/KnowledgeGraph/KnowledgeGraph.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/ppt_generate/PPTGenerator.jsx",
+      "target": "file:src/components/ppt_generate/PPTGenerator.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/TechAgent/EnterpriseDemand.jsx",
+      "target": "file:src/components/TechAgent/EnterpriseDemand.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/TechAgent/KnowledgeGraphView.jsx",
+      "target": "file:src/utils/api.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/TechAgent/KnowledgeGraphView.jsx",
+      "target": "file:src/components/TechAgent/KnowledgeGraphView.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/TechAgent/TechAgent.jsx",
+      "target": "file:src/utils/api.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/TechAgent/TechAgent.jsx",
+      "target": "file:src/components/TechAgent/TechAgent.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/App.jsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/index.css",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useAIPPT.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useAddSlidesOrElements.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useAIPPT.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useAlignActiveElement.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useAlignElementToCanvas.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useLockElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useCombineElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useSelectElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useMoveElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useOrderElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useScreening.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useScaleCanvas.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useImport.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/usePasteEvent.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/usePasteTextClipboardData.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/usePasteEvent.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useCreateElement.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/hooks/useUniformDisplayElement.ts",
+      "target": "file:TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/main.ts",
+      "target": "file:TrainPPTAgent/frontend/src/router/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/plugins/directive/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/plugins/directive/contextmenu.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/plugins/directive/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/plugins/directive/clickOutside.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/plugins/directive/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts",
+      "target": "file:TrainPPTAgent/frontend/src/plugins/directive/tooltip.scss",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/services/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/services/config.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/main.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/slides.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/snapshot.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/keyboard.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/screen.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/main.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/slides.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/snapshot.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/slides.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/store/snapshot.ts",
+      "target": "file:TrainPPTAgent/frontend/src/store/main.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/types/edit.ts",
+      "target": "file:TrainPPTAgent/frontend/src/types/slides.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/format.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/format.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setListStyle.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextIndent.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/toggleList.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/keymap.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/inputrules.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/placeholder.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/nodes.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts",
+      "target": "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/marks.ts",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:index.html",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:vite.config.js",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "file:vite.config.js",
+      "target": "file:index.html",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "config:nginx.conf",
+      "target": "file:index.html",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "document:DEPLOYMENT.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "document:QUICK_START.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "document:NEO4J_SETUP.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "weight": 0.5
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:frontend-application",
+      "name": "前端应用",
+      "description": "React、Vite、公共资源以及面向浏览器的源文件。",
+      "nodeIds": [
+        "file:index.html",
+        "file:src/App.css",
+        "file:src/App.jsx",
+        "file:src/components/IntelligentMatching/IntelligentMatching.css",
+        "file:src/components/IntelligentMatching/IntelligentMatching.jsx",
+        "file:src/components/KnowledgeGraph/graphData.js",
+        "file:src/components/KnowledgeGraph/KnowledgeGraph.css",
+        "file:src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+        "file:src/components/ppt_generate/PPTGenerator.css",
+        "file:src/components/ppt_generate/PPTGenerator.jsx",
+        "file:src/components/TechAgent/EnterpriseDemand.css",
+        "file:src/components/TechAgent/EnterpriseDemand.jsx",
+        "file:src/components/TechAgent/KnowledgeGraphView.css",
+        "file:src/components/TechAgent/KnowledgeGraphView.jsx",
+        "file:src/components/TechAgent/TechAgent.css",
+        "file:src/components/TechAgent/TechAgent.jsx",
+        "file:src/config.example.js",
+        "file:src/config.js",
+        "file:src/index.css",
+        "file:src/main.jsx",
+        "file:src/utils/api.js",
+        "file:src/utils/excelUtils.js",
+        "file:vite.config.js"
+      ]
+    },
+    {
+      "id": "layer:backend-services",
+      "name": "后端服务",
+      "description": "服务端 API、图谱导入、Redis 启动以及数据服务逻辑。",
+      "nodeIds": [
+        "file:server/agentEngine.js",
+        "file:server/agentTools.js",
+        "file:server/bootstrap/createApp.js",
+        "file:server/bootstrap/createServerContext.js",
+        "file:server/check-database.js",
+        "file:server/config.example.js",
+        "file:server/config.js",
+        "file:server/harness/langChainTechAgentHarness.js",
+        "file:server/harness/profileStore.js",
+        "file:server/import-chain-data.js",
+        "file:server/init-db.js",
+        "file:server/knowledgeBase.js",
+        "document:server/MATCHING_ENGINE_README.md",
+        "file:server/neo4j-import.js",
+        "file:server/pptService.js",
+        "file:server/routes/agent/registerAgentRoutes.js",
+        "file:server/routes/aippt/registerAipptRoutes.js",
+        "file:server/routes/graph/registerGraphRoutes.js",
+        "file:server/routes/matching/registerMatchingRoutes.js",
+        "file:server/routes/ppt/registerPptRoutes.js",
+        "file:server/server.js",
+        "file:server/services/chainSeedService.js",
+        "file:server/services/graphService.js",
+        "file:server/services/matchingAiService.js",
+        "file:server/utils/memoryRedisClient.js"
+      ]
+    },
+    {
+      "id": "layer:automation-and-imports",
+      "name": "自动化与导入",
+      "description": "用于导入、匹配、部署和检查的运维脚本及根目录工具。",
+      "nodeIds": [
+        "file:check-enterprises.js",
+        "file:check-path.js",
+        "file:check-relations.js",
+        "file:deploy.bat",
+        "file:deploy.sh",
+        "file:import-achievements.js",
+        "file:import-shipping-chain.js",
+        "file:import-tech-needs.js",
+        "file:match-tech-needs-achievements.js",
+        "file:scripts/start-server-with-redis.js",
+        "file:TrainPPTAgent/deploy.sh",
+        "config:TrainPPTAgent/frontend/.github/workflows/deploy.yml"
+      ]
+    },
+    {
+      "id": "layer:documentation-and-deployment",
+      "name": "文档与部署",
+      "description": "Markdown 指南、部署说明、Neo4j 设置和基础设施配置。",
+      "nodeIds": [
+        "document:DEPLOYMENT.md",
+        "document:Excel导入模板-关系.md",
+        "document:Excel导入模板-节点.md",
+        "document:NEO4J_SETUP.md",
+        "config:nginx.conf",
+        "document:QUICK_START.md",
+        "document:TrainPPTAgent/backend/启动说明.md",
+        "document:TrainPPTAgent/backend/main_api/README.md",
+        "document:TrainPPTAgent/backend/personaldb/README.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/17e95f63-45aa-491a-9a26-9d4587bc1051_39009782.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/31fbe6d5-b744-40df-ab38-950ea503cb43_39009782.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/912e5edf-6172-4c03-96d0-93c7cd24f2b1_39009782.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/9f220746-f282-4b83-9373-51746cf74db4_39009782.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/a8eb3950-8825-4356-8889-81688538d8ae_39009782.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/ca9c91a1-0c5b-4130-bca9-8585cf687697_39009782.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/d266ba03-a71f-4a82-8c3f-c99cf77931f5_39009782.md",
+        "document:TrainPPTAgent/backend/personaldb/temp_download/f54e9fd6-f7c4-4255-a09a-b6f612758f77_39009782.md",
+        "document:TrainPPTAgent/backend/README.md",
+        "document:TrainPPTAgent/backend/simpleOutline/README.md",
+        "document:TrainPPTAgent/backend/slide_agent/README.md",
+        "document:TrainPPTAgent/doc/API_CONTENT.md",
+        "document:TrainPPTAgent/doc/API_IMAGE.md",
+        "document:TrainPPTAgent/doc/API_OUTLINE.md",
+        "document:TrainPPTAgent/doc/API_TEMPLATE.md",
+        "document:TrainPPTAgent/doc/CHANGES.md",
+        "document:TrainPPTAgent/doc/custom_model.md",
+        "document:TrainPPTAgent/doc/DockerDeploy.md",
+        "document:TrainPPTAgent/doc/Gallery.md",
+        "document:TrainPPTAgent/doc/Image.md",
+        "document:TrainPPTAgent/doc/issue.md",
+        "document:TrainPPTAgent/doc/PPT_Structure.md",
+        "document:TrainPPTAgent/doc/prompt.md",
+        "document:TrainPPTAgent/doc/Template.md",
+        "document:TrainPPTAgent/doc/Train.md",
+        "document:TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/bug_report.md",
+        "document:TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/feature_request.md",
+        "document:TrainPPTAgent/frontend/doc/AIPPT.md",
+        "document:TrainPPTAgent/frontend/doc/Blacklist.md",
+        "document:TrainPPTAgent/frontend/doc/Canvas.md",
+        "document:TrainPPTAgent/frontend/doc/CustomElement.md",
+        "document:TrainPPTAgent/frontend/doc/DirectoryAndData.md",
+        "document:TrainPPTAgent/frontend/doc/Q&A.md",
+        "document:TrainPPTAgent/frontend/public/mocks/AIPPT_Outline.md",
+        "document:TrainPPTAgent/frontend/README.md",
+        "document:TrainPPTAgent/README_EN.md",
+        "document:TrainPPTAgent/README_PRODUCTION.md",
+        "document:TrainPPTAgent/README.md",
+        "document:TrainPPTAgent/template/README.md",
+        "document:TrainPPTAgent/utils/README.md"
+      ]
+    },
+    {
+      "id": "layer:configuration",
+      "name": "配置",
+      "description": "包配置、环境配置和应用配置文件。",
+      "nodeIds": [
+        "config:.env",
+        "config:.env.local",
+        "config:knowledge_base/feedback.json",
+        "config:knowledge_base/harness_profile.json",
+        "config:knowledge_base/learnings.json",
+        "config:knowledge_base/patterns.json",
+        "config:knowledge_base/technology_ppts.json",
+        "config:package-lock.json",
+        "config:package.json",
+        "config:TrainPPTAgent/.env",
+        "config:TrainPPTAgent/backend/main_api/.env",
+        "config:TrainPPTAgent/backend/main_api/template/__________________1.json",
+        "config:TrainPPTAgent/backend/main_api/template/template_1.json",
+        "config:TrainPPTAgent/backend/main_api/template/template_2.json",
+        "config:TrainPPTAgent/backend/main_api/template/template_3.json",
+        "config:TrainPPTAgent/backend/main_api/template/template_4.json",
+        "config:TrainPPTAgent/backend/main_api/template/template_9.json",
+        "config:TrainPPTAgent/backend/mock_api/template/knowledge-graph-fusion-nodes-json.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_1.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_2.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_3.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_4.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_5.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_6.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_7.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_8.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template_9.json",
+        "config:TrainPPTAgent/backend/mock_api/template/template.json",
+        "config:TrainPPTAgent/backend/personaldb/.env",
+        "config:TrainPPTAgent/backend/simpleOutline/.env",
+        "config:TrainPPTAgent/backend/slide_agent/.env",
+        "config:TrainPPTAgent/backend/slide_agent/pyproject.toml",
+        "config:TrainPPTAgent/docker-compose-hostnetwork.yml",
+        "config:TrainPPTAgent/docker-compose.yml",
+        "config:TrainPPTAgent/frontend/.vscode/extensions.json",
+        "config:TrainPPTAgent/frontend/nginx.conf",
+        "config:TrainPPTAgent/frontend/package-lock.json",
+        "config:TrainPPTAgent/frontend/package.json",
+        "config:TrainPPTAgent/frontend/public/mocks/AIPPT.json",
+        "config:TrainPPTAgent/frontend/public/mocks/imgs.json",
+        "config:TrainPPTAgent/frontend/public/mocks/slides.json",
+        "config:TrainPPTAgent/frontend/public/mocks/template_1.json",
+        "config:TrainPPTAgent/frontend/tsconfig.app.json",
+        "config:TrainPPTAgent/frontend/tsconfig.json",
+        "config:TrainPPTAgent/frontend/tsconfig.node.json",
+        "config:TrainPPTAgent/template/标注过后的pptx.json",
+        "config:TrainPPTAgent/template/未标注pptx.json",
+        "config:TrainPPTAgent/template/ai_template_pptx.json"
+      ]
+    },
+    {
+      "id": "layer:other-project-files",
+      "name": "其他项目文件",
+      "description": "未归入主要层级的其余源文件和支撑文件。",
+      "nodeIds": [
+        "file:TrainPPTAgent/backend/main_api/Dockerfile",
+        "file:TrainPPTAgent/backend/personaldb/Dockerfile",
+        "file:TrainPPTAgent/backend/simpleOutline/Dockerfile",
+        "file:TrainPPTAgent/backend/slide_agent/Dockerfile",
+        "file:TrainPPTAgent/frontend/.eslintrc.cjs",
+        "file:TrainPPTAgent/frontend/commitlint.config.cjs",
+        "file:TrainPPTAgent/frontend/Dockerfile",
+        "file:TrainPPTAgent/frontend/env.d.ts",
+        "file:TrainPPTAgent/frontend/index.html",
+        "file:TrainPPTAgent/frontend/src/assets/styles/font.scss",
+        "file:TrainPPTAgent/frontend/src/assets/styles/global.scss",
+        "file:TrainPPTAgent/frontend/src/assets/styles/mixin.scss",
+        "file:TrainPPTAgent/frontend/src/assets/styles/prosemirror.scss",
+        "file:TrainPPTAgent/frontend/src/assets/styles/variable.scss",
+        "file:TrainPPTAgent/frontend/src/components.d.ts",
+        "file:TrainPPTAgent/frontend/src/components/Contextmenu/types.ts",
+        "file:TrainPPTAgent/frontend/src/components/LaTeXEditor/hfmath.ts",
+        "file:TrainPPTAgent/frontend/src/configs/animation.ts",
+        "file:TrainPPTAgent/frontend/src/configs/chart.ts",
+        "file:TrainPPTAgent/frontend/src/configs/element.ts",
+        "file:TrainPPTAgent/frontend/src/configs/font.ts",
+        "file:TrainPPTAgent/frontend/src/configs/hotkey.ts",
+        "file:TrainPPTAgent/frontend/src/configs/imageClip.ts",
+        "file:TrainPPTAgent/frontend/src/configs/latex.ts",
+        "file:TrainPPTAgent/frontend/src/configs/lines.ts",
+        "file:TrainPPTAgent/frontend/src/configs/shapes.ts",
+        "file:TrainPPTAgent/frontend/src/configs/storage.ts",
+        "file:TrainPPTAgent/frontend/src/configs/symbol.ts",
+        "file:TrainPPTAgent/frontend/src/configs/theme.ts",
+        "file:TrainPPTAgent/frontend/src/global.d.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useAddSlidesOrElements.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useAIPPT.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useAlignActiveElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useAlignElementToCanvas.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useCombineElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useCreateElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useExport.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useHideElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useImport.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useLink.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useLoadSlides.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useLockElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useMoveElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useOrderElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/usePasteEvent.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/usePasteTextClipboardData.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useScaleCanvas.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useScreening.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useSearch.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useSectionHandler.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useSelectElement.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useShapeFormatPainter.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useSlideBackgroundStyle.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useSlideTheme.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useTextFormatPainter.ts",
+        "file:TrainPPTAgent/frontend/src/hooks/useUniformDisplayElement.ts",
+        "file:TrainPPTAgent/frontend/src/main.ts",
+        "file:TrainPPTAgent/frontend/src/plugins/directive/clickOutside.ts",
+        "file:TrainPPTAgent/frontend/src/plugins/directive/contextmenu.ts",
+        "file:TrainPPTAgent/frontend/src/plugins/directive/index.ts",
+        "file:TrainPPTAgent/frontend/src/plugins/directive/tooltip.scss",
+        "file:TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts",
+        "file:TrainPPTAgent/frontend/src/plugins/icon.ts",
+        "file:TrainPPTAgent/frontend/src/router/index.ts",
+        "file:TrainPPTAgent/frontend/src/services/config.ts",
+        "file:TrainPPTAgent/frontend/src/services/index.ts",
+        "file:TrainPPTAgent/frontend/src/store/index.ts",
+        "file:TrainPPTAgent/frontend/src/store/keyboard.ts",
+        "file:TrainPPTAgent/frontend/src/store/main.ts",
+        "file:TrainPPTAgent/frontend/src/store/screen.ts",
+        "file:TrainPPTAgent/frontend/src/store/slides.ts",
+        "file:TrainPPTAgent/frontend/src/store/snapshot.ts",
+        "file:TrainPPTAgent/frontend/src/types/AIPPT.ts",
+        "file:TrainPPTAgent/frontend/src/types/edit.ts",
+        "file:TrainPPTAgent/frontend/src/types/export.ts",
+        "file:TrainPPTAgent/frontend/src/types/injectKey.ts",
+        "file:TrainPPTAgent/frontend/src/types/mobile.ts",
+        "file:TrainPPTAgent/frontend/src/types/slides.ts",
+        "file:TrainPPTAgent/frontend/src/types/toolbar.ts",
+        "file:TrainPPTAgent/frontend/src/utils/clipboard.ts",
+        "file:TrainPPTAgent/frontend/src/utils/common.ts",
+        "file:TrainPPTAgent/frontend/src/utils/crypto.ts",
+        "file:TrainPPTAgent/frontend/src/utils/database.ts",
+        "file:TrainPPTAgent/frontend/src/utils/element.ts",
+        "file:TrainPPTAgent/frontend/src/utils/emitter.ts",
+        "file:TrainPPTAgent/frontend/src/utils/fullscreen.ts",
+        "file:TrainPPTAgent/frontend/src/utils/htmlParser/format.ts",
+        "file:TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+        "file:TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+        "file:TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+        "file:TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts",
+        "file:TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts",
+        "file:TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+        "file:TrainPPTAgent/frontend/src/utils/image.ts",
+        "file:TrainPPTAgent/frontend/src/utils/message.ts",
+        "file:TrainPPTAgent/frontend/src/utils/print.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/replaceText.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setListStyle.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextAlign.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextIndent.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/commands/toggleList.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/index.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/inputrules.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/keymap.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/plugins/placeholder.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/marks.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/schema/nodes.ts",
+        "file:TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts",
+        "file:TrainPPTAgent/frontend/src/utils/selection.ts",
+        "file:TrainPPTAgent/frontend/src/utils/svg2Base64.ts",
+        "file:TrainPPTAgent/frontend/src/utils/svgPathParser.ts",
+        "file:TrainPPTAgent/frontend/src/utils/textParser.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/ChartElement/chartOption.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFill.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFlip.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementOutline.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/hooks/useElementShadow.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/ImageElement/useClipImage.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/ImageElement/useFilter.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/TableElement/useHideCells.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/TableElement/useSubThemeColor.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/TableElement/utils.ts",
+        "file:TrainPPTAgent/frontend/src/views/components/element/VideoElement/VideoPlayer/useMSE.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useCommonOperate.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragElement.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragLineElement.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDropImageOrText.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMouseSelection.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useRotateElement.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useScaleElement.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useSelectElement.ts",
+        "file:TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useViewportSize.ts",
+        "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useExecPlay.ts",
+        "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useFullscreen.ts",
+        "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useSlideSize.ts",
+        "file:TrainPPTAgent/frontend/src/views/Screen/hooks/useSlidesWithTurningMode.ts",
+        "file:TrainPPTAgent/frontend/vite.config.ts"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "项目清单与目标",
+      "description": "从 package.json 和快速开始文档入手，理解应用形态、脚本和依赖。",
+      "nodeIds": [
+        "config:package.json",
+        "document:QUICK_START.md",
+        "document:DEPLOYMENT.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "前端入口",
+      "description": "查看 Vite 入口和 React 源码区域，了解浏览器端应用如何组装。",
+      "nodeIds": [
+        "file:index.html",
+        "file:vite.config.js",
+        "file:src/main.jsx",
+        "file:src/App.jsx"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "后端与数据服务",
+      "description": "阅读服务端层和导入流程，理解 API 行为、数据加载和图谱持久化。",
+      "nodeIds": [
+        "file:server/agentEngine.js",
+        "file:server/agentTools.js",
+        "file:server/bootstrap/createApp.js",
+        "file:server/bootstrap/createServerContext.js",
+        "file:server/check-database.js",
+        "file:server/config.example.js",
+        "file:server/config.js",
+        "file:server/harness/langChainTechAgentHarness.js"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "自动化与部署",
+      "description": "沿着运维脚本、部署文件和设置指南，理解本地运行和生产部署支撑。",
+      "nodeIds": [
+        "file:scripts/start-server-with-redis.js",
+        "file:deploy.sh",
+        "file:deploy.bat",
+        "config:nginx.conf",
+        "document:NEO4J_SETUP.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# .understandignore - patterns for files/dirs to exclude from analysis
+node_modules/
+.git/
+dist/
+logs/
+uploads/
+.understand-anything/tmp/
+*.lock
+package-lock.json
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.pptx
+*.zip
+*.tar
+*.gz
+*.rdb
+*.log

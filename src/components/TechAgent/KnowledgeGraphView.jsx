@@ -19,8 +19,7 @@ function KnowledgeGraphView({ onClose }) {
   const [focusedNode, setFocusedNode] = useState(null)
   const [hasChainGraph, setHasChainGraph] = useState(false)
   const [exportingChainPPT, setExportingChainPPT] = useState(false)
-  const [chainPPTProgress, setChainPPTProgress] = useState(0)
-  const [chainPPTStatus, setChainPPTStatus] = useState('')
+  const [techMatchingProgress, setTechMatchingProgress] = useState('')
   const cyRef = useRef(null)
   const cyInstanceRef = useRef(null)
 
@@ -36,31 +35,24 @@ function KnowledgeGraphView({ onClose }) {
   }, [graphData])
 
   const handleGenerateIntegratedGraph = async () => {
-    console.log('handleGenerateIntegratedGraph 被调用')
-    console.log('enterpriseName:', enterpriseName)
-    console.log('loading:', loading)
-    
     if (!enterpriseName.trim()) {
       setError('请输入企业名称')
       return
     }
 
     try {
-      console.log('开始生成融合图谱...')
       setLoading(true)
       setError(null)
-      setViewMode('chain')
+      setViewMode('fusion')
       setFocusedNode(null)
+      setTechMatchingProgress('正在获取产业链数据...')
 
-      console.log('调用API获取融合图谱数据...')
-      const data = await api.getIntegratedGraph(enterpriseName)
-      console.log('API返回数据:', data)
+      const data = await api.getFusionChainTech(enterpriseName)
       
       setGraphData(data)
       setEnterprise(data.enterprise)
       setHasChainGraph(true)
-
-      console.log('数据已设置，等待useEffect渲染...')
+      setTechMatchingProgress('')
       setLoading(false)
     } catch (err) {
       console.error('生成融合图谱失败:', err)
@@ -72,6 +64,7 @@ function KnowledgeGraphView({ onClose }) {
         setError(err.message || '生成融合图谱失败，请检查企业名称是否正确')
       }
       setLoading(false)
+      setTechMatchingProgress('')
     }
   }
 
@@ -99,13 +92,23 @@ function KnowledgeGraphView({ onClose }) {
     }
   }
 
-  const handleBackToChain = () => {
-    console.log('返回产业链图谱')
+  const handleBackToChain = async () => {
     setViewMode('chain')
     setFocusedNode(null)
     
     if (enterprise) {
-      handleGenerateIntegratedGraph()
+      try {
+        setLoading(true)
+        setError(null)
+        const data = await api.getIntegratedGraph(enterprise.label || enterpriseName)
+        setGraphData(data)
+        setEnterprise(data.enterprise)
+        setLoading(false)
+      } catch (err) {
+        console.error('返回产业链图谱失败:', err)
+        setError(err.message || '获取产业链图谱失败')
+        setLoading(false)
+      }
     }
   }
 
@@ -187,8 +190,7 @@ function KnowledgeGraphView({ onClose }) {
               'text-outline-color': '#52c41a',
               'width': '80px',
               'height': '80px',
-              'font-size': '14px',
-              'font-weight': 'bold'
+              'font-size': '14px'
             }
           },
           {
@@ -253,23 +255,35 @@ function KnowledgeGraphView({ onClose }) {
             style: {
               'background-color': '#1890ff',
               'border-color': '#40a9ff',
-              'text-outline-color': '#1890ff'
+              'text-outline-color': '#1890ff',
+              'width': '50px',
+              'height': '50px',
+              'font-size': '10px',
+              'shape': 'diamond'
             }
           },
           {
             selector: 'node[type="Paper"]',
             style: {
-              'background-color': '#1890ff',
-              'border-color': '#40a9ff',
-              'text-outline-color': '#1890ff'
+              'background-color': '#4ecdc4',
+              'border-color': '#7eddd6',
+              'text-outline-color': '#4ecdc4',
+              'width': '50px',
+              'height': '50px',
+              'font-size': '10px',
+              'shape': 'diamond'
             }
           },
           {
             selector: 'node[type="Project"]',
             style: {
-              'background-color': '#1890ff',
-              'border-color': '#40a9ff',
-              'text-outline-color': '#1890ff'
+              'background-color': '#f39c12',
+              'border-color': '#f5b041',
+              'text-outline-color': '#f39c12',
+              'width': '50px',
+              'height': '50px',
+              'font-size': '10px',
+              'shape': 'diamond'
             }
           },
           {
@@ -281,7 +295,10 @@ function KnowledgeGraphView({ onClose }) {
               'border-width': '3px',
               'width': '70px',
               'height': '70px',
-              'font-size': '13px'
+              'font-size': '13px',
+              'shape': 'round-rectangle',
+              'text-wrap': 'wrap',
+              'text-max-width': '80px'
             }
           },
           {
@@ -304,9 +321,7 @@ function KnowledgeGraphView({ onClose }) {
               'font-size': '10px',
               'text-rotation': 'autorotate',
               'text-margin-y': -10,
-              'text-background-color': '#ffffff',
-              'text-background-opacity': 0.8,
-              'text-background-padding': '3px'
+              'color': '#fff'
             }
           },
           {
@@ -324,6 +339,29 @@ function KnowledgeGraphView({ onClose }) {
               'width': 3,
               'line-color': '#ff4757',
               'target-arrow-color': '#ff4757'
+            }
+          },
+          {
+            selector: '.circle-guide',
+            style: {
+              'background-color': 'transparent',
+              'border-width': 0,
+              'width': 1,
+              'height': 1,
+              'label': '',
+              'opacity': 0
+            }
+          },
+          {
+            selector: 'edge.circle-guide',
+            style: {
+              'width': 1,
+              'line-color': '#d9d9d9',
+              'line-style': 'dashed',
+              'opacity': 0.5,
+              'source-arrow-shape': 'none',
+              'target-arrow-shape': 'none',
+              'curve-style': 'bezier'
             }
           }
         ],
@@ -367,12 +405,129 @@ function KnowledgeGraphView({ onClose }) {
         cy.fit(undefined, 50)
       }
 
+      const applyFusionLayout = () => {
+        const chainTypes = ['Enterprise', 'Vessel', 'Port', 'Cargo', 'Route']
+        const techTypes = ['Patent', 'Paper', 'Project']
+
+        const chainNodes = cy.nodes().filter(node => chainTypes.includes(node.data('type')))
+        const techNodes = cy.nodes().filter(node => techTypes.includes(node.data('type')))
+
+        const centerX = 0
+        const centerY = 0
+
+        // 企业节点放中心
+        const enterpriseNode = cy.nodes('[type="Enterprise"]')
+        if (enterpriseNode.length > 0) {
+          enterpriseNode.position({ x: centerX, y: centerY })
+        }
+
+        // 内圈：产业链节点（非企业中心）
+        const innerChainNodes = chainNodes.filter(node => node.data('type') !== 'Enterprise')
+        const innerRadius = 250
+
+        innerChainNodes.forEach((node, index) => {
+          const angle = (index / innerChainNodes.length) * 2 * Math.PI - Math.PI / 2
+          const x = centerX + innerRadius * Math.cos(angle)
+          const y = centerY + innerRadius * Math.sin(angle)
+          node.position({ x, y })
+        })
+
+        // 外圈：技术节点按所属产业链节点分组分布
+        const outerRadius = 500
+
+        if (techNodes.length > 0) {
+          const groups = {}
+          const ungrouped = []
+
+          techNodes.forEach(node => {
+            // 通过"技术匹配"边找到连接的产业链节点
+            const matchEdges = node.connectedEdges().filter(e => e.data('label') === '技术匹配')
+            if (matchEdges.length > 0) {
+              const chainNeighbor = matchEdges[0].source().data('type') !== 'Patent' && matchEdges[0].source().data('type') !== 'Paper' && matchEdges[0].source().data('type') !== 'Project'
+                ? matchEdges[0].source()
+                : matchEdges[0].target()
+              const parentLabel = chainNeighbor.data('label')
+              if (!groups[parentLabel]) groups[parentLabel] = []
+              groups[parentLabel].push(node)
+            } else {
+              ungrouped.push(node)
+            }
+          })
+
+          const chainLabels = innerChainNodes.map(n => n.data('label'))
+
+          Object.keys(groups).forEach(parentLabel => {
+            const group = groups[parentLabel]
+            const parentIndex = chainLabels.indexOf(parentLabel)
+            if (parentIndex === -1) return
+
+            const parentAngle = (parentIndex / innerChainNodes.length) * 2 * Math.PI - Math.PI / 2
+            const arcSpan = (2 * Math.PI / innerChainNodes.length) * 0.8
+            const startAngle = parentAngle - arcSpan / 2
+
+            group.forEach((node, idx) => {
+              const angle = group.length === 1
+                ? parentAngle
+                : startAngle + (idx / (group.length - 1)) * arcSpan
+              const x = centerX + outerRadius * Math.cos(angle)
+              const y = centerY + outerRadius * Math.sin(angle)
+              node.position({ x, y })
+            })
+          })
+
+          if (ungrouped.length > 0) {
+            ungrouped.forEach((node, index) => {
+              const angle = (index / ungrouped.length) * 2 * Math.PI - Math.PI / 2
+              const x = centerX + outerRadius * Math.cos(angle)
+              const y = centerY + outerRadius * Math.sin(angle)
+              node.position({ x, y })
+            })
+          }
+        }
+
+        // 添加圈层辅助线
+        cy.startBatch()
+        cy.remove('.circle-guide')
+
+        const createCirclePoints = (cx, cy, radius, segments) => {
+          const points = []
+          for (let i = 0; i <= segments; i++) {
+            const angle = (i / segments) * 2 * Math.PI
+            points.push({ x: cx + radius * Math.cos(angle), y: cy + radius * Math.sin(angle) })
+          }
+          return points
+        }
+
+        const addCircleGuide = (prefix, points) => {
+          for (let i = 0; i < points.length - 1; i++) {
+            const srcId = `__${prefix}_${i}`
+            const tgtId = `__${prefix}_${i + 1}`
+            if (!cy.getElementById(srcId).length) {
+              cy.add({ group: 'nodes', data: { id: srcId, label: '' }, position: points[i], classes: ['circle-guide'] })
+            }
+            if (!cy.getElementById(tgtId).length) {
+              cy.add({ group: 'nodes', data: { id: tgtId, label: '' }, position: points[i + 1], classes: ['circle-guide'] })
+            }
+            cy.add({ group: 'edges', data: { id: `${prefix}-e-${i}`, source: srcId, target: tgtId }, classes: ['circle-guide'] })
+          }
+        }
+
+        addCircleGuide('fusion_inner', createCirclePoints(centerX, centerY, innerRadius, 64))
+        addCircleGuide('fusion_outer', createCirclePoints(centerX, centerY, outerRadius, 64))
+        cy.endBatch()
+
+        cy.fit(undefined, 50)
+      }
+
       const applyTechNeedsLayout = () => {
         const enterpriseNode = cy.nodes('[type="Enterprise"]')
         const techNeedNodes = cy.nodes('[type="technical requirements"]')
-        const achievementNodes = cy.nodes('[type="Patent"]')
+        const achievementNodes = cy.nodes().filter(node => {
+          const type = node.data('type')
+          return ['Patent', 'Paper', 'Project'].includes(type)
+        })
 
-        if (enterpriseNode.length === 0) {
+        if (enterpriseNode.length === 0 && techNeedNodes.length === 0) {
           cy.layout({
             name: 'cose',
             animate: true,
@@ -385,26 +540,154 @@ function KnowledgeGraphView({ onClose }) {
 
         const centerX = 0
         const centerY = 0
-        const enterpriseRadius = 0
 
-        enterpriseNode.position({ x: centerX, y: centerY })
+        // 企业节点放中心
+        if (enterpriseNode.length > 0) {
+          enterpriseNode.position({ x: centerX, y: centerY })
+        }
 
-        const techNeedRadius = 250
-        const achievementRadius = 450
+        // 内圈：技术类型节点（技术需求）
+        const innerRadius = 220
+        // 外圈：详细技术节点（专利/论文/项目）
+        const outerRadius = 450
 
+        // 内圈：技术需求节点均匀围成一圈
         techNeedNodes.forEach((node, index) => {
-          const angle = (index / techNeedNodes.length) * 2 * Math.PI
-          const x = centerX + techNeedRadius * Math.cos(angle)
-          const y = centerY + techNeedRadius * Math.sin(angle)
+          const angle = (index / techNeedNodes.length) * 2 * Math.PI - Math.PI / 2
+          const x = centerX + innerRadius * Math.cos(angle)
+          const y = centerY + innerRadius * Math.sin(angle)
           node.position({ x, y })
         })
 
-        achievementNodes.forEach((node, index) => {
-          const angle = (index / achievementNodes.length) * 2 * Math.PI
-          const x = centerX + achievementRadius * Math.cos(angle)
-          const y = centerY + achievementRadius * Math.sin(angle)
-          node.position({ x, y })
-        })
+        // 外圈：详细技术节点按所属技术需求分组，围绕对应内圈节点分布
+        if (achievementNodes.length > 0) {
+          // 先按连接的技术需求分组
+          const groups = {}
+          const ungrouped = []
+
+          achievementNodes.forEach(node => {
+            const neighbors = node.connectedEdges().connectedNodes('[type="technical requirements"]')
+            if (neighbors.length > 0) {
+              const parentLabel = neighbors[0].data('label')
+              if (!groups[parentLabel]) groups[parentLabel] = []
+              groups[parentLabel].push(node)
+            } else {
+              ungrouped.push(node)
+            }
+          })
+
+          // 对每个分组，围绕其对应的内圈节点在外圈弧段上分布
+          const techNeedLabels = techNeedNodes.map(n => n.data('label'))
+
+          Object.keys(groups).forEach(parentLabel => {
+            const group = groups[parentLabel]
+            const parentIndex = techNeedLabels.indexOf(parentLabel)
+            if (parentIndex === -1) return
+
+            // 计算该内圈节点的角度
+            const parentAngle = (parentIndex / techNeedNodes.length) * 2 * Math.PI - Math.PI / 2
+
+            // 在外圈对应弧段上均匀分布
+            const arcSpan = (2 * Math.PI / techNeedNodes.length) * 0.8 // 占该扇区的80%
+            const startAngle = parentAngle - arcSpan / 2
+
+            group.forEach((node, idx) => {
+              const angle = group.length === 1
+                ? parentAngle
+                : startAngle + (idx / (group.length - 1)) * arcSpan
+              const x = centerX + outerRadius * Math.cos(angle)
+              const y = centerY + outerRadius * Math.sin(angle)
+              node.position({ x, y })
+            })
+          })
+
+          // 未分组的节点均匀分布在外圈
+          if (ungrouped.length > 0) {
+            ungrouped.forEach((node, index) => {
+              const angle = (index / ungrouped.length) * 2 * Math.PI - Math.PI / 2
+              const x = centerX + outerRadius * Math.cos(angle)
+              const y = centerY + outerRadius * Math.sin(angle)
+              node.position({ x, y })
+            })
+          }
+        }
+
+        // 添加圈层辅助线（内圈和外圈虚线圆）
+        cy.startBatch()
+        // 移除旧的辅助线
+        cy.remove('.circle-guide')
+
+        const createCirclePoints = (cx, cy, radius, segments) => {
+          const points = []
+          for (let i = 0; i <= segments; i++) {
+            const angle = (i / segments) * 2 * Math.PI
+            points.push({ x: cx + radius * Math.cos(angle), y: cy + radius * Math.sin(angle) })
+          }
+          return points
+        }
+
+        // 内圈辅助线
+        const innerPoints = createCirclePoints(centerX, centerY, innerRadius, 64)
+        for (let i = 0; i < innerPoints.length - 1; i++) {
+          cy.add({
+            group: 'edges',
+            data: {
+              id: `inner-circle-${i}`,
+              source: `__circle_inner_${i}`,
+              target: `__circle_inner_${i + 1}`,
+              isCircleGuide: true
+            },
+            classes: ['circle-guide']
+          })
+          if (!cy.getElementById(`__circle_inner_${i}`).length) {
+            cy.add({
+              group: 'nodes',
+              data: { id: `__circle_inner_${i}`, label: '' },
+              position: innerPoints[i],
+              classes: ['circle-guide']
+            })
+          }
+          if (!cy.getElementById(`__circle_inner_${i + 1}`).length) {
+            cy.add({
+              group: 'nodes',
+              data: { id: `__circle_inner_${i + 1}`, label: '' },
+              position: innerPoints[i + 1],
+              classes: ['circle-guide']
+            })
+          }
+        }
+
+        // 外圈辅助线
+        const outerPoints = createCirclePoints(centerX, centerY, outerRadius, 64)
+        for (let i = 0; i < outerPoints.length - 1; i++) {
+          cy.add({
+            group: 'edges',
+            data: {
+              id: `outer-circle-${i}`,
+              source: `__circle_outer_${i}`,
+              target: `__circle_outer_${i + 1}`,
+              isCircleGuide: true
+            },
+            classes: ['circle-guide']
+          })
+          if (!cy.getElementById(`__circle_outer_${i}`).length) {
+            cy.add({
+              group: 'nodes',
+              data: { id: `__circle_outer_${i}`, label: '' },
+              position: outerPoints[i],
+              classes: ['circle-guide']
+            })
+          }
+          if (!cy.getElementById(`__circle_outer_${i + 1}`).length) {
+            cy.add({
+              group: 'nodes',
+              data: { id: `__circle_outer_${i + 1}`, label: '' },
+              position: outerPoints[i + 1],
+              classes: ['circle-guide']
+            })
+          }
+        }
+        cy.endBatch()
 
         cy.fit(undefined, 50)
       }
@@ -413,6 +696,8 @@ function KnowledgeGraphView({ onClose }) {
       setTimeout(() => {
         if (currentViewMode === 'tech-needs') {
           applyTechNeedsLayout()
+        } else if (currentViewMode === 'fusion') {
+          applyFusionLayout()
         } else {
           applyHierarchicalLayout()
         }
@@ -420,6 +705,8 @@ function KnowledgeGraphView({ onClose }) {
 
       cy.on('tap', 'node', (evt) => {
         const node = evt.target
+        // 忽略辅助线节点的点击
+        if (node.hasClass('circle-guide')) return
         const nodeData = node.data()
         
         if (viewMode === 'chain') {
@@ -534,85 +821,18 @@ function KnowledgeGraphView({ onClose }) {
 
     try {
       setExportingChainPPT(true)
-      setChainPPTProgress(0)
-      setChainPPTStatus('正在查询产业链企业...')
       console.log('开始导出产业链PPT，企业:', enterprise.label)
-
-      setChainPPTProgress(10)
-      setChainPPTStatus('正在匹配技术成果...')
-      
       const data = await api.exportChainPPT(enterprise.label)
       console.log('导出API返回:', data)
       
-      setChainPPTProgress(70)
-      setChainPPTStatus('正在生成PPT文件...')
-      
       if (data.success) {
-        const pptUrl = data.data?.ppt_url || data.filePath
-        const fileName = data.data?.file_name || data.fileName || `${enterprise.label}_产业链汇报PPT.pptx`
-        
-        setChainPPTProgress(85)
-        setChainPPTStatus('正在下载PPT文件...')
-        
-        if (pptUrl) {
-          const fullUrl = `http://localhost:3002${pptUrl}`
-          
-          try {
-            const response = await fetch(fullUrl)
-            if (!response.ok) throw new Error('下载失败')
-            
-            const contentLength = response.headers.get('content-length')
-            const total = contentLength ? parseInt(contentLength, 10) : 0
-            let loaded = 0
-            
-            const reader = response.body.getReader()
-            const chunks = []
-            
-            while (true) {
-              const { done, value } = await reader.read()
-              if (done) break
-              
-              chunks.push(value)
-              loaded += value.length
-              
-              if (total > 0) {
-                const downloadProgress = Math.round((loaded / total) * 15)
-                setChainPPTProgress(85 + downloadProgress)
-                setChainPPTStatus(`正在下载PPT文件... ${Math.round((loaded / total) * 100)}%`)
-              } else {
-                setChainPPTProgress(90)
-                setChainPPTStatus('正在下载PPT文件...')
-              }
-            }
-            
-            const blob = new Blob(chunks, { 
-              type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
-            })
-            const blobUrl = URL.createObjectURL(blob)
-            
-            setChainPPTProgress(100)
-            setChainPPTStatus('PPT生成完成！')
-            
-            window.open(blobUrl, '_blank')
-            
-            const link = document.createElement('a')
-            link.href = blobUrl
-            link.download = fileName
-            document.body.appendChild(link)
-            link.click()
-            document.body.removeChild(link)
-            
-            setTimeout(() => URL.revokeObjectURL(blobUrl), 60000)
-            console.log('PPT下载成功:', fileName)
-          } catch (downloadError) {
-            console.error('下载PPT失败，尝试直接打开:', downloadError)
-            window.open(fullUrl, '_blank')
-            setChainPPTProgress(100)
-            setChainPPTStatus('PPT已生成！')
-          }
-        } else {
-          alert('PPT生成成功但未获取到下载地址')
-        }
+        const link = document.createElement('a')
+        link.href = data.data.ppt_url
+        link.download = `${enterprise.label}_产业链汇报PPT.pptx`
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+        console.log('PPT下载成功')
       } else {
         console.error('导出失败:', data.error)
         alert('导出产业链PPT失败：' + (data.error || '未知错误'))
@@ -621,11 +841,7 @@ function KnowledgeGraphView({ onClose }) {
       console.error('导出产业链PPT失败:', error)
       alert('导出产业链PPT失败：' + error.message)
     } finally {
-      setTimeout(() => {
-        setExportingChainPPT(false)
-        setChainPPTProgress(0)
-        setChainPPTStatus('')
-      }, 2000)
+      setExportingChainPPT(false)
     }
   }
 
@@ -646,11 +862,12 @@ function KnowledgeGraphView({ onClose }) {
       </div>
 
       <div className="kg-toolbar">
-        {viewMode === 'chain' ? (
+        {viewMode === 'chain' || viewMode === 'fusion' ? (
           <div className="kg-integrated-mode">
             <div className="kg-integrated-info">
               <span className="enterprise-label">当前企业：</span>
               <span className="enterprise-name">{enterprise?.label || enterpriseName}</span>
+              {viewMode === 'fusion' && <span className="fusion-badge">融合模式</span>}
             </div>
             <div className="kg-enterprise-input">
               <input
@@ -670,21 +887,14 @@ function KnowledgeGraphView({ onClose }) {
                 onClick={handleGenerateIntegratedGraph}
                 disabled={loading}
               >
-                生成产业链图谱
+                {viewMode === 'fusion' ? '重新生成融合图谱' : '生成产业链图谱'}
               </button>
               <button 
                 className="btn btn-success" 
                 onClick={handleExportChainPPT}
                 disabled={!hasChainGraph || exportingChainPPT}
               >
-                {exportingChainPPT ? (
-                  <span className="chain-ppt-progress-wrapper">
-                    <span className="chain-ppt-progress-text">{chainPPTStatus || '生成中...'}</span>
-                    <span className="chain-ppt-progress-bar">
-                      <span className="chain-ppt-progress-fill" style={{ width: `${chainPPTProgress}%` }}></span>
-                    </span>
-                  </span>
-                ) : '生成产业链汇总PPT'}
+                {exportingChainPPT ? '生成中...' : '生成产业链汇总PPT'}
               </button>
             </div>
           </div>
@@ -712,7 +922,7 @@ function KnowledgeGraphView({ onClose }) {
           {loading ? (
             <div className="kg-loading">
               <div className="spinner"></div>
-              <p>正在加载知识图谱...</p>
+              <p>{techMatchingProgress || '正在加载知识图谱...'}</p>
             </div>
           ) : error ? (
             <div className="kg-error">
@@ -772,12 +982,12 @@ function KnowledgeGraphView({ onClose }) {
             <div className="kg-node-details card">
               <h4>节点详情</h4>
               <div className="node-detail-item">
-                <span className="detail-label">名称：</span>
-                <span className="detail-value">{selectedNode.label}</span>
+                <span className="detail-label">节点类型：</span>
+                <span className="detail-value">{selectedNode.type}</span>
               </div>
               <div className="node-detail-item">
-                <span className="detail-label">类型：</span>
-                <span className="detail-value">{selectedNode.type}</span>
+                <span className="detail-label">节点名称：</span>
+                <span className="detail-value">{selectedNode.label}</span>
               </div>
               <div className="node-detail-item">
                 <span className="detail-label">分类：</span>

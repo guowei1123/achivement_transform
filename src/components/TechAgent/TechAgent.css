@@ -10,15 +10,12 @@
 .ta-header h2 {
   font-size: 28px;
   margin-bottom: 8px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
 }
 
 .ta-header p {
-  color: #666;
-  font-size: 14px;
+  display: none;
 }
 
 .ta-content {
@@ -32,9 +29,10 @@
 
 .ta-chat-area {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  gap: 0;
   width: 100%;
+  position: relative;
 }
 
 .ta-chat {
@@ -272,12 +270,18 @@
 }
 
 .ta-input-area {
-  padding: 24px;
+  padding: 16px 20px;
   border-top: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
   background: #fafafa;
+}
+
+.chat-input-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
 }
 
 .input-actions {
@@ -286,11 +290,14 @@
 }
 
 .ta-input-area .textarea {
+  flex: 1;
+  min-height: 44px;
+  max-height: 88px;
   resize: none;
   font-family: inherit;
   font-size: 15px;
   line-height: 1.6;
-  padding: 16px;
+  padding: 10px 14px;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   transition: border-color 0.3s ease;
@@ -303,9 +310,10 @@
 
 .input-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .task-buttons {
@@ -354,8 +362,9 @@
 }
 
 .send-btn {
-  height: 40px;
-  padding: 0 24px;
+  height: 44px;
+  min-width: 88px;
+  padding: 0 20px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
@@ -382,6 +391,10 @@
   .ta-chat {
     height: 600px;
   }
+
+  .history-sidebar {
+    height: 600px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -390,6 +403,10 @@
   }
 
   .ta-chat {
+    height: 500px;
+  }
+
+  .history-sidebar {
     height: 500px;
   }
 
@@ -1196,4 +1213,645 @@
   .kg-search .input {
     min-width: 100%;
   }
+}
+
+.workflow-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 0 auto 24px;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #f0f2f5;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.workflow-step.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.workflow-step.completed {
+  background: #10b981;
+  color: white;
+}
+
+.workflow-step .step-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.workflow-step.pending .step-number {
+  background: #ddd;
+  color: #888;
+}
+
+.workflow-step .step-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.workflow-step .step-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.workflow-step .step-detail {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.workflow-connector {
+  width: 32px;
+  height: 2px;
+  background: #d0d5dd;
+  flex-shrink: 0;
+}
+
+.workflow-step.active + .workflow-connector,
+.workflow-step.completed + .workflow-connector {
+  background: linear-gradient(90deg, #667eea, #d0d5dd);
+}
+
+.ppt-action-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f0f5ff 0%, #e8eeff 100%);
+  border: 1px solid #d6e4ff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  animation: fadeIn 0.3s ease;
+}
+
+.ppt-action-bar.ppt-downloaded {
+  background: linear-gradient(135deg, #f0fff4 0%, #e6ffed 100%);
+  border-color: #b7eb8f;
+}
+
+.ppt-generate-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.ppt-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #10b981;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ppt-download-btn:hover {
+  background: #059669;
+  color: white;
+}
+
+.ppt-regenerate-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.ppt-action-hint {
+  font-size: 13px;
+  color: #667eea;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  font-size: 13px;
+  color: #888;
+  margin-left: 8px;
+}
+
+.quick-questions-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.quick-q-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.quick-q-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background: #f8f9ff;
+}
+
+.agent-trace {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f8f9ff;
+  border-radius: 8px;
+  border: 1px solid #e8eeff;
+}
+
+.trace-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 8px;
+}
+
+.trace-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.trace-iteration {
+  font-weight: 600;
+  color: #999;
+  min-width: 20px;
+}
+
+.trace-tool {
+  padding: 2px 8px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #d6e4ff;
+  color: #667eea;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.trace-status {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.trace-status.success {
+  color: #52c41a;
+}
+
+.trace-status.fail {
+  color: #ff4d4f;
+}
+
+.agent-trace-summary {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #f0f5ff 0%, #eef2ff 100%);
+  border-top: 1px solid #e8eeff;
+}
+
+.trace-summary-toggle {
+  font-size: 12px;
+  color: #667eea;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.trace-close {
+  margin-left: auto;
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.trace-close:hover {
+  color: #ff4d4f;
+}
+
+.knowledge-sidebar {
+  width: 320px;
+  background: white;
+  border-left: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.05);
+  animation: slideInRight 0.3s ease;
+  flex-shrink: 0;
+}
+
+.knowledge-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafbfc;
+}
+
+.knowledge-sidebar-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.knowledge-sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.knowledge-empty {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.knowledge-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 12px 8px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 100%);
+  border-radius: 8px;
+  border: 1px solid #e8eeff;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #667eea;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.knowledge-section {
+  margin-bottom: 20px;
+}
+
+.knowledge-section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.knowledge-item {
+  padding: 10px 12px;
+  background: #fafbfc;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.knowledge-item:hover {
+  border-color: #d6e4ff;
+  background: #f8f9ff;
+}
+
+.knowledge-item-key {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+  word-break: break-all;
+}
+
+.knowledge-item-value {
+  font-size: 12px;
+  color: #667eea;
+  margin-bottom: 6px;
+  word-break: break-all;
+}
+
+.knowledge-item-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+}
+
+.knowledge-category {
+  padding: 1px 6px;
+  background: #f0f5ff;
+  border-radius: 4px;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.knowledge-hits {
+  color: #999;
+}
+
+.knowledge-corrected {
+  padding: 1px 6px;
+  background: #fff7e6;
+  border-radius: 4px;
+  color: #fa8c16;
+  font-weight: 500;
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #059669;
+  color: white;
+}
+
+.ta-chat-area .ta-chat {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-sidebar {
+  order: -1;
+  width: 280px;
+  height: 700px;
+  background: white;
+  border-right: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.05);
+  animation: slideInLeft 0.3s ease;
+  flex-shrink: 0;
+}
+
+.history-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.history-action-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.history-action-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.history-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafbfc;
+}
+
+.history-sidebar-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.history-close-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.history-close-btn:hover {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.history-sidebar-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.history-empty {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.history-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.history-item:hover {
+  background: #f5f7ff;
+}
+
+.history-item.active {
+  background: linear-gradient(135deg, #eef2ff 0%, #e8eeff 100%);
+  border: 1px solid #d6e4ff;
+}
+
+.history-item-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-item-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.history-item-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.history-item-step {
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  background: #f0f5ff;
+  color: #667eea;
+}
+
+.history-item-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.history-link-tag {
+  padding: 1px 8px;
+  background: #f0f2f5;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #666;
+}
+
+.history-link-more {
+  font-size: 11px;
+  color: #999;
+}
+
+.history-item-delete {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  opacity: 0;
+}
+
+.history-item:hover .history-item-delete {
+  opacity: 1;
+}
+
+.history-item-delete:hover {
+  background: #fff1f0;
+  color: #ff4d4f;
+}
+
+.input-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.input-actions .btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.quick-questions-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.quick-q-btn {
+  padding: 6px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.quick-q-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+  background: #f8f9ff;
 }

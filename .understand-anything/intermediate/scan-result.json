@@ -1,0 +1,2334 @@
+{
+  "projectName": "tech-service-knowledge-graph",
+  "projectDescription": "科技服务知识图谱动态构建与智能匹配系统",
+  "languages": [
+    "batch",
+    "config",
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "nginx",
+    "shell",
+    "text",
+    "toml",
+    "typescript",
+    "yaml"
+  ],
+  "frameworks": [
+    "React",
+    "Vite",
+    "Express",
+    "Neo4j",
+    "Redis",
+    "Ant Design",
+    "Cytoscape"
+  ],
+  "files": [
+    {
+      "path": ".env",
+      "language": "config",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".env.local",
+      "language": "config",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "check-enterprises.js",
+      "language": "javascript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "check-path.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "check-relations.js",
+      "language": "javascript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "deploy.bat",
+      "language": "batch",
+      "sizeLines": 36,
+      "fileCategory": "script"
+    },
+    {
+      "path": "deploy.sh",
+      "language": "shell",
+      "sizeLines": 37,
+      "fileCategory": "script"
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "language": "markdown",
+      "sizeLines": 344,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Excel导入模板-关系.md",
+      "language": "markdown",
+      "sizeLines": 89,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Excel导入模板-节点.md",
+      "language": "markdown",
+      "sizeLines": 85,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "import-achievements.js",
+      "language": "javascript",
+      "sizeLines": 303,
+      "fileCategory": "code"
+    },
+    {
+      "path": "import-shipping-chain.js",
+      "language": "javascript",
+      "sizeLines": 227,
+      "fileCategory": "code"
+    },
+    {
+      "path": "import-tech-needs.js",
+      "language": "javascript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "knowledge_base/feedback.json",
+      "language": "json",
+      "sizeLines": 2,
+      "fileCategory": "config"
+    },
+    {
+      "path": "knowledge_base/harness_profile.json",
+      "language": "json",
+      "sizeLines": 160,
+      "fileCategory": "config"
+    },
+    {
+      "path": "knowledge_base/learnings.json",
+      "language": "json",
+      "sizeLines": 462,
+      "fileCategory": "config"
+    },
+    {
+      "path": "knowledge_base/patterns.json",
+      "language": "json",
+      "sizeLines": 482,
+      "fileCategory": "config"
+    },
+    {
+      "path": "knowledge_base/technology_ppts.json",
+      "language": "json",
+      "sizeLines": 468,
+      "fileCategory": "config"
+    },
+    {
+      "path": "match-tech-needs-achievements.js",
+      "language": "javascript",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "NEO4J_SETUP.md",
+      "language": "markdown",
+      "sizeLines": 239,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "nginx.conf",
+      "language": "nginx",
+      "sizeLines": 28,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package-lock.json",
+      "language": "json",
+      "sizeLines": 6839,
+      "fileCategory": "config"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 47,
+      "fileCategory": "config"
+    },
+    {
+      "path": "QUICK_START.md",
+      "language": "markdown",
+      "sizeLines": 177,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/start-server-with-redis.js",
+      "language": "javascript",
+      "sizeLines": 144,
+      "fileCategory": "script"
+    },
+    {
+      "path": "server/agentEngine.js",
+      "language": "javascript",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/agentTools.js",
+      "language": "javascript",
+      "sizeLines": 257,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/bootstrap/createApp.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/bootstrap/createServerContext.js",
+      "language": "javascript",
+      "sizeLines": 121,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/check-database.js",
+      "language": "javascript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/config.example.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/config.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/harness/langChainTechAgentHarness.js",
+      "language": "javascript",
+      "sizeLines": 407,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/harness/profileStore.js",
+      "language": "javascript",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/import-chain-data.js",
+      "language": "javascript",
+      "sizeLines": 321,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/init-db.js",
+      "language": "javascript",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/knowledgeBase.js",
+      "language": "javascript",
+      "sizeLines": 606,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/MATCHING_ENGINE_README.md",
+      "language": "markdown",
+      "sizeLines": 434,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "server/neo4j-import.js",
+      "language": "javascript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/pptService.js",
+      "language": "javascript",
+      "sizeLines": 1202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/routes/agent/registerAgentRoutes.js",
+      "language": "javascript",
+      "sizeLines": 431,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/routes/aippt/registerAipptRoutes.js",
+      "language": "javascript",
+      "sizeLines": 2047,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/routes/graph/registerGraphRoutes.js",
+      "language": "javascript",
+      "sizeLines": 1625,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/routes/matching/registerMatchingRoutes.js",
+      "language": "javascript",
+      "sizeLines": 348,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/routes/ppt/registerPptRoutes.js",
+      "language": "javascript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/server.js",
+      "language": "javascript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/services/chainSeedService.js",
+      "language": "javascript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/services/graphService.js",
+      "language": "javascript",
+      "sizeLines": 349,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/services/matchingAiService.js",
+      "language": "javascript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "server/utils/memoryRedisClient.js",
+      "language": "javascript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/App.css",
+      "language": "css",
+      "sizeLines": 192,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/App.jsx",
+      "language": "javascript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/IntelligentMatching/IntelligentMatching.css",
+      "language": "css",
+      "sizeLines": 377,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/IntelligentMatching/IntelligentMatching.jsx",
+      "language": "javascript",
+      "sizeLines": 430,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/KnowledgeGraph/graphData.js",
+      "language": "javascript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/KnowledgeGraph/KnowledgeGraph.css",
+      "language": "css",
+      "sizeLines": 1143,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+      "language": "javascript",
+      "sizeLines": 1871,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/ppt_generate/PPTGenerator.css",
+      "language": "css",
+      "sizeLines": 791,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/ppt_generate/PPTGenerator.jsx",
+      "language": "javascript",
+      "sizeLines": 510,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/TechAgent/EnterpriseDemand.css",
+      "language": "css",
+      "sizeLines": 277,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/TechAgent/EnterpriseDemand.jsx",
+      "language": "javascript",
+      "sizeLines": 367,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/TechAgent/KnowledgeGraphView.css",
+      "language": "css",
+      "sizeLines": 602,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/TechAgent/KnowledgeGraphView.jsx",
+      "language": "javascript",
+      "sizeLines": 1154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/TechAgent/TechAgent.css",
+      "language": "css",
+      "sizeLines": 1858,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/TechAgent/TechAgent.jsx",
+      "language": "javascript",
+      "sizeLines": 913,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/config.example.js",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/config.js",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/index.css",
+      "language": "css",
+      "sizeLines": 270,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/main.jsx",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/api.js",
+      "language": "javascript",
+      "sizeLines": 561,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/utils/excelUtils.js",
+      "language": "javascript",
+      "sizeLines": 289,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/.env",
+      "language": "config",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/启动说明.md",
+      "language": "markdown",
+      "sizeLines": 114,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/.env",
+      "language": "config",
+      "sizeLines": 4,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/Dockerfile",
+      "language": "text",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/README.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/template/__________________1.json",
+      "language": "json",
+      "sizeLines": 29,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/template/template_1.json",
+      "language": "json",
+      "sizeLines": 9021,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/template/template_2.json",
+      "language": "json",
+      "sizeLines": 9651,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/template/template_3.json",
+      "language": "json",
+      "sizeLines": 7485,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/template/template_4.json",
+      "language": "json",
+      "sizeLines": 8818,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/main_api/template/template_9.json",
+      "language": "json",
+      "sizeLines": 9651,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/knowledge-graph-fusion-nodes-json.json",
+      "language": "json",
+      "sizeLines": 262,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_1.json",
+      "language": "json",
+      "sizeLines": 9021,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_2.json",
+      "language": "json",
+      "sizeLines": 9651,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_3.json",
+      "language": "json",
+      "sizeLines": 7485,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_4.json",
+      "language": "json",
+      "sizeLines": 8818,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_5.json",
+      "language": "json",
+      "sizeLines": 4480,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_6.json",
+      "language": "json",
+      "sizeLines": 6671,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_7.json",
+      "language": "json",
+      "sizeLines": 220,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_8.json",
+      "language": "json",
+      "sizeLines": 206,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template_9.json",
+      "language": "json",
+      "sizeLines": 9651,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/mock_api/template/template.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/.env",
+      "language": "config",
+      "sizeLines": 16,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/Dockerfile",
+      "language": "text",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/README.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/17e95f63-45aa-491a-9a26-9d4587bc1051_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/31fbe6d5-b744-40df-ab38-950ea503cb43_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/912e5edf-6172-4c03-96d0-93c7cd24f2b1_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/9f220746-f282-4b83-9373-51746cf74db4_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/a8eb3950-8825-4356-8889-81688538d8ae_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/ca9c91a1-0c5b-4130-bca9-8585cf687697_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/d266ba03-a71f-4a82-8c3f-c99cf77931f5_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/personaldb/temp_download/f54e9fd6-f7c4-4255-a09a-b6f612758f77_39009782.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/README.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/simpleOutline/.env",
+      "language": "config",
+      "sizeLines": 9,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/simpleOutline/Dockerfile",
+      "language": "text",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/backend/simpleOutline/README.md",
+      "language": "markdown",
+      "sizeLines": 92,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/backend/slide_agent/.env",
+      "language": "config",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/slide_agent/Dockerfile",
+      "language": "text",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/backend/slide_agent/pyproject.toml",
+      "language": "toml",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/backend/slide_agent/README.md",
+      "language": "markdown",
+      "sizeLines": 115,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/deploy.sh",
+      "language": "shell",
+      "sizeLines": 67,
+      "fileCategory": "script"
+    },
+    {
+      "path": "TrainPPTAgent/doc/API_CONTENT.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/API_IMAGE.md",
+      "language": "markdown",
+      "sizeLines": 502,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/API_OUTLINE.md",
+      "language": "markdown",
+      "sizeLines": 152,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/API_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 9264,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/CHANGES.md",
+      "language": "markdown",
+      "sizeLines": 743,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/custom_model.md",
+      "language": "markdown",
+      "sizeLines": 229,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/DockerDeploy.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/Gallery.md",
+      "language": "markdown",
+      "sizeLines": 74,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/Image.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/issue.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/PPT_Structure.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/prompt.md",
+      "language": "markdown",
+      "sizeLines": 1888,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/Template.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/doc/Train.md",
+      "language": "markdown",
+      "sizeLines": 369,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/docker-compose-hostnetwork.yml",
+      "language": "yaml",
+      "sizeLines": 54,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 102,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/.eslintrc.cjs",
+      "language": "javascript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/bug_report.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/feature_request.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/.github/workflows/deploy.yml",
+      "language": "yaml",
+      "sizeLines": 31,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/.vscode/extensions.json",
+      "language": "json",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/commitlint.config.cjs",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/doc/AIPPT.md",
+      "language": "markdown",
+      "sizeLines": 61,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/doc/Blacklist.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/doc/Canvas.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/doc/CustomElement.md",
+      "language": "markdown",
+      "sizeLines": 415,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/doc/DirectoryAndData.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/doc/Q&A.md",
+      "language": "markdown",
+      "sizeLines": 158,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/Dockerfile",
+      "language": "text",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/env.d.ts",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/index.html",
+      "language": "html",
+      "sizeLines": 64,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/nginx.conf",
+      "language": "nginx",
+      "sizeLines": 32,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/package-lock.json",
+      "language": "json",
+      "sizeLines": 9552,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/package.json",
+      "language": "json",
+      "sizeLines": 77,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/public/mocks/AIPPT_Outline.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/public/mocks/AIPPT.json",
+      "language": "json",
+      "sizeLines": 475,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/public/mocks/imgs.json",
+      "language": "json",
+      "sizeLines": 482,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/public/mocks/slides.json",
+      "language": "json",
+      "sizeLines": 184,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/public/mocks/template_1.json",
+      "language": "json",
+      "sizeLines": 91,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/README.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/assets/styles/font.scss",
+      "language": "css",
+      "sizeLines": 9,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/assets/styles/global.scss",
+      "language": "css",
+      "sizeLines": 138,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/assets/styles/mixin.scss",
+      "language": "css",
+      "sizeLines": 42,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/assets/styles/prosemirror.scss",
+      "language": "css",
+      "sizeLines": 102,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/assets/styles/variable.scss",
+      "language": "css",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/components.d.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/components/Contextmenu/types.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/components/LaTeXEditor/hfmath.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/animation.ts",
+      "language": "typescript",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/chart.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/element.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/font.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/hotkey.ts",
+      "language": "typescript",
+      "sizeLines": 149,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/imageClip.ts",
+      "language": "typescript",
+      "sizeLines": 181,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/latex.ts",
+      "language": "typescript",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/lines.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/shapes.ts",
+      "language": "typescript",
+      "sizeLines": 1038,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/storage.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/symbol.ts",
+      "language": "typescript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/configs/theme.ts",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/global.d.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useAddSlidesOrElements.ts",
+      "language": "typescript",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useAIPPT.ts",
+      "language": "typescript",
+      "sizeLines": 1044,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useAlignActiveElement.ts",
+      "language": "typescript",
+      "sizeLines": 177,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useAlignElementToCanvas.ts",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useCombineElement.ts",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useCreateElement.ts",
+      "language": "typescript",
+      "sizeLines": 325,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useExport.ts",
+      "language": "typescript",
+      "sizeLines": 972,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts",
+      "language": "typescript",
+      "sizeLines": 321,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useHideElement.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useImport.ts",
+      "language": "typescript",
+      "sizeLines": 783,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useLink.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useLoadSlides.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useLockElement.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useMoveElement.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useOrderElement.ts",
+      "language": "typescript",
+      "sizeLines": 212,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/usePasteEvent.ts",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/usePasteTextClipboardData.ts",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useScaleCanvas.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useScreening.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useSearch.ts",
+      "language": "typescript",
+      "sizeLines": 444,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useSectionHandler.ts",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useSelectElement.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useShapeFormatPainter.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useSlideBackgroundStyle.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts",
+      "language": "typescript",
+      "sizeLines": 191,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useSlideTheme.ts",
+      "language": "typescript",
+      "sizeLines": 392,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useTextFormatPainter.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/hooks/useUniformDisplayElement.ts",
+      "language": "typescript",
+      "sizeLines": 261,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/plugins/directive/clickOutside.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/plugins/directive/contextmenu.ts",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/plugins/directive/index.ts",
+      "language": "typescript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/plugins/directive/tooltip.scss",
+      "language": "css",
+      "sizeLines": 67,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/plugins/icon.ts",
+      "language": "typescript",
+      "sizeLines": 290,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/router/index.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/services/config.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/services/index.ts",
+      "language": "typescript",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/store/index.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/store/keyboard.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/store/main.ts",
+      "language": "typescript",
+      "sizeLines": 242,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/store/screen.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/store/slides.ts",
+      "language": "typescript",
+      "sizeLines": 290,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/store/snapshot.ts",
+      "language": "typescript",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/types/AIPPT.ts",
+      "language": "typescript",
+      "sizeLines": 202,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/types/edit.ts",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/types/export.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/types/injectKey.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/types/mobile.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/types/slides.ts",
+      "language": "typescript",
+      "sizeLines": 777,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/types/toolbar.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/clipboard.ts",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/common.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/crypto.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/database.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/element.ts",
+      "language": "typescript",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/emitter.ts",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/fullscreen.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/htmlParser/format.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/htmlParser/index.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+      "language": "typescript",
+      "sizeLines": 275,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+      "language": "typescript",
+      "sizeLines": 129,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/image.ts",
+      "language": "typescript",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/message.ts",
+      "language": "typescript",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/print.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/replaceText.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setListStyle.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextAlign.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextIndent.ts",
+      "language": "typescript",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/commands/toggleList.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/index.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/inputrules.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/keymap.ts",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/placeholder.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/schema/marks.ts",
+      "language": "typescript",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/schema/nodes.ts",
+      "language": "typescript",
+      "sizeLines": 179,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts",
+      "language": "typescript",
+      "sizeLines": 260,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/selection.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/svg2Base64.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/svgPathParser.ts",
+      "language": "typescript",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/utils/textParser.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/ChartElement/chartOption.ts",
+      "language": "typescript",
+      "sizeLines": 315,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFill.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFlip.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementOutline.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementShadow.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/ImageElement/useClipImage.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/ImageElement/useFilter.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/TableElement/useHideCells.ts",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/TableElement/useSubThemeColor.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/TableElement/utils.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/components/element/VideoElement/VideoPlayer/useMSE.ts",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useCommonOperate.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragElement.ts",
+      "language": "typescript",
+      "sizeLines": 327,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragLineElement.ts",
+      "language": "typescript",
+      "sizeLines": 232,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDropImageOrText.ts",
+      "language": "typescript",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "language": "typescript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMouseSelection.ts",
+      "language": "typescript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "language": "typescript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useRotateElement.ts",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useScaleElement.ts",
+      "language": "typescript",
+      "sizeLines": 579,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useSelectElement.ts",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useViewportSize.ts",
+      "language": "typescript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Screen/hooks/useExecPlay.ts",
+      "language": "typescript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Screen/hooks/useFullscreen.ts",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Screen/hooks/useSlideSize.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/src/views/Screen/hooks/useSlidesWithTurningMode.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/tsconfig.app.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/tsconfig.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/tsconfig.node.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/frontend/vite.config.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "TrainPPTAgent/README_EN.md",
+      "language": "markdown",
+      "sizeLines": 182,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/README_PRODUCTION.md",
+      "language": "markdown",
+      "sizeLines": 222,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/README.md",
+      "language": "markdown",
+      "sizeLines": 263,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/template/标注过后的pptx.json",
+      "language": "json",
+      "sizeLines": 1181,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/template/未标注pptx.json",
+      "language": "json",
+      "sizeLines": 1179,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/template/ai_template_pptx.json",
+      "language": "json",
+      "sizeLines": 1184,
+      "fileCategory": "config"
+    },
+    {
+      "path": "TrainPPTAgent/template/README.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "TrainPPTAgent/utils/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "vite.config.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 303,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "moderate",
+  "stats": {
+    "filesScanned": 303,
+    "byCategory": {
+      "config": 50,
+      "code": 184,
+      "script": 4,
+      "docs": 49,
+      "markup": 16
+    },
+    "byLanguage": {
+      "config": 7,
+      "javascript": 48,
+      "batch": 1,
+      "shell": 2,
+      "markdown": 49,
+      "html": 2,
+      "json": 37,
+      "nginx": 2,
+      "css": 14,
+      "text": 5,
+      "toml": 1,
+      "yaml": 3,
+      "typescript": 132
+    }
+  },
+  "importMap": {
+    ".env": [],
+    ".env.local": [],
+    "check-enterprises.js": [
+      "server/config.js"
+    ],
+    "check-path.js": [],
+    "check-relations.js": [],
+    "deploy.bat": [],
+    "deploy.sh": [],
+    "DEPLOYMENT.md": [],
+    "Excel导入模板-关系.md": [],
+    "Excel导入模板-节点.md": [],
+    "import-achievements.js": [
+      "server/config.js"
+    ],
+    "import-shipping-chain.js": [
+      "server/config.js"
+    ],
+    "import-tech-needs.js": [
+      "server/config.js"
+    ],
+    "index.html": [],
+    "knowledge_base/feedback.json": [],
+    "knowledge_base/harness_profile.json": [],
+    "knowledge_base/learnings.json": [],
+    "knowledge_base/patterns.json": [],
+    "knowledge_base/technology_ppts.json": [],
+    "match-tech-needs-achievements.js": [
+      "server/config.js"
+    ],
+    "NEO4J_SETUP.md": [],
+    "nginx.conf": [],
+    "package-lock.json": [],
+    "package.json": [],
+    "QUICK_START.md": [],
+    "scripts/start-server-with-redis.js": [],
+    "server/agentEngine.js": [
+      "server/knowledgeBase.js",
+      "server/harness/langChainTechAgentHarness.js",
+      "server/harness/profileStore.js"
+    ],
+    "server/agentTools.js": [],
+    "server/bootstrap/createApp.js": [
+      "server/routes/graph/registerGraphRoutes.js",
+      "server/routes/matching/registerMatchingRoutes.js",
+      "server/routes/ppt/registerPptRoutes.js",
+      "server/routes/agent/registerAgentRoutes.js",
+      "server/routes/aippt/registerAipptRoutes.js"
+    ],
+    "server/bootstrap/createServerContext.js": [
+      "server/config.js",
+      "server/pptService.js",
+      "server/utils/memoryRedisClient.js",
+      "server/agentEngine.js"
+    ],
+    "server/check-database.js": [
+      "server/config.js"
+    ],
+    "server/config.example.js": [],
+    "server/config.js": [],
+    "server/harness/langChainTechAgentHarness.js": [
+      "server/agentTools.js",
+      "server/harness/profileStore.js"
+    ],
+    "server/harness/profileStore.js": [],
+    "server/import-chain-data.js": [
+      "server/config.js"
+    ],
+    "server/init-db.js": [
+      "server/config.js"
+    ],
+    "server/knowledgeBase.js": [],
+    "server/MATCHING_ENGINE_README.md": [],
+    "server/neo4j-import.js": [
+      "src/components/KnowledgeGraph/graphData.js",
+      "server/config.js"
+    ],
+    "server/pptService.js": [],
+    "server/routes/agent/registerAgentRoutes.js": [
+      "server/services/graphService.js"
+    ],
+    "server/routes/aippt/registerAipptRoutes.js": [],
+    "server/routes/graph/registerGraphRoutes.js": [
+      "server/services/graphService.js",
+      "server/services/chainSeedService.js"
+    ],
+    "server/routes/matching/registerMatchingRoutes.js": [
+      "server/services/matchingAiService.js"
+    ],
+    "server/routes/ppt/registerPptRoutes.js": [],
+    "server/server.js": [
+      "server/bootstrap/createApp.js",
+      "server/bootstrap/createServerContext.js"
+    ],
+    "server/services/chainSeedService.js": [],
+    "server/services/graphService.js": [],
+    "server/services/matchingAiService.js": [],
+    "server/utils/memoryRedisClient.js": [],
+    "src/App.css": [],
+    "src/App.jsx": [
+      "src/components/KnowledgeGraph/KnowledgeGraph.jsx",
+      "src/components/TechAgent/TechAgent.jsx",
+      "src/components/ppt_generate/PPTGenerator.jsx",
+      "src/App.css"
+    ],
+    "src/components/IntelligentMatching/IntelligentMatching.css": [],
+    "src/components/IntelligentMatching/IntelligentMatching.jsx": [
+      "src/components/IntelligentMatching/IntelligentMatching.css"
+    ],
+    "src/components/KnowledgeGraph/graphData.js": [],
+    "src/components/KnowledgeGraph/KnowledgeGraph.css": [],
+    "src/components/KnowledgeGraph/KnowledgeGraph.jsx": [
+      "src/utils/api.js",
+      "src/components/KnowledgeGraph/KnowledgeGraph.css"
+    ],
+    "src/components/ppt_generate/PPTGenerator.css": [],
+    "src/components/ppt_generate/PPTGenerator.jsx": [
+      "src/components/ppt_generate/PPTGenerator.css"
+    ],
+    "src/components/TechAgent/EnterpriseDemand.css": [],
+    "src/components/TechAgent/EnterpriseDemand.jsx": [
+      "src/components/TechAgent/EnterpriseDemand.css"
+    ],
+    "src/components/TechAgent/KnowledgeGraphView.css": [],
+    "src/components/TechAgent/KnowledgeGraphView.jsx": [
+      "src/utils/api.js",
+      "src/components/TechAgent/KnowledgeGraphView.css"
+    ],
+    "src/components/TechAgent/TechAgent.css": [],
+    "src/components/TechAgent/TechAgent.jsx": [
+      "src/utils/api.js",
+      "src/components/TechAgent/TechAgent.css"
+    ],
+    "src/config.example.js": [],
+    "src/config.js": [],
+    "src/index.css": [],
+    "src/main.jsx": [
+      "src/App.jsx",
+      "src/index.css"
+    ],
+    "src/utils/api.js": [],
+    "src/utils/excelUtils.js": [],
+    "TrainPPTAgent/.env": [],
+    "TrainPPTAgent/backend/启动说明.md": [],
+    "TrainPPTAgent/backend/main_api/.env": [],
+    "TrainPPTAgent/backend/main_api/Dockerfile": [],
+    "TrainPPTAgent/backend/main_api/README.md": [],
+    "TrainPPTAgent/backend/main_api/template/__________________1.json": [],
+    "TrainPPTAgent/backend/main_api/template/template_1.json": [],
+    "TrainPPTAgent/backend/main_api/template/template_2.json": [],
+    "TrainPPTAgent/backend/main_api/template/template_3.json": [],
+    "TrainPPTAgent/backend/main_api/template/template_4.json": [],
+    "TrainPPTAgent/backend/main_api/template/template_9.json": [],
+    "TrainPPTAgent/backend/mock_api/template/knowledge-graph-fusion-nodes-json.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_1.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_2.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_3.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_4.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_5.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_6.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_7.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_8.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template_9.json": [],
+    "TrainPPTAgent/backend/mock_api/template/template.json": [],
+    "TrainPPTAgent/backend/personaldb/.env": [],
+    "TrainPPTAgent/backend/personaldb/Dockerfile": [],
+    "TrainPPTAgent/backend/personaldb/README.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/17e95f63-45aa-491a-9a26-9d4587bc1051_39009782.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/31fbe6d5-b744-40df-ab38-950ea503cb43_39009782.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/912e5edf-6172-4c03-96d0-93c7cd24f2b1_39009782.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/9f220746-f282-4b83-9373-51746cf74db4_39009782.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/a8eb3950-8825-4356-8889-81688538d8ae_39009782.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/ca9c91a1-0c5b-4130-bca9-8585cf687697_39009782.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/d266ba03-a71f-4a82-8c3f-c99cf77931f5_39009782.md": [],
+    "TrainPPTAgent/backend/personaldb/temp_download/f54e9fd6-f7c4-4255-a09a-b6f612758f77_39009782.md": [],
+    "TrainPPTAgent/backend/README.md": [],
+    "TrainPPTAgent/backend/simpleOutline/.env": [],
+    "TrainPPTAgent/backend/simpleOutline/Dockerfile": [],
+    "TrainPPTAgent/backend/simpleOutline/README.md": [],
+    "TrainPPTAgent/backend/slide_agent/.env": [],
+    "TrainPPTAgent/backend/slide_agent/Dockerfile": [],
+    "TrainPPTAgent/backend/slide_agent/pyproject.toml": [],
+    "TrainPPTAgent/backend/slide_agent/README.md": [],
+    "TrainPPTAgent/deploy.sh": [],
+    "TrainPPTAgent/doc/API_CONTENT.md": [],
+    "TrainPPTAgent/doc/API_IMAGE.md": [],
+    "TrainPPTAgent/doc/API_OUTLINE.md": [],
+    "TrainPPTAgent/doc/API_TEMPLATE.md": [],
+    "TrainPPTAgent/doc/CHANGES.md": [],
+    "TrainPPTAgent/doc/custom_model.md": [],
+    "TrainPPTAgent/doc/DockerDeploy.md": [],
+    "TrainPPTAgent/doc/Gallery.md": [],
+    "TrainPPTAgent/doc/Image.md": [],
+    "TrainPPTAgent/doc/issue.md": [],
+    "TrainPPTAgent/doc/PPT_Structure.md": [],
+    "TrainPPTAgent/doc/prompt.md": [],
+    "TrainPPTAgent/doc/Template.md": [],
+    "TrainPPTAgent/doc/Train.md": [],
+    "TrainPPTAgent/docker-compose-hostnetwork.yml": [],
+    "TrainPPTAgent/docker-compose.yml": [],
+    "TrainPPTAgent/frontend/.eslintrc.cjs": [],
+    "TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/bug_report.md": [],
+    "TrainPPTAgent/frontend/.github/ISSUE_TEMPLATE/feature_request.md": [],
+    "TrainPPTAgent/frontend/.github/workflows/deploy.yml": [],
+    "TrainPPTAgent/frontend/.vscode/extensions.json": [],
+    "TrainPPTAgent/frontend/commitlint.config.cjs": [],
+    "TrainPPTAgent/frontend/doc/AIPPT.md": [],
+    "TrainPPTAgent/frontend/doc/Blacklist.md": [],
+    "TrainPPTAgent/frontend/doc/Canvas.md": [],
+    "TrainPPTAgent/frontend/doc/CustomElement.md": [],
+    "TrainPPTAgent/frontend/doc/DirectoryAndData.md": [],
+    "TrainPPTAgent/frontend/doc/Q&A.md": [],
+    "TrainPPTAgent/frontend/Dockerfile": [],
+    "TrainPPTAgent/frontend/env.d.ts": [],
+    "TrainPPTAgent/frontend/index.html": [],
+    "TrainPPTAgent/frontend/nginx.conf": [],
+    "TrainPPTAgent/frontend/package-lock.json": [],
+    "TrainPPTAgent/frontend/package.json": [],
+    "TrainPPTAgent/frontend/public/mocks/AIPPT_Outline.md": [],
+    "TrainPPTAgent/frontend/public/mocks/AIPPT.json": [],
+    "TrainPPTAgent/frontend/public/mocks/imgs.json": [],
+    "TrainPPTAgent/frontend/public/mocks/slides.json": [],
+    "TrainPPTAgent/frontend/public/mocks/template_1.json": [],
+    "TrainPPTAgent/frontend/README.md": [],
+    "TrainPPTAgent/frontend/src/assets/styles/font.scss": [],
+    "TrainPPTAgent/frontend/src/assets/styles/global.scss": [],
+    "TrainPPTAgent/frontend/src/assets/styles/mixin.scss": [],
+    "TrainPPTAgent/frontend/src/assets/styles/prosemirror.scss": [],
+    "TrainPPTAgent/frontend/src/assets/styles/variable.scss": [],
+    "TrainPPTAgent/frontend/src/components.d.ts": [],
+    "TrainPPTAgent/frontend/src/components/Contextmenu/types.ts": [],
+    "TrainPPTAgent/frontend/src/components/LaTeXEditor/hfmath.ts": [],
+    "TrainPPTAgent/frontend/src/configs/animation.ts": [],
+    "TrainPPTAgent/frontend/src/configs/chart.ts": [],
+    "TrainPPTAgent/frontend/src/configs/element.ts": [],
+    "TrainPPTAgent/frontend/src/configs/font.ts": [],
+    "TrainPPTAgent/frontend/src/configs/hotkey.ts": [],
+    "TrainPPTAgent/frontend/src/configs/imageClip.ts": [],
+    "TrainPPTAgent/frontend/src/configs/latex.ts": [],
+    "TrainPPTAgent/frontend/src/configs/lines.ts": [],
+    "TrainPPTAgent/frontend/src/configs/shapes.ts": [],
+    "TrainPPTAgent/frontend/src/configs/storage.ts": [],
+    "TrainPPTAgent/frontend/src/configs/symbol.ts": [],
+    "TrainPPTAgent/frontend/src/configs/theme.ts": [],
+    "TrainPPTAgent/frontend/src/global.d.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useAddSlidesOrElements.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useAIPPT.ts": [
+      "TrainPPTAgent/frontend/src/hooks/useAddSlidesOrElements.ts",
+      "TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts"
+    ],
+    "TrainPPTAgent/frontend/src/hooks/useAlignActiveElement.ts": [
+      "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts"
+    ],
+    "TrainPPTAgent/frontend/src/hooks/useAlignElementToCanvas.ts": [
+      "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts"
+    ],
+    "TrainPPTAgent/frontend/src/hooks/useCombineElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts": [
+      "TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts"
+    ],
+    "TrainPPTAgent/frontend/src/hooks/useCreateElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useExport.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useGlobalHotkey.ts": [
+      "TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts",
+      "TrainPPTAgent/frontend/src/hooks/useLockElement.ts",
+      "TrainPPTAgent/frontend/src/hooks/useDeleteElement.ts",
+      "TrainPPTAgent/frontend/src/hooks/useCombineElement.ts",
+      "TrainPPTAgent/frontend/src/hooks/useCopyAndPasteElement.ts",
+      "TrainPPTAgent/frontend/src/hooks/useSelectElement.ts",
+      "TrainPPTAgent/frontend/src/hooks/useMoveElement.ts",
+      "TrainPPTAgent/frontend/src/hooks/useOrderElement.ts",
+      "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts",
+      "TrainPPTAgent/frontend/src/hooks/useScreening.ts",
+      "TrainPPTAgent/frontend/src/hooks/useScaleCanvas.ts"
+    ],
+    "TrainPPTAgent/frontend/src/hooks/useHideElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useImport.ts": [
+      "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts"
+    ],
+    "TrainPPTAgent/frontend/src/hooks/useLink.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useLoadSlides.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useLockElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useMoveElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useOrderElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/usePasteEvent.ts": [
+      "TrainPPTAgent/frontend/src/hooks/usePasteTextClipboardData.ts",
+      "TrainPPTAgent/frontend/src/hooks/useCreateElement.ts"
+    ],
+    "TrainPPTAgent/frontend/src/hooks/usePasteTextClipboardData.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useScaleCanvas.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useScreening.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useSearch.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useSectionHandler.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useSelectElement.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useShapeFormatPainter.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useSlideBackgroundStyle.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useSlideHandler.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useSlideTheme.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useTextFormatPainter.ts": [],
+    "TrainPPTAgent/frontend/src/hooks/useUniformDisplayElement.ts": [
+      "TrainPPTAgent/frontend/src/hooks/useHistorySnapshot.ts"
+    ],
+    "TrainPPTAgent/frontend/src/main.ts": [
+      "TrainPPTAgent/frontend/src/router/index.ts"
+    ],
+    "TrainPPTAgent/frontend/src/plugins/directive/clickOutside.ts": [],
+    "TrainPPTAgent/frontend/src/plugins/directive/contextmenu.ts": [],
+    "TrainPPTAgent/frontend/src/plugins/directive/index.ts": [
+      "TrainPPTAgent/frontend/src/plugins/directive/contextmenu.ts",
+      "TrainPPTAgent/frontend/src/plugins/directive/clickOutside.ts",
+      "TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts"
+    ],
+    "TrainPPTAgent/frontend/src/plugins/directive/tooltip.scss": [],
+    "TrainPPTAgent/frontend/src/plugins/directive/tooltip.ts": [
+      "TrainPPTAgent/frontend/src/plugins/directive/tooltip.scss"
+    ],
+    "TrainPPTAgent/frontend/src/plugins/icon.ts": [],
+    "TrainPPTAgent/frontend/src/router/index.ts": [],
+    "TrainPPTAgent/frontend/src/services/config.ts": [],
+    "TrainPPTAgent/frontend/src/services/index.ts": [
+      "TrainPPTAgent/frontend/src/services/config.ts"
+    ],
+    "TrainPPTAgent/frontend/src/store/index.ts": [
+      "TrainPPTAgent/frontend/src/store/main.ts",
+      "TrainPPTAgent/frontend/src/store/slides.ts",
+      "TrainPPTAgent/frontend/src/store/snapshot.ts",
+      "TrainPPTAgent/frontend/src/store/keyboard.ts",
+      "TrainPPTAgent/frontend/src/store/screen.ts"
+    ],
+    "TrainPPTAgent/frontend/src/store/keyboard.ts": [],
+    "TrainPPTAgent/frontend/src/store/main.ts": [
+      "TrainPPTAgent/frontend/src/store/slides.ts"
+    ],
+    "TrainPPTAgent/frontend/src/store/screen.ts": [],
+    "TrainPPTAgent/frontend/src/store/slides.ts": [],
+    "TrainPPTAgent/frontend/src/store/snapshot.ts": [
+      "TrainPPTAgent/frontend/src/store/slides.ts",
+      "TrainPPTAgent/frontend/src/store/main.ts"
+    ],
+    "TrainPPTAgent/frontend/src/types/AIPPT.ts": [],
+    "TrainPPTAgent/frontend/src/types/edit.ts": [
+      "TrainPPTAgent/frontend/src/types/slides.ts"
+    ],
+    "TrainPPTAgent/frontend/src/types/export.ts": [],
+    "TrainPPTAgent/frontend/src/types/injectKey.ts": [],
+    "TrainPPTAgent/frontend/src/types/mobile.ts": [],
+    "TrainPPTAgent/frontend/src/types/slides.ts": [],
+    "TrainPPTAgent/frontend/src/types/toolbar.ts": [],
+    "TrainPPTAgent/frontend/src/utils/clipboard.ts": [],
+    "TrainPPTAgent/frontend/src/utils/common.ts": [],
+    "TrainPPTAgent/frontend/src/utils/crypto.ts": [],
+    "TrainPPTAgent/frontend/src/utils/database.ts": [],
+    "TrainPPTAgent/frontend/src/utils/element.ts": [],
+    "TrainPPTAgent/frontend/src/utils/emitter.ts": [],
+    "TrainPPTAgent/frontend/src/utils/fullscreen.ts": [],
+    "TrainPPTAgent/frontend/src/utils/htmlParser/format.ts": [
+      "TrainPPTAgent/frontend/src/utils/htmlParser/types.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/htmlParser/index.ts": [
+      "TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts",
+      "TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts",
+      "TrainPPTAgent/frontend/src/utils/htmlParser/format.ts",
+      "TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/htmlParser/lexer.ts": [
+      "TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/htmlParser/parser.ts": [
+      "TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/htmlParser/stringify.ts": [
+      "TrainPPTAgent/frontend/src/utils/htmlParser/types.ts",
+      "TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/htmlParser/tags.ts": [],
+    "TrainPPTAgent/frontend/src/utils/htmlParser/types.ts": [],
+    "TrainPPTAgent/frontend/src/utils/image.ts": [],
+    "TrainPPTAgent/frontend/src/utils/message.ts": [],
+    "TrainPPTAgent/frontend/src/utils/print.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/commands/replaceText.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setListStyle.ts": [
+      "TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextAlign.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/commands/setTextIndent.ts": [
+      "TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/commands/toggleList.ts": [
+      "TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/index.ts": [
+      "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts",
+      "TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/index.ts": [
+      "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/keymap.ts",
+      "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/inputrules.ts",
+      "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/placeholder.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/inputrules.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/keymap.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/plugins/placeholder.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/schema/index.ts": [
+      "TrainPPTAgent/frontend/src/utils/prosemirror/schema/nodes.ts",
+      "TrainPPTAgent/frontend/src/utils/prosemirror/schema/marks.ts"
+    ],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/schema/marks.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/schema/nodes.ts": [],
+    "TrainPPTAgent/frontend/src/utils/prosemirror/utils.ts": [],
+    "TrainPPTAgent/frontend/src/utils/selection.ts": [],
+    "TrainPPTAgent/frontend/src/utils/svg2Base64.ts": [],
+    "TrainPPTAgent/frontend/src/utils/svgPathParser.ts": [],
+    "TrainPPTAgent/frontend/src/utils/textParser.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/ChartElement/chartOption.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFill.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementFlip.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementOutline.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/hooks/useElementShadow.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/ImageElement/useClipImage.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/ImageElement/useFilter.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/TableElement/useHideCells.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/TableElement/useSubThemeColor.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/TableElement/utils.ts": [],
+    "TrainPPTAgent/frontend/src/views/components/element/VideoElement/VideoPlayer/useMSE.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useCommonOperate.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragElement.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDragLineElement.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useDropImageOrText.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useInsertFromCreateSelection.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMouseSelection.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useMoveShapeKeypoint.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useRotateElement.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useScaleElement.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useSelectElement.ts": [],
+    "TrainPPTAgent/frontend/src/views/Editor/Canvas/hooks/useViewportSize.ts": [],
+    "TrainPPTAgent/frontend/src/views/Screen/hooks/useExecPlay.ts": [],
+    "TrainPPTAgent/frontend/src/views/Screen/hooks/useFullscreen.ts": [],
+    "TrainPPTAgent/frontend/src/views/Screen/hooks/useSlideSize.ts": [],
+    "TrainPPTAgent/frontend/src/views/Screen/hooks/useSlidesWithTurningMode.ts": [],
+    "TrainPPTAgent/frontend/tsconfig.app.json": [],
+    "TrainPPTAgent/frontend/tsconfig.json": [],
+    "TrainPPTAgent/frontend/tsconfig.node.json": [],
+    "TrainPPTAgent/frontend/vite.config.ts": [],
+    "TrainPPTAgent/README_EN.md": [],
+    "TrainPPTAgent/README_PRODUCTION.md": [],
+    "TrainPPTAgent/README.md": [],
+    "TrainPPTAgent/template/标注过后的pptx.json": [],
+    "TrainPPTAgent/template/未标注pptx.json": [],
+    "TrainPPTAgent/template/ai_template_pptx.json": [],
+    "TrainPPTAgent/template/README.md": [],
+    "TrainPPTAgent/utils/README.md": [],
+    "vite.config.js": []
+  }
+}

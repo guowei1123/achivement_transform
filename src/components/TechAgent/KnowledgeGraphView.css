@@ -5,35 +5,6 @@
   height: 100%;
 }
 
-.chain-ppt-progress-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  width: 100%;
-}
-
-.chain-ppt-progress-text {
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-.chain-ppt-progress-bar {
-  width: 100%;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.chain-ppt-progress-fill {
-  display: block;
-  height: 100%;
-  background: #fff;
-  border-radius: 2px;
-  transition: width 0.3s ease;
-}
-
 .kg-header {
   display: flex;
   justify-content: space-between;
@@ -122,6 +93,17 @@
   font-size: 16px;
   font-weight: 600;
   color: #667eea;
+}
+
+.fusion-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6b6b, #f39c12);
+  border-radius: 12px;
 }
 
 .kg-integrated-mode .kg-enterprise-input {
